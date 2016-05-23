@@ -1,5 +1,3 @@
-![]()
-
 ## 激活Tomcat的JMX远程配置
 
 ** 程序使用JMX监控Tomcat，需激活Tomcat的JMX远程配置，先修改Tomcat的启动脚本，windows下为bin/catalina.bat（linux下为catalina.sh），添加以下内容**
