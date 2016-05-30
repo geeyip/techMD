@@ -31,7 +31,7 @@ $("#fadd").val();
 ## 返回中文
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" return-value="tree"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" return-value="true"/>
 ```
 
 `return-value = "true"` 时， 字典返回中文，树形、下拉、多选框都适用
@@ -39,10 +39,10 @@ $("#fadd").val();
 ### 树形字典多选
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" dict-multiple="tree"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" dict-multiple="true"/>
 ```
 
-`dict-multiple="tree"`时，树形字典支持多选。
+`dict-multiple="true"`时，树形字典支持多选。
 
 ### 下拉字典非空
 
