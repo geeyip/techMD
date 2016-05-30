@@ -3,7 +3,7 @@
 **HTML 代码**
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd"></dict>
 ```
 
 **JAVASCRIPT 代码**
@@ -31,7 +31,7 @@ $("#fadd").val();
 ## 返回中文
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" return-value="true"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" return-value="true"></dict>
 ```
 
 `return-value = "true"` 时， 字典返回中文，树形、下拉、多选框都适用
@@ -39,7 +39,7 @@ $("#fadd").val();
 ### 树形字典多选
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" dict-multiple="true"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" dict-multiple="true"></dict>
 ```
 
 `dict-multiple="true"`时，树形字典支持多选。
@@ -47,7 +47,7 @@ $("#fadd").val();
 ### 下拉字典非空
 
 ``` html
-<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" empty="false"/>
+<dict dict-type="tree" dict-root="GXSDM" name="fadd" id="fadd" empty="false"></dict>
 ```
 
 `empty="false"`时，下拉字典没有空选项。
@@ -67,12 +67,11 @@ $("#fadd").dict(data);
 * 可以使用class选择器初始化页面上的所有字典控件
   
   ``` html
-  <dict dict-type="tree" dict-root="GXSDM" name="fadd" class="dict"/>
-  <dict dict-type="select" dict-root="SFDM" name="isbz" class="dict"/>
+  <dict dict-type="tree" dict-root="GXSDM" name="fadd" class="dict"></dict>
+  <dict dict-type="select" dict-root="SFDM" name="isbz" class="dict"></dict>
   ```
   
   ``` javascript
   //通过class选择器初始化字典
   $(".dict").dict();
   ```
-
