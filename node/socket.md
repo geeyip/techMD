@@ -22,6 +22,8 @@
 
   **Restful URL**
 
+  获取在线用户信息
+
   ```http
   http://localhost:3000/users
   ```
