@@ -16,7 +16,7 @@
   http://192.168.1.103/root/h-socket.git
   ```
 
-  使用webstorm检出代码，根目录下startup.js 文件使用右键直接运行。运行后直接访问`http://localhos:30000`  
+  使用webstorm检出代码，根目录下startup.js 文件使用右键直接运行。运行后直接访问`http://localhos:3000`  
 
 ### 实现原理
 
