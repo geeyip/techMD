@@ -3,7 +3,7 @@
 ### 用户管理
 
 ```http
-/api/{recordLog}/system/user
+ /api/{recordLog}/system/user
 ```
 
 * 用户管理通用路径前缀
@@ -56,7 +56,7 @@ POST /api/{recordLog}/system/user/password
 ### 角色管理
 
 ```http
-/api/{recordLog}/system/role
+ /api/{recordLog}/system/role
 ```
 
 * 角色管理通用路径前缀
