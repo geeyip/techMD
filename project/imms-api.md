@@ -170,7 +170,7 @@ POST /api/{recordLog}/system/param/add
 
 * 修改系统参数
 ```http
-POST api/{recordLog}/system/param/edit
+POST /api/{recordLog}/system/param/edit
 ```
 
 
