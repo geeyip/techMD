@@ -1,6 +1,37 @@
-## mongoDB
+## mongoDB 安装与启动
+
+### 安装
+
+* 安装步骤略
+
+
+* 注意安装路径**不要有空格**
+
+ ### 启动
 
 ```shell
+mongod --dbpath D:\data --logpath D:\logs --logappend --install
+```
+
+* 在安装目录下找到`bin`  目录，在`bin`目录下使用命令窗口执行上面命令
+* `dbpath` 和 `logpath`后面的文件夹绝对路径要存在
+* `logappend`  参数表示日志只在一个文件中追加
+* `install` 参数表示安装为windows系统服务，默认服务名为`MongoDB`
+
+### 连接
+
+```shell
+mongo
+```
+
+* 在安装目录下找到`bin`  目录，在`bin`目录下使用命令窗口执行上面命令,即可连接数据库
+
+
+
+## mongoDB 命令
+
+```shell
+
 # 切换或创建数据库
 use mydb
 
@@ -75,7 +106,6 @@ db.mycol.find({},{"title":1,_id:0}).sort({"title":-1})
 
 # 创建索引
 db.mycol.ensureIndex({"title":1,"description":-1})
-
 
 
 
