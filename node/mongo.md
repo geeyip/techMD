@@ -107,7 +107,223 @@ db.mycol.find({},{"title":1,_id:0}).sort({"title":-1})
 # 创建索引
 db.mycol.ensureIndex({"title":1,"description":-1})
 
-
-
 ```
+
+## update(query, data, upsert, updateAll)
+
+```javascript
+db.badperson.update({_id:'112345'}, {name:'aba', age: 12});
+```
+
+### $set
+
+修改特定属性
+
+```javascript
+db.badperson.update({_id:'112345'}, {$set: {name:'aba', age: 12}});
+```
+
+### $unset
+
+移除文档属性
+
+```javascript
+db.badperson.update({_id:'112345'}, {$unset: {age: 12}});
+```
+
+### $inc
+
+属性值累加
+
+```javascript
+db.badperson.update({_id:'112345'}, {$inc: {age: 12}});
+```
+
+### $push
+
+数组增加
+
+```javascript
+db.badperson.update({_id:'112345'},{$push: {card:'1122'}});
+```
+
+### $each
+
+```javascript
+db.badperson.update({_id:'112345'},{$push: {card: {$each: ['111','222']}}});
+```
+
+### $slice
+
+保持数组固定大小
+
+```javascript
+db.badperson.update({_id:'112345'},{$push: {card: {$each: ['111','222'],$slice:-10,$sort:1}}});
+```
+
+返回数组固定大小子集
+
+```javascript
+db.badperson.find({address:'asdf'},{card: {$slice:-1}})
+```
+
+### $addToSet
+
+加入数组并可查重
+
+```javascript
+db.badperson.update({_id:'112345'},{$addToSet: {card: {$each: ['111','333']}}});
+```
+
+### $pull
+
+移除数据中包好111的元素
+
+```javascript
+db.badperson.update({_id:'112345'},{$pull:{card:'111'}})
+```
+
+
+
+## find(query, column)
+
+### $ne
+
+不等于
+
+```javascript
+db.badperson.find({'age':{$ne: 44}});
+```
+
+### $lt
+
+小于
+
+```javascript
+db.badperson.find({'age':{$lt: 44}});
+```
+
+### $lte
+
+小于等于
+
+```javascript
+db.badperson.find({'age':{$lte: 44}});
+```
+
+### $gt
+
+大于
+
+```javascript
+db.badperson.find({'age':{$gt: 44}});
+```
+
+### $gte
+
+大于等于
+
+```javascript
+db.badperson.find({'age':{$gte: 44}});
+```
+
+### $in
+
+值在给定数组中
+
+```javascript
+db.badperson.find({'age':{$in: [23,44]}});
+```
+
+### $nin
+
+值不在给定数组中
+
+```javascript
+db.badperson.find({'age':{$nin: [23,44]}});
+```
+
+### $not
+
+结果取反
+
+```javascript
+db.badperson.find({'age':{$not: {$nin: [23,44]}}});
+```
+
+### $or
+
+查询姓名叫王五或者年龄大于35的人
+
+```javascript
+db.badperson.find({$or: [{name:'王五'}, {'age': {$gt: 35}}]});
+```
+
+### $and
+
+查询姓名叫王五并且年龄大于30的人
+
+```javascript
+db.badperson.find({$and: [{name:'王五'}, {age: {$gt: 30}}]});
+```
+
+```javascript
+db.badperson.find({name:'王五', age: {$gt: 30}});
+```
+
+### $all
+
+数组查询和标量一样
+
+```javascript
+db.badperson.find({card: '222'}) //card是数组
+```
+
+匹配所有给定值, 
+
+```javascript
+db.badperson.find({card: {$all: ['222','333']}}) //card中既有222又有333
+```
+
+### $size
+
+查询给定长度的数组
+
+```javascript
+db.badperson.find({'card': {$size: 2}})
+```
+
+### $elemMatch
+
+数组匹配和内嵌文档查询
+
+```javascript
+db.badperson.find({'card': {$elemMatch: {$lt: 33, $gt: 22}});
+```
+
+### limit
+
+返回前5条数据
+
+```javascript
+db.badperson.find().limit(5);
+```
+
+### skip
+
+跳过条数，避免略过大量结果
+
+```javascript
+db.badperson.find().limit(5).skip(5);
+```
+
+### sort
+
+排序
+
+```javascript
+db.badperson.find().limit(5).skip(5).sort({name: -1});
+```
+
+
 
