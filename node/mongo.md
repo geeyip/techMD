@@ -326,4 +326,84 @@ db.badperson.find().limit(5).skip(5).sort({name: -1});
 ```
 
 
+## 分片
+
+这里有2台windows机器，配置方案：
+* 4个分片sharding
+* 3个配置节点Configsever
+* 1个路由节点Mongos
+
+### 分片A
+
+`192.168.1.108:10000`
+```shell
+mongod.exe --logpath d:/mongodb/logs/a.log --logappend --dbpath d:/mongodb/datas/a --port 10000 --shardsvr
+```
+### 分片B
+
+`192.168.1.108:20000`
+```shell
+mongod.exe --logpath d:/mongodb/logs/b.log --logappend --dbpath d:/mongodb/datas/b --port 20000 --shardsvr
+```
+### 分片C
+
+`192.168.1.168:30000`
+```shell
+mongod.exe --logpath d:/mongodb/logs/c.log --logappend --dbpath d:/mongodb/datas/c --port 30000 --shardsvr
+```
+### 分片D
+
+`192.168.1.168:40000`
+```shell
+mongod.exe --logpath d:/mongodb/logs/d.log --logappend --dbpath d:/mongodb/datas/d --port 40000 --shardsvr
+```
+### Configsvc（3个配置服务器节点）:
+
+`192.168.1.108:50000`
+
+```shell
+mongod.exe --configsvr --logpath d:/mongodb/logs/configsvr.log --logappend --dbpath d:/mongodb/datas/configsvr --port 50000
+```
+
+`192.168.1.168:50000`
+
+```shell
+mongod.exe --configsvr --logpath d:/mongodb/logs/configsvr.log --logappend --dbpath d:/mongodb/datas/configsvr --port 50000
+```
+
+`192.168.1.168:60000`
+
+```shell
+mongod.exe --configsvr --logpath d:/mongodb/logs/configsvr2.log --logappend --dbpath d:/mongodb/datas/configsvr2 --port 60000
+```
+### mongos（一个路由节点）:
+
+`192.168.1.108:60000`
+```shell
+mongos.exe --configdb 192.168.1.108:50000,192.168.1.168:50000,192.168.1.168:60000 --logpath d:/mongodb/logs/mongos.log --logappend --port 60000
+```
+### 配置分片
+
+```shell
+mongo.exe 192.168.1.108:60000/admin
+
+//添加 Shard Server A
+db.runCommand({ addshard:"192.168.1.108:10000" })
+
+//添加 Shard Server B
+db.runCommand({ addshard:"192.168.1.108:20000" })
+
+//添加 Shard Server C
+db.runCommand({ addshard:"192.168.1.168:30000" })
+
+//添加 Shard Server D
+db.runCommand({ addshard:"192.168.1.168:40000" })
+
+//设置分片存储的数据库
+db.runCommand({ enablesharding:"neab" })
+
+//设置分片的集合名称。且必须指定Shard Key，系统会自动创建索引
+db.runCommand({ shardcollection: "neab.people", key: { name:1 }})
+
+```
 
