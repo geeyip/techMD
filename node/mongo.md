@@ -385,25 +385,25 @@ mongos.exe --configdb 192.168.1.108:50000,192.168.1.168:50000,192.168.1.168:6000
 ### 配置分片
 
 ```shell
-mongo.exe 192.168.1.108:60000/admin
+> mongo admin --port 60000
 
 //添加 Shard Server A
-db.runCommand({ addshard:"192.168.1.108:10000" })
+> db.runCommand({ addshard:"192.168.1.108:10000" })
 
 //添加 Shard Server B
-db.runCommand({ addshard:"192.168.1.108:20000" })
+> db.runCommand({ addshard:"192.168.1.108:20000" })
 
 //添加 Shard Server C
-db.runCommand({ addshard:"192.168.1.168:30000" })
+> db.runCommand({ addshard:"192.168.1.168:30000" })
 
 //添加 Shard Server D
-db.runCommand({ addshard:"192.168.1.168:40000" })
+> db.runCommand({ addshard:"192.168.1.168:40000" })
 
 //设置分片存储的数据库
-db.runCommand({ enablesharding:"neab" })
+> db.runCommand({ enablesharding:"neab" })
 
 //设置分片的集合名称。且必须指定Shard Key，系统会自动创建索引
-db.runCommand({ shardcollection: "neab.people", key: { name:1 }})
+> db.runCommand({ shardcollection: "neab.people", key: { name:1 }})
 
 ```
 
