@@ -376,6 +376,8 @@ mongod.exe --configsvr --logpath d:/mongodb/logs/configsvr.log --logappend --dbp
 ```shell
 mongod.exe --configsvr --logpath d:/mongodb/logs/configsvr2.log --logappend --dbpath d:/mongodb/datas/configsvr2 --port 60000
 ```
+
+* configsvr 不是必须的，因为我们已经指定了port 和 dbpath********************
 ### mongos（一个路由节点）:
 
 `192.168.1.108:60000`
@@ -401,9 +403,12 @@ mongos.exe --configdb 192.168.1.108:50000,192.168.1.168:50000,192.168.1.168:6000
 
 //设置分片存储的数据库
 > db.runCommand({ enablesharding:"neab" })
+或
+> sh.enableSharding('neab')
 
 //设置分片的集合名称。且必须指定Shard Key，系统会自动创建索引
 > db.runCommand({ shardcollection: "neab.people", key: { name:1 }})
-
+或
+sh.shardCollection('neab.people', {name: 1})
 ```
 
