@@ -1,4 +1,4 @@
-## 部署步骤
+## 简易部署步骤
 
 ### 1. 启动zookeeper服务
 将`zookeeper.zip` 解压到任意目录，点击`zookeeper-3.4.6\bin\zkServer.cmd`启动,默认端口`2181`
