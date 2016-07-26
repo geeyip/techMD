@@ -19,11 +19,11 @@
 
 ​	`Path`： 选择node安装目录下的`node.exe `
 
-​	`	Startup directory` ： 选择neab所在路径。
+​	`	Startup directory` ： 选择neab文件夹所在路径。
 
-​	`	Arguments`： ：填写server。
+​	`	Arguments` ：填写server。
 
-​	`Service name`： ：neab ,或自己定义。
+​	`Service name` ：neab ,或自己定义。
 
 * 填好后点击Install service 即可，最后启动服务。
 
