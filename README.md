@@ -16,3 +16,11 @@
 
 * [系统API设计](project/imms-api.md)
 * [登录日志实现](node/socket.md)
+
+一体化平台API文档
+> 系统管理模块
+
+* [系统用户管理API](ythpt/system/sysUser.md)
+
+> 工作台模块
+
