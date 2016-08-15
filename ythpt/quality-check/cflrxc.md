@@ -39,22 +39,22 @@
 					rownum: '1',
 					id: 'A93F2F10874F4A7CB25FC6D261B26B6E',
 					kybh: 'K4403070305002010092684',
-					kysj: '2016-08-11',
+					kysj: '2016-08-11 12:25:20',
 					kyr: '张三、李四',
 					kydd: 'address',
 					kyUnit: 'Unit',
 					kyCheckSit: '在2016年7月6日13时0分接到东华在北京市房山区发生一起入户抢劫案。',
-					rdSuggest: '未认定',
-					sfzg: '未整改'
+					rdSuggest: '非重复现场',
+					sfzg: '1'
 				}
 			],
-			sfrd: '1',
-			sfzg: '0',
+			sfrd: '1',  //1表示已认定，0表示未认定
+			sfzg: '0', //1表示已整改，0表示未整改
 			sortName: null,
             sortOrder: null,
             orderByString: null,
             token: null
-}
+		}
     ],
     "pages": null,
     "operates": null
@@ -71,13 +71,13 @@
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：  (list的值为认定为重复现场或者非重复现场的勘验id)
-  	jsonStr: {
-    "list":
-		[
-			"A93F2F10874F4A7CB25FC6D261B26B67",
-			"A93F2F10874F4A7CB25FC6D261B26B68"
-		]
-    }
+jsonStr: {
+    "type": "1",  //1:认定为重复现场 0:认定为非重复现场
+    "list": [
+        "A93F2F10874F4A7CB25FC6D261B26B67",
+        "A93F2F10874F4A7CB25FC6D261B26B68"
+    ]
+}
 4.返回值格式：
   	{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
