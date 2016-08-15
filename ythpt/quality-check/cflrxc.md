@@ -65,7 +65,7 @@
 
 
 
-* 页面修改保存接口（进入修改页面后，保存修改时触发）
+* 页面修改保存接口（进入修改页面后，保存修改时触发 ）
 
 ```java
 1.API路径：http://localhost:8090/api/1/qualityCheck/cflrxc/edit
