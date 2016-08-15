@@ -9,6 +9,9 @@
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr: {
+	    "sfrd": "", //是否认定
+	    "rdyj": "", //认定意见
+	    "sfzg": "", //是否整改
 	    "kyDateBegin": "",  //勘验开始时间
 	    "kyDateEnd": "",  //勘验结束时间
 	    "faqh": "",  //发案区划
@@ -17,7 +20,7 @@
 	    "jqbh": "", //警情编号
 	    "kydd": "", //勘验地点
 	    "ajlb": "", //案件类别
-	    "begin": 1, 
+	    "begin": 1,
 	    "end": 60
 	}
 4.返回值格式：
@@ -28,7 +31,6 @@
     "data": [
         {
 			rownum: '1',
-			id: 'DC3BE807E29C43DFAE58B12A4EA93D3A',
 			ajbh: 'A4401066000002013120101',
 			jqbh: 'J370700447005201005000004',
 			ajlb: '入室盗窃案',
