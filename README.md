@@ -32,3 +32,4 @@
 
 ### 打包更新
 * [打包exe安装包](ythpt/client/package.md)
+* [客户端更新](https://github.com/geeyip/hupdater)
