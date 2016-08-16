@@ -13,7 +13,7 @@
 git clone http://192.168.1.103/root/one.git
 ```
 
-使用webstorm 从代码仓库克隆代码，克隆后的文件结构如下
+使用`webstorm` 从代码仓库克隆代码，克隆后的文件结构如下
 
 ![](pic/p1.png)
 
@@ -25,13 +25,13 @@ git clone http://192.168.1.103/root/one.git
 npm install
 ```
 
-在webstorm的命令窗口(Terminal) , 使用上面命令安装依赖, 完成后生成**node_modules** 文件夹。
+在`webstorm`的命令窗口(`Terminal`) , 使用上面命令安装依赖, 完成后生成**node_modules** 文件夹。
 
 ### 修改配置
 
-根据Inno Setup安装路径的不同和one工程克隆存放路径的不同，需要修改配置文件。
+根据`Inno Setup`安装路径的不同和`one`工程克隆存放路径的不同，需要修改配置文件。
 
-**修改setup文件夹下的setup.js 文件，修改下列2处**
+**修改`setup`文件夹下的`setup.js` 文件，修改下列2处**
 
 ```javascript
 exports.InnoSetupPath = "D:\\InnoSetup5\\ISCC.exe";
@@ -39,22 +39,22 @@ exports.InnoSetupPath = "D:\\InnoSetup5\\ISCC.exe";
 exports.InnoSetupConfig = "E:\\work\\one\\setup\\setup.iss";
 ```
 
-InnoSetupPath 是Inno Setup安装根目录下ISCC.exe的绝对路径
+`InnoSetupPath` 是`Inno Setup`安装根目录下`ISCC.exe`的绝对路径
 
-InnoSetupConfig 是setup文件夹下的setup.iss文件的绝对路径
+`InnoSetupConfig` 是`setup`文件夹下的`setup.iss`文件的绝对路径
 
-**修改setup文件夹下的setup.iss 文件，修改下列2处**
+**修改`setup`文件夹下的`setup.iss` 文件，修改下列2处**
 
-注意，webstorm打开会有乱码，所以使用Inno Setup软件打开。
+注意，`webstorm`打开会有乱码，所以使用`Inno Setup`软件打开。
 
 ```shell
 #define ExeOutputDir "D:\"
 #define AppDistDir "E:\work\one\tmp"
 ```
 
-ExeOutputDir 是exe安装文件生成存放目录
+`ExeOutputDir` 是exe安装文件生成存放目录
 
-AppDistDir 是one工程根目录下的tmp文件夹的绝对路径
+`AppDistDir` 是`one`工程根目录下的`tmp`文件夹的绝对路径
 
 ### 生成安装包
 
@@ -62,7 +62,7 @@ AppDistDir 是one工程根目录下的tmp文件夹的绝对路径
 gulp
 ```
 
-在webstorm的命令窗口(Terminal) , 使用上面命令生成安装包, 完成后会在`{ExeOutputDir}` 目录生成windows安装包。
+在`webstorm`的命令窗口(`Terminal`) , 使用上面命令生成安装包, 完成后会在`{ExeOutputDir}` 目录生成windows安装包。
 
 
 
