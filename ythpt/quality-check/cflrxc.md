@@ -9,17 +9,17 @@
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr: {
-	    "sfrd": "", //是否认定
-	    "rdyj": "", //认定意见
-	    "sfzg": "", //是否整改
-	    "kyDateBegin": "",  //勘验开始时间
-	    "kyDateEnd": "",  //勘验结束时间
-	    "faqh": "",  //发案区划
-	    "kybh": "", //勘验编号
-	    "ajbh": "", //案件编号
-	    "jqbh": "", //警情编号
-	    "kydd": "", //勘验地点
-	    "ajlb": "", //案件类别
+	    "sfrd": "", //是否认定-add
+	    "rdyj": "", //认定意见-add
+	    "sfzg": "", //是否整改-add
+	    "investigationTimeStart": "",  //勘验开始时间
+	    "investigationTimeEnd": "",  //勘验结束时间
+	    "faqh": "",  //发案区划-add
+	    "investigationNo": "", //勘验编号
+	    "caseNo": "", //案件编号
+	    "jqbh": "", //警情编号-add
+	    "investigationPlace": "", //勘验地点
+	    "caseType": "", //案件类别
 	    "begin": 1,
 	    "end": 60
 	}
@@ -31,19 +31,19 @@
     "data": [
         {
 			rownum: '1',
-			ajbh: 'A4401066000002013120101',
+			caseNo: 'A4401066000002013120101',
 			jqbh: 'J370700447005201005000004',
-			ajlb: '入室盗窃案',
+			caseType: '入室盗窃案',
 			faqh: '湖里派出所',
 			fadd: '湖里区11号大街',
 			xckyInfo: [
 				{
 					rownum: '1',
-					id: 'A93F2F10874F4A7CB25FC6D261B26B6E',
-					kybh: 'K4403070305002010092684',
-					kysj: '2016-08-11 12:25:20',
-					kyr: '张三、李四',
-					kydd: 'address',
+					investigationId: 'A93F2F10874F4A7CB25FC6D261B26B6E',
+					investigationNo: 'K4403070305002010092684',
+					investigationTime: '2016-08-11 12:25:20',
+					investigator: '张三、李四',
+					investigationPlace: 'address',
 					kyUnit: 'Unit',
 					kyCheckSit: '在2016年7月6日13时0分接到东华在北京市房山区发生一起入户抢劫案。',
 					rdSuggest: '非重复现场',
