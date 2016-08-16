@@ -2,10 +2,10 @@
 
 ### 安装环境
 
-打包开始前，需要安装下列[软件](ftp://192.168.1.168/%BF%CD%BB%A7%B6%CB/%B4%F2%B0%FC/)
+打包开始前，需要安装下列软件
 
-* Node
-* Inno Setup
+* [Node](ftp://192.168.1.168/%BF%CD%BB%A7%B6%CB/%B4%F2%B0%FC/innosetup5505.exe)
+* [Inno Setup](ftp://192.168.1.168/%BF%CD%BB%A7%B6%CB/%B4%F2%B0%FC/node-v4.4.5-x64.msi)
 
 ### 克隆代码
 
