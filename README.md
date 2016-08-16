@@ -24,3 +24,4 @@
 
 > 工作台模块
 
+* [打包exe安装包](ythpt/client/package.md)
