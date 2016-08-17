@@ -19,23 +19,23 @@ POST, application/json
 ```
 
 #### 传入参数格式
-jsonStr:
+**jsonStr:**
 ```json
 {
-	    "sfrd": "", //是否认定-add
-	    "rdyj": "", //认定意见-add
-	    "sfzg": "", //是否整改-add
-	    "investigationTimeStart": "",  //勘验开始时间
-	    "investigationTimeEnd": "",  //勘验结束时间
-	    "faqh": "",  //发案区划-add
-	    "investigationNo": "", //勘验编号
-	    "caseNo": "", //案件编号
-	    "jqbh": "", //警情编号-add
-	    "investigationPlace": "", //勘验地点
-	    "caseType": "", //案件类别
-	    "begin": 1,
-	    "end": 60
-	}
+  "sfrd": "", //是否认定-add
+  "rdyj": "", //认定意见-add
+  "sfzg": "", //是否整改-add
+  "investigationTimeStart": "",  //勘验开始时间
+  "investigationTimeEnd": "",  //勘验结束时间
+  "faqh": "",  //发案区划-add
+  "investigationNo": "", //勘验编号
+  "caseNo": "", //案件编号
+  "jqbh": "", //警情编号-add
+  "investigationPlace": "", //勘验地点
+  "caseType": "", //案件类别
+  "begin": 1,
+  "end": 60
+}
 ```
 
 #### 返回值格式
@@ -103,7 +103,7 @@ POST, application/json
 #### 传入参数格式
 
 `list`的值为认定为重复现场或者非重复现场的勘验id
-jsonStr:
+**jsonStr:**
 ```json
 {
     "type": "1",  //1:认定为重复现场 0:认定为非重复现场
