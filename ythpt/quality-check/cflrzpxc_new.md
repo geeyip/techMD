@@ -19,9 +19,9 @@ POST, application/json
 ```
 
 #### 传入参数格式
-
+jsonStr:
 ```json
-jsonStr: {
+{
 	    "sfrd": "", //是否认定-add
 	    "rdyj": "", //认定意见-add
 	    "sfzg": "", //是否整改-add
@@ -103,9 +103,9 @@ POST, application/json
 #### 传入参数格式
 
 `list`的值为认定为重复现场或者非重复现场的勘验id
-
+jsonStr:
 ```json
-jsonStr: {
+{
     "type": "1",  //1:认定为重复现场 0:认定为非重复现场
     "list": [
         "A93F2F10874F4A7CB25FC6D261B26B67",
