@@ -4,8 +4,8 @@
 
 打包开始前，需要安装下列软件
 
-* [Node](ftp://192.168.1.168/%BF%CD%BB%A7%B6%CB/%B4%F2%B0%FC/innosetup5505.exe)
-* [Inno Setup](ftp://192.168.1.168/%BF%CD%BB%A7%B6%CB/%B4%F2%B0%FC/node-v4.4.5-x64.msi)
+* Node [点击下载](https://nodejs.org/en/download/)
+* Inno Setup  [点击下载](http://pan.baidu.com/s/1dERLbn7)
 
 ### 克隆代码
 
