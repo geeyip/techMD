@@ -50,8 +50,8 @@
 					"faqh": "湖里派出所",
 					"lrdw": "录入单位",
 					"picInfo": [
-						{"id":"", "base64":""}
-					],  //重复照片
+						{"id":"", "base64":"","repeatFlag":"","desc":""}
+					],  //重复照片  base64:图片的base64编码，repeatFlag:重复照片的标志，desc:对照片的描述
 					"rdSuggest": "未认定",
 					"sfzg": "0"
 				}
