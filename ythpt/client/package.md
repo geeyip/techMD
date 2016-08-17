@@ -10,7 +10,7 @@
 ### 克隆代码
 
 ```shell
-git clone http://192.168.1.103/root/one.git
+git clone https://github.com/geeyip/one-client.git
 ```
 
 使用`webstorm` 从代码仓库克隆代码，克隆后的文件结构如下
