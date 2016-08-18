@@ -1,7 +1,7 @@
 # 重复录入现场检查API文档
 
 * 页面查询接口（点击查询按钮时触发）
-
+ 
 ```java
 1.API路径：http://localhost:8090/api/1/qualityCheck/cflrxc/list
     后端格式为：/api/{recordLog}/qualityCheck/cflrxc/list（其中{recordLog}为前端传入，
