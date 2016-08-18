@@ -73,14 +73,14 @@ $("#fadd").dict(data);
 
 ### 其他说明
 
-* 可以使用class选择器初始化页面上的所有字典控件
+可以使用class选择器初始化页面上的所有字典控件
   
-  ``` html
-  <dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" class="dict"></dict>
-  <dict dict-type="select" dict-root="SFDM" dict-name="isbz" class="dict"></dict>
-  ```
-  
-  ``` javascript
-  //通过class选择器初始化字典
-  $(".dict").dict();
-  ```
+``` html
+<dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" class="dict"></dict>
+<dict dict-type="select" dict-root="SFDM" dict-name="isbz" class="dict"></dict>
+```
+
+``` javascript
+//通过class选择器初始化字典
+$(".dict").dict();
+```
