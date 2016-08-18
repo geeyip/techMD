@@ -45,8 +45,13 @@ $("#fadd").val();
 ``` html
 <dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" id="fadd" dict-multiple="true"></dict>
 ```
+### 树形字典只选叶子节点
 
-`dict-multiple="true"`时，树形字典支持多选。
+``` html
+<dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" id="fadd" tree-leaf="true"></dict>
+```
+
+`tree-leaf="true"`时，只能选取叶子节点。
 
 ### 下拉字典非空
 
@@ -68,14 +73,14 @@ $("#fadd").dict(data);
 
 ### 其他说明
 
-* 可以使用class选择器初始化页面上的所有字典控件
+可以使用class选择器初始化页面上的所有字典控件
   
-  ``` html
-  <dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" class="dict"></dict>
-  <dict dict-type="select" dict-root="SFDM" dict-name="isbz" class="dict"></dict>
-  ```
-  
-  ``` javascript
-  //通过class选择器初始化字典
-  $(".dict").dict();
-  ```
+``` html
+<dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" class="dict"></dict>
+<dict dict-type="select" dict-root="SFDM" dict-name="isbz" class="dict"></dict>
+```
+
+``` javascript
+//通过class选择器初始化字典
+$(".dict").dict();
+```
