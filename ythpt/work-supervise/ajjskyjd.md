@@ -61,7 +61,6 @@ POST, application/json
 			"zbrxm": "某某",
 			"fadd": "朝阳XXX小区",
 			"jyaq": "朝阳XXX小区入室盗窃",
-			"sfky": "未勘验",
 			"kyr": "某某",
 			"xkbh":"",
 			"sfyq": "2",//1:未逾期  2:已逾期
@@ -75,6 +74,51 @@ POST, application/json
 ```
 
 ​	
+
+### 消息发送弹窗展示接口
+
+点击催办按钮时触发
+
+#### API路径
+
+```http
+http://localhost:8080/api/1/workSupervise/ajjskyjd/_urge
+```
+
+后端格式为`/api/{recordLog}/workSupervise/ajjskyjd/_urge`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数
+
+```
+无
+```
+
+#### 返回值格式
+
+```json
+{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+		{
+			"name": "周丽",
+			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+			"job": "技术员",
+			"phone": "13659856321"
+		}
+    ],
+    "pages": null,
+    "operates": null
+}
+```
+
 
 ### 消息发送页信息保存接口
 
