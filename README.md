@@ -35,6 +35,10 @@
 
 * [发送消息API](ythpt/message/message.md)
 
+### 工作监督模块
+
+* [案件及时勘验监督API](ythpt/work-supervise/ajjskyjd.md)
+
 ### 打包更新
 * [打包exe安装包](ythpt/client/package.md)
 * [客户端更新](https://github.com/geeyip/hupdater)

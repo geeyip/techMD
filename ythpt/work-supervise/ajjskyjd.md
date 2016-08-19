@@ -108,10 +108,10 @@ POST, application/json
     "msg": null,
     "data": [
 		{
-			"name": "周丽",
+			"trueName": "周丽",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-			"job": "技术员",
-			"phone": "13659856321"
+			"postZw": "技术员",
+			"mobilephoneNo": "13659856321"
 		}
     ],
     "pages": null,
