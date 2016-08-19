@@ -23,6 +23,7 @@
 
 * [重复录入现场检查API](ythpt/quality-check/cflrxc.md)
 * [重复录入照片现场检查API](ythpt/quality-check/cflrzpxc.md)
+* [现场照片检查API](ythpt/quality-check/xczp.md)
 
 ### 系统管理模块
 
