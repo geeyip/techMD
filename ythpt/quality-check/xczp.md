@@ -47,27 +47,27 @@ POST, application/json
     "msg": null,
     "data": [
 		{
-			'rownum': '1',
-			'investigationId': '6E806CAB765A4051932A948F97BDC57A', //勘验id
-			'investigationNo': 'K1101126644646313233',//勘验编号
-			'ajbh': 'A12312315451321211',//案件编号
-			'jqbh': 'J110145656985321324',//警情编号
-			'caseType': '入室盗窃',//案件类别
-			'faqh': 'xxx',//发案区划
-			'fadd': 'xxx',//发案地点
-			'investigationTime': '2015-01-0110: 00',//勘验时间
-			'investigationPlace': '湖里校区110号',//勘验地点
-			'investigator': '张三、李四',//勘验人
-			'lrr': '张三',//录入人
-			'lrsj': '2015-01-0114: 00',//录入时间
-			'sfsc': '1',//是否审查  1-已审查，0-未审查
-			'sfhg': '1',//是否合格 1-合格，0-不合格
-			'sfzg': '1',//是否整改 1-已整改，0-未整改
-			'picNum': 20,//照片数量
-			'tz': [1,2],//通知  第一个参数为短信数量，第二个参数为站内消息数量
-			'fasj': '2016-08-1812: 25: 20',//发案时间
-			'kysy': 'xxx',//勘验事由
-			'kyjcqk': 'xxx'//勘验检查情况
+			"rownum": "1",
+			"investigationId": "6E806CAB765A4051932A948F97BDC57A", //勘验id
+			"investigationNo": "K1101126644646313233",//勘验编号
+			"ajbh": "A12312315451321211",//案件编号
+			"jqbh": "J110145656985321324",//警情编号
+			"caseType": "入室盗窃",//案件类别
+			"faqh": "xxx",//发案区划
+			"fadd": "xxx",//发案地点
+			"investigationTime": "2015-01-0110: 00",//勘验时间
+			"investigationPlace": "湖里校区110号",//勘验地点
+			"investigator": "张三、李四",//勘验人
+			"lrr": "张三",//录入人
+			"lrsj": "2015-01-0114: 00",//录入时间
+			"sfsc": "1",//是否审查  1-已审查，0-未审查
+			"sfhg": "1",//是否合格 1-合格，0-不合格
+			"sfzg": "1",//是否整改 1-已整改，0-未整改
+			"picNum": 20,//照片数量
+			"tz": [1,2],//通知  第一个参数为短信数量，第二个参数为站内消息数量
+			"fasj": "2016-08-1812: 25: 20",//发案时间
+			"kysy": "xxx",//勘验事由
+			"kyjcqk": "xxx"//勘验检查情况
 		}
 	],
     "pages": null,
@@ -109,17 +109,17 @@ POST, application/json
     "msg": null,
     "data": [
 		{
-			'rownum': '1',
-			'id': 'B225A49283DA496C83AA79905C892EA2', //该组照片的id
-			'picType': '现场图', //该组照片描述
-			'picNum': 3,//该组照片数量
-			'pics': [
+			"rownum": "1",
+			"id": "B225A49283DA496C83AA79905C892EA2", //该组照片的id
+			"picType": "现场图", //该组照片描述
+			"picNum": 3,//该组照片数量
+			"pics": [
 				{
-					'rownum': '1',
-					'id': 'B9F3FB8F562D48988E97584C8612E7FC',//需要审查的照片id
-					'pId': 'B225A49283DA496C83AA79905C892EA2',//照片组的id
-					'base64': '',//照片的base64
-					'desc': '平面示意图'//照片的描述
+					"rownum": "1",
+					"id": "B9F3FB8F562D48988E97584C8612E7FC",//需要审查的照片id
+					"pId": "B225A49283DA496C83AA79905C892EA2",//照片组的id
+					"base64": "",//照片的base64
+					"desc": "平面示意图"//照片的描述
 				}
 			]
 		}
@@ -163,17 +163,17 @@ POST, application/json
     "msg": null,
     "data": [
 		{
-			'rownum': '1',
-			'id': 'B225A49283DA496C83AA79905C892EA2',
-			'picType': '现场图', //照片组描述、类型
-			'picNum': 3,//照片数量
-			'pics': [ //照片list
+			"rownum": "1",
+			"id": "B225A49283DA496C83AA79905C892EA2",
+			"picType": "现场图", //照片组描述、类型
+			"picNum": 3,//照片数量
+			"pics": [ //照片list
 				{
-					'rownum': '1',
-					'id': 'B9F3FB8F562D48988E97584C8612E7FC',//照片id
-					'base64': '',//照片的base64
-					'desc': '平面示意图',//照片的描述
-					'result': '1'//照片审查的结果 1-合格，0-不合格
+					"rownum": "1",
+					"id": "B9F3FB8F562D48988E97584C8612E7FC",//照片id
+					"base64": "",//照片的base64
+					"desc": "平面示意图",//照片的描述
+					"result": "1"//照片审查的结果 1-合格，0-不合格
 				}
 			]
 		}
