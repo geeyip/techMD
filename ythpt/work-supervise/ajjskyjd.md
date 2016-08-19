@@ -56,16 +56,17 @@ POST, application/json
 			"fadsxpcs": "XXX派出所",
 			"ajlb": "入室盗窃",
 			"ajzt": "",
-			"lasj": "2016-08-18",
+			"lasj": "2016-08-18",//Date类型
 			"zbdw": "某某单位",
 			"zbrxm": "某某",
 			"fadd": "朝阳XXX小区",
 			"jyaq": "朝阳XXX小区入室盗窃",
 			"sfky": "未勘验",
 			"kyr": "某某",
-			"sfyq": "是",
-			"sfzg": "否",
-			"yqtz": [1,2] //短信和消息条数
+			"xkbh":"",
+			"sfyq": "2",//1:未逾期  2:已逾期
+			"dxsl": 1, //短信条数
+			"xxsl":2//消息条数
 		}
     ],
     "pages": null,
