@@ -38,6 +38,7 @@
 ### 工作监督模块
 
 * [案件及时勘验监督API](ythpt/work-supervise/ajjskyjd.md)
+* [现场及时关联监督API](ythpt/work-supervise/xcjsgljd.md)
 
 ### 打包更新
 * [打包exe安装包](ythpt/client/package.md)
