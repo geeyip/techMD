@@ -50,12 +50,44 @@
 					"faqh": "湖里派出所",
 					"lrdw": "录入单位",
 					"picInfo": [
-						{"id":"", "base64":"","repeatFlag":"","desc":""}
-					],  //重复照片  base64:图片的base64编码，repeatFlag:重复照片的标志，desc:对照片的描述
+						{"id":"", "pid":"" "base64":"","repeatFlag":"","desc":""}
+					],  //重复照片 id:小图的id, pid:对应大图的id, base64:图片的base64编码，repeatFlag:重复照片的标志，desc:对照片的描述
 					"rdSuggest": "未认定",
 					"sfzg": "0"
 				}
 			]
+		}
+    ],
+    "pages": null,
+    "operates": null
+}
+```
+
+* 查询大图接口
+
+```json
+1.API路径：http://localhost:8090/api/1/qualityCheck/cflrzpxc/bigPic
+	后端格式为：/api/{recordLog}/qualityCheck/cflrzpxc/bigPic（其中{recordLog}为前端传入，
+      标识是否需要记录操作日志）
+2.请求：POST, application/json
+3.传入参数格式： 
+jsonStr: {
+    "pics": [
+        {
+            "id": "1", //小图的id
+            "pid": "aa" //大图的id
+        }
+}
+4.返回值格式：
+  	{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+		{
+			"rownum": "1",
+			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A", //大图的id
+            "base64":"" //大图的base64
 		}
     ],
     "pages": null,
