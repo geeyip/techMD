@@ -69,7 +69,7 @@
 1.API路径：http://localhost:8090/api/1/qualityCheck/cflrzpxc/bigPic
 	后端格式为：/api/{recordLog}/qualityCheck/cflrzpxc/bigPic（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
-2.请求：POST, application/json
+2.请求：GET, application/json
 3.传入参数格式： 
 jsonStr: {
     "pics": [
