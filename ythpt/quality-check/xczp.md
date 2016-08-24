@@ -90,7 +90,7 @@ http://localhost:8090/api/1/qualityCheck/xczp/_edit
 #### 请求
 
 ```
-POST, application/json
+GET, application/json
 ```
 
 #### 传入参数格式
@@ -116,8 +116,9 @@ POST, application/json
 			"pics": [
 				{
 					"rownum": "1",
-					"id": "B9F3FB8F562D48988E97584C8612E7FC",//需要审查的照片id
-					"pId": "B225A49283DA496C83AA79905C892EA2",//照片组的id
+					"id": "B9F3FB8F562D48988E97584C8612E7FC",//需要审查的照片缩略图id
+                    "pId":"",//大图id
+					"groupId": "B225A49283DA496C83AA79905C892EA2",//照片组的id
 					"base64": "",//照片的base64
 					"desc": "平面示意图"//照片的描述
 				}
@@ -144,7 +145,7 @@ http://localhost:8090/api/1/qualityCheck/xczp/view
 #### 请求
 
 ```
-POST, application/json
+GET, application/json
 ```
 
 #### 传入参数格式
@@ -170,7 +171,8 @@ POST, application/json
 			"pics": [ //照片list
 				{
 					"rownum": "1",
-					"id": "B9F3FB8F562D48988E97584C8612E7FC",//照片id
+					"id": "B9F3FB8F562D48988E97584C8612E7FC",//照片缩略图id
+                    "pId":"",//大图id
 					"base64": "",//照片的base64
 					"desc": "平面示意图",//照片的描述
 					"result": "1"//照片审查的结果 1-合格，0-不合格
