@@ -5,7 +5,7 @@
 打包开始前，需要安装下列软件
 
 * Node [点击下载](https://nodejs.org/en/download/)
-* Inno Setup  [点击下载](http://pan.baidu.com/s/1dERLbn7)
+* Inno Setup  [点击下载](https://pan.baidu.com/s/1c18kJ0O)
 
 ### 克隆代码
 
