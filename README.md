@@ -29,6 +29,7 @@
 ### 系统管理模块
 
 * [系统用户管理API](ythpt/system/sysUser.md)
+* [系统参数管理API](ythpt/system/sysParam.md)
 
 ### 工作台模块
 
