@@ -45,6 +45,13 @@ $("#fadd").val();
 ``` html
 <dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" id="fadd" dict-multiple="true"></dict>
 ```
+`dict-multiple="true"` 时， 树形字典可多选。
+### 树形字典弹层位置
+
+``` html
+<dict dict-type="tree" dict-root="GXSDM" dict-name="fadd" id="fadd" tree-x="100" tree-y="50"></dict>
+```
+
 ### 树形字典只选叶子节点
 
 ``` html
