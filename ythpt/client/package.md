@@ -17,7 +17,7 @@ git clone https://github.com/geeyip/one-client.git
 
 ![](pic/p1.png)
 
-其中**data**与**dist** 文件夹为一体化代码， **node_modules** 文件夹刚开始不存在，需要安装依赖生成。
+其中**data**与**dist** 文件夹为一体化前端代码， **node_modules** 文件夹刚开始不存在，需要安装依赖生成。
 
 ### 安装依赖
 
