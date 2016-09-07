@@ -19,6 +19,10 @@ git clone https://github.com/geeyip/one-client.git
 
 其中**data**与**dist** 文件夹为一体化前端代码,需要从一体化工程中拷贝到这里， **node_modules** 文件夹刚开始不存在，需要安装依赖生成。
 
+### 拷贝一体化代码
+
+将一体化工程webapp下的data文件夹、dist文件夹、package.json文件拷贝到工程目录下覆盖。
+
 ### 安装依赖
 
 ```shell
