@@ -7,7 +7,7 @@
 * Node [点击下载](https://nodejs.org/en/download/)
 * Inno Setup  [点击下载](https://pan.baidu.com/s/1c18kJ0O)
 
-### 克隆代码
+### 克隆打包工程代码
 
 ```shell
 git clone https://github.com/geeyip/one-client.git
