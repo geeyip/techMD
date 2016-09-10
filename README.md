@@ -19,6 +19,10 @@
 
 
 ## 一体化平台API文档
+### 我的应用
+
+* [我的应用API](ythpt/myapp/myApp.md)
+
 ### 质量检查模块
 
 * [重复录入现场检查API](ythpt/quality-check/cflrxc.md)
