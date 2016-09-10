@@ -399,6 +399,66 @@ POST, application/json
 ```
 
 ​
+###勘验笔录不合格弹窗展示接口
+
+点击列表中勘验笔录列中的不合格链接时触发
+
+#### API路径
+
+```http
+http://localhost:8080/api/1/qualityCheck/bhgxcjc/inspect
+```
+
+后端格式为`/api/{recordLog}/qualityCheck/bhgxcjc/inspect`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+  "id": "DC3BE807E29C43DFAE58B12A4EA93D3A", //
+  "type": "kybl" //类型：勘验笔录
+}
+```
+
+#### 返回值格式
+
+```json
+{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+		{
+			"reasons": [
+				{"bhgyy": "案件类别未填写"},
+				{"bhgyy": "保护人单位未填写"}
+			],//不合格原因
+			"kybh": "K489302378239",//勘验编号
+			"fasj": "2016-05-26",//发案时间
+			"kysj": "2016-06-02",//勘验时间
+			"kydd": "XXX",//勘验地点
+			"kysy": "XXX",//勘验事由
+			"kyjcqk": "情况嘛就是这么个情况",//勘验检查情况
+			"kyjcry": "谭某某",//勘验检查人员
+			"kyblURL": "",//勘验笔录下载路径
+			"kyblmc": "莲花池小区入室盗窃案件勘验笔录",//勘验笔录文档名称
+			"rdr": "system",//认定人
+			"rdsj": "2016-08-23",//认定时间
+			"rdyj": ""//认定意见
+		}
+    ],
+    "pages": null,
+    "operates": null
+}
+```
+
+​
 ### 消息发送弹窗展示接口
 
 点击催办按钮时触发
