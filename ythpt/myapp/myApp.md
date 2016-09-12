@@ -3,7 +3,9 @@
 * 我的应用页面查询接口
 
 ```java
-1.API路径：
+1.API路径：http://localhost:8090//api/1/app/myapps/list
+    后端格式为：/api/{recordLog}/app/myapps/list（其中{recordLog}为前端传入，
+          标识是否需要记录操作日志）
 2.请求:POST ,application/json
 3.传入参数格式：
     jsonStr:{"userid":"8af67d6247aa82060147aa8206c40000"}   //传入的用户名id
@@ -48,7 +50,9 @@
 * 页面修改保存接口
 
 ```java
-1.API路径：
+1.API路径：http://localhost:8090//api/1/app/myapps/edit
+    后端格式为：/api/{recordLog}/app/myapps/edit（其中{recordLog}为前端传入，
+          标识是否需要记录操作日志）
 2.请求:POST ,application/json
 3.传入参数格式：
     jsonStr:{
