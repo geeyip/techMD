@@ -3,8 +3,8 @@
 * 我的应用页面查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/1/app/myapps/list
-    后端格式为：/api/{recordLog}/app/myapps/list（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8090/api/1/app/myapps/allList
+    后端格式为：/api/{recordLog}/app/myapps/allList（其中{recordLog}为前端传入，
           标识是否需要记录操作日志）
 2.请求:POST ,application/json
 3.传入参数格式：
