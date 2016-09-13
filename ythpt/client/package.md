@@ -29,7 +29,7 @@ npm install
 
 ### 拷贝一体化代码
 
-将一体化工程webapp下的data文件夹、dist文件夹、package.json文件拷贝到工程目录下覆盖。
+将一体化工程webapp下的data文件夹、dist文件夹拷贝到工程目录下覆盖。
 
 
 ### 修改配置
