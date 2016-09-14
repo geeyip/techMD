@@ -28,9 +28,9 @@ POST, application/json
   "receiverList":[   //消息接收人数组
 	  {
 			'senderName':'',//发送人姓名
-			'senderId':'',//发送人ID
+			'senderId':'',//发送人用户名
 			'senderUnit':'',//发送方所属单位
-			'receiverId':'',//接收人ID
+			'receiverId':'',//接收人用户名
 			'receiverName':'',//接收人姓名
 		}
   ]
