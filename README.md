@@ -47,9 +47,9 @@
 * [案件及时勘验监督API](ythpt/work-supervise/ajjskyjd.md)
 * [现场及时关联监督API](ythpt/work-supervise/xcjsgljd.md)
 
-### 打包更新、基础服务
+### 一体化客户端
 * [打包exe安装包](ythpt/client/package.md)
-* [客户端更新](https://github.com/geeyip/hupdater)
+* [客户端更新](ythpt/client/update.md)
 * [基础服务部署](ythpt/client/neab.md)
 
 ### 案发地图API
