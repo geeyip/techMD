@@ -12,16 +12,16 @@
 
   ![](pic/20160914094341.png)
 
-  ​
+
 ### 部署更新包
 
 需要安装neab基础服务，详见[基础服务部署](neab.md)
 
 将更新包拷贝到neab部署目录下的 api\client\resource\one 文件夹下，并修改one.json文件的version属性成最新版本。
 
-访问 http://ip:port/api/client/one/version 能获取最新版本号
+访问 `http://ip:port/api/client/one/version` 能获取最新版本号
 
-访问 http://ip:port/api/client/one/version/2.0.zip 能下载最新更新包 （2.0.zip修改成你最新版本的更新包）
+访问 `http://ip:port/api/client/one/version/2.0.zip` 能下载最新更新包 （2.0.zip修改成你最新版本的更新包）
 
 ### 更新客户端
 
