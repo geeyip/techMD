@@ -1,7 +1,7 @@
 # 重复录入现场检查API文档
 
 * 页面查询接口（点击查询按钮时触发）
- 
+
 ```java
 1.API路径：http://localhost:8090/api/1/qualityCheck/cflrxc/list
     后端格式为：/api/{recordLog}/qualityCheck/cflrxc/list（其中{recordLog}为前端传入，
@@ -84,3 +84,39 @@ jsonStr: {
   	{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
 
+- 进入处理页面查询接口
+
+  ```
+  1.API路径：http://localhost:8090/api/1/qualityCheck/cflrxc/_edit
+      后端格式为：/api/{recordLog}/qualityCheck/cflrxc/_edit（其中{recordLog}为前端传入，
+        标识是否需要记录操作日志）
+  2.请求：POST, application/json
+  3.传入参数格式：
+    	jsonStr: {
+  	    'caseNo':'' //案件编号
+  	}
+  4.返回值格式：
+    	{
+      "flag": 1,
+      "totalCount": 1,
+      "msg": null,
+      "data": [
+          {
+          rownum: '1',
+          investigationId: 'A93F2F10874F4A7CB25FC6D261B26B6E',
+          investigationNo: 'K4403070305002010092684',
+          investigationTime: '2016-08-11 12:25:20',
+          investigator: '张三、李四',
+          investigationPlace: 'address',
+          kyUnit: 'Unit',
+          kyCheckSit: '在2016年7月6日13时0分接到东华在北京市房山区发生一起入户抢劫案。',
+          qualifiedFlag: '0', 
+          sfzg: '1' //1:已整改
+          }
+      ],
+      "pages": null,
+      "operates": null
+  }
+  ```
+
+  ​
