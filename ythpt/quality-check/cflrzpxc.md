@@ -116,3 +116,45 @@ jsonStr: {
   	{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
 
+- 进入处理页面查询接口
+
+  ```
+  1.API路径：http://localhost:8090/api/1/qualityCheck/cflrzpxc/_edit
+      后端格式为：/api/{recordLog}/qualityCheck/cflrzpxc/_edit（其中{recordLog}为前端传入，
+        标识是否需要记录操作日志）
+  2.请求：GET, application/json
+  3.传入参数格式：
+        jsonStr: {
+        'investigationId':'' 
+    }
+  4.返回值格式：
+        {
+      "flag": 1,
+      "totalCount": 1,
+      "msg": null,
+      "data": [
+          {
+              "rownum": "1",
+              "investigationId": "A93F2F10874F4A7CB25FC6D261B26B6E",
+              "investigationNo": "K4403070305002010092684",
+              "investigationTime": "2016-08-11 12:12:25",
+              "investigator": "张三、李四",
+              "investigationPlace": "月华小区",
+              "kyUnit": "Unit",
+              "kyCheckSit": "7月6日13时0分接到东华在北京在2016年7月6日13时0分接到东华在北京市房山区发生一起入户抢劫案。",
+              "caseNo": "A4401066000002013120101",
+              "jqbh": "J370700447005201005000004",
+              "caseType": "入室盗窃案",
+              "faqh": "湖里派出所",
+              "lrdw": "录入单位",
+              "picInfo": [
+              {"id":"", "pid":"" "base64":"","repeatFlag":"","desc":""}
+              ],  //重复照片 id:小图的id, pid:对应大图的id, base64:图片的base64编码，repeatFlag:重复照片的标志，desc:对照片的描述
+              "sfrd": "0", //0：未认定 1：合格 2：不合格
+              "sfzg": "0"
+          }
+      ],
+      "pages": null,
+      "operates": null
+  }
+  ```
