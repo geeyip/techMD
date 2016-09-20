@@ -7,7 +7,7 @@
 * Node [点击下载](https://nodejs.org/en/download/)
 * Inno Setup  [点击下载](https://pan.baidu.com/s/1c18kJ0O)
 
-### 克隆代码
+### 克隆打包工程代码
 
 ```shell
 git clone https://github.com/geeyip/one-client.git
@@ -17,7 +17,7 @@ git clone https://github.com/geeyip/one-client.git
 
 ![](pic/p1.png)
 
-其中**data**与**dist** 文件夹为一体化代码， **node_modules** 文件夹刚开始不存在，需要安装依赖生成。
+ **node_modules** 文件夹刚开始不存在，需要安装依赖生成，其中**data**与**dist** 文件夹为一体化前端代码,需要从一体化工程中拷贝到这里。
 
 ### 安装依赖
 
@@ -26,6 +26,11 @@ npm install
 ```
 
 在`webstorm`的命令窗口(`Terminal`) , 使用上面命令安装依赖, 完成后生成**node_modules** 文件夹。
+
+### 拷贝一体化代码
+
+将一体化工程webapp下的data文件夹、dist文件夹拷贝到工程目录下覆盖。
+
 
 ### 修改配置
 

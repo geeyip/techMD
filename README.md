@@ -19,12 +19,17 @@
 
 
 ## 一体化平台API文档
+### 我的应用
+
+* [我的应用API](ythpt/myapp/myApp.md)
+
 ### 质量检查模块
 
 * [重复录入现场检查API](ythpt/quality-check/cflrxc.md)
 * [重复录入照片现场检查API](ythpt/quality-check/cflrzpxc.md)
 * [现场照片检查API](ythpt/quality-check/xczp.md)
 * [案件勘验抽查API](ythpt/quality-check/ajkycc.md)
+* [不合格现场检查API](ythpt/quality-check/bhgxcjc.md)
 
 ### 系统管理模块
 
@@ -42,6 +47,10 @@
 * [案件及时勘验监督API](ythpt/work-supervise/ajjskyjd.md)
 * [现场及时关联监督API](ythpt/work-supervise/xcjsgljd.md)
 
-### 打包更新
+### 一体化客户端
 * [打包exe安装包](ythpt/client/package.md)
-* [客户端更新](https://github.com/geeyip/hupdater)
+* [客户端更新](ythpt/client/update.md)
+* [基础服务部署](ythpt/client/neab.md)
+
+### 案发地图API
+* [案发地图API](ythpt/map/案发地图API文档.md)
