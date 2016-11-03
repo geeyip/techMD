@@ -119,6 +119,7 @@ GET, application/json
 
 #### 返回值格式
 ```json
-{"flag":1,"totalCount":1,"msg":null,"data":
-{"jqdcl_wwc":0,"jqzp_yzp":0,"yqwkaj_wzp":0,"ajzp_wzp":0,"jqdcl_wc":0,"yqwkaj_yzp":0,"jqzp_wzp":0,"ajdcl_wc":0,"ajdcl_wwc":0,"ajzp_yzp":0},
+{"flag":1,"totalCount":1,"msg":null,
+"data":{"jqdcl_wwc":0,"jqzp_yzp":0,"yqwkaj_wzp":0,"ajzp_wzp":0,"jqdcl_wc":0,
+        yqwkaj_yzp":0, "jqzp_wzp":0,"ajdcl_wc":0,"ajdcl_wwc":0,"ajzp_yzp":0},
 "pages":null,"operates":null}
