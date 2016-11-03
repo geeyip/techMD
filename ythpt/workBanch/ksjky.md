@@ -95,3 +95,30 @@ POST, application/json
 {"flag":1,"totalCount":1,"msg":null}
 //date数据具体参考JqInfo类
 
+
+###案事件数量接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/workbench/jqxx/count
+```
+
+后端格式为`/api/{recordLog}/workbench/jqxx/count`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+```
+无传入参数
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":1,"msg":null,"data":
+{"jqdcl_wwc":0,"jqzp_yzp":0,"yqwkaj_wzp":0,"ajzp_wzp":0,"jqdcl_wc":0,"yqwkaj_yzp":0,"jqzp_wzp":0,"ajdcl_wc":0,"ajdcl_wwc":0,"ajzp_yzp":0},
+"pages":null,"operates":null}
