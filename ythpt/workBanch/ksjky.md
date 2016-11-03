@@ -31,7 +31,7 @@ POST, application/json
 
 ```json
 {"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
-
+```
 
 ### 警情/案件指派接口
 
@@ -64,7 +64,7 @@ POST, application/json
 
 ```json
 {"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
-
+```
 
 ###警情编号/报案人/已反馈/指派、反馈查看接口
 
@@ -94,7 +94,7 @@ POST, application/json
 ```json
 {"flag":1,"totalCount":1,"msg":null}
 //date数据具体参考JqInfo类
-
+```
 
 ###案事件数量接口
 
@@ -123,3 +123,4 @@ GET, application/json
 "data":{"jqdcl_wwc":0,"jqzp_yzp":0,"yqwkaj_wzp":0,"ajzp_wzp":0,"jqdcl_wc":0,
         yqwkaj_yzp":0, "jqzp_wzp":0,"ajdcl_wc":0,"ajdcl_wwc":0,"ajzp_yzp":0},
 "pages":null,"operates":null}
+```
