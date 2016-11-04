@@ -66,7 +66,7 @@ POST, application/json
 {"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
 ```
 
-###警情编号/报案人/已反馈/指派、反馈查看接口
+###警情编号/报案人/已反馈/反馈查看接口
 
 #### API路径
 
@@ -124,3 +124,30 @@ GET, application/json
         yqwkaj_yzp":0, "jqzp_wzp":0,"ajdcl_wc":0,"ajdcl_wwc":0,"ajzp_yzp":0},
 "pages":null,"operates":null}
 ```
+
+###指派列表接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/workbench/jqxx/appoint_info
+```
+
+后端格式为`/api/{recordLog}/workbench/jqxx/appoint_info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+```
+无传入参数
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":1,"msg":null,"data":[],"pages":null,"operates":null}
+```
+//data中的list字段：id 技术人员编号 trueName 真实姓名 kys 勘验数 mobilephoneNo 电话
