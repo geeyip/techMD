@@ -149,5 +149,6 @@ GET, application/json
 #### 返回值格式
 ```json
 {"flag":1,"totalCount":1,"msg":null,"data":[],"pages":null,"operates":null}
-```
 //data中的list字段：id 技术人员编号 trueName 真实姓名 kys 勘验数 mobilephoneNo 电话
+```
+
