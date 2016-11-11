@@ -48,19 +48,27 @@ POST, application/json
 		{
 			"rownum": "1",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-			"xckyh": "J110145656985321322",
-			"jqbh": "J110145656985321322",
-			"ajbh": "A110145656985321323",
-			"kysj": "2016-08-18",//Date类型
-			"kydd": "朝阳XXX小区",
-			"ajlb": "",
-			"faqh": "",
-			"fadd": "朝阳XXX小区",
-			"kyr": "某某",
-			"xczt":"",
-			"sfyq": "2",//1:未逾期  2:已逾期
-			"dxsl": 1, //短信条数
-			"xxsl":2//消息条数
+			"caseType"://案件类型代码（提供字典）,
+			"sceneRegionalism"://发案区划代码 "J110145656985321322",
+			"caseNo"://案件编号  "A110145656985321323",
+			"caseName"://案件名称 "2016-08-18",//Date类型
+			"jyaq"://简要案情 "朝阳XXX小区",
+			"jqbh"://警情编号 "",
+			"incerstigationNo"://勘验编号 "",
+			"occurrCaroom"://发案地点 "朝阳XXX小区",
+			"sampleName"://样本名称/物证名称 "某某",
+			"sampleNo"://条形码"",
+			"evidenceNo"://物证编号 "2",//1:未逾期  2:已逾期
+			"sampleLabNo"://DNA检材编号 1, //短信条数
+			"sampleType"://样本类型代码（提供字典） 2//消息条数
+			"slsj"://受理时间
+			"tqsj"://提取时间
+			"jyzt"://检验状态代码（提供字典）
+			"bdzt"://比对状态代码（提供字典）
+			"createUser":2//录入员编号
+			"createDatetime":2//录入时间
+			"updateUser":2//修改人员编号
+			"updateDatetime":2//修改时间
 		}
     ],
     "pages": null,
