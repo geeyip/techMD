@@ -8,7 +8,7 @@
 
 ```http
 http://localhost:8080/api/0/alims/DNA/query
-`````
+```
 
 后端格式为`/api/{recordLog}/alims/DNA/query`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 
