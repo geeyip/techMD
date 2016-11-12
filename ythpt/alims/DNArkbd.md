@@ -115,10 +115,13 @@ GET, application/json
 			"rn": "1",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
 			"matchNo"://目标编号(物证编号,人员DNA样本编号),
-			"matchType"://比中类型（案案、案人、人案、人人） ,
-			"aaCaseNo"://比中案件编号 ,
-			"aaCaseName"://比中案件名称 "",
-			"aaSampleName"://比中物证名称 "",
+			"dataType":// 1:填充表格后半段 ; 0:填充表格前半段
+			"aaEvidenceNo"://// dataType=0 物证编号, dataType=1 比中物证编号 ,
+			"aaSampleName":// dataType=0 物证名称, dataType=1 比中物证名称 ,
+			"aaSampleLabNo"：//DNA检材编号,
+            "matchType"://比中类型（案案、案人、人案、人人） ,
+			"aaCaseNo":// dataType=0 案件编号, dataType=1 比中案件编号 ,
+			"aaCaseName"://dataType=0 案件名称, dataType=1 比中案件名称 ,
 		}
     ],
     "pages": null,
