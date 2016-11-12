@@ -91,6 +91,7 @@ POST, application/json
 ```json
 {
      "inveId" : '' //现勘ID
+     "hjlx" : '' //痕迹/物证类型
 }
 ```
 
@@ -107,7 +108,6 @@ POST, application/json
                 "wzbh": "W110145656985321323",       //物证编号
                 "wzmc": "匕首",                       //物证名称
                 "wzlx": "",                          //物证类型
-                 "wzly": "案件",                      //物证来源
                 "photoStr": "",                      //物证照片
                 "zwbh": "某某单位",                    //指纹编号
             }
