@@ -30,7 +30,7 @@ POST, application/json
   "ajmc": "",  //案件名称
   "yblx": "",  //样本类型
   "jyzt": "", //检验状态
-  "bbzt": "", //比对状态
+  "bdzt": "", //比对状态
   "jqbh": "", //警情编号
   "kybh": "", //勘验编号
   "fadd": "", //发案地点
