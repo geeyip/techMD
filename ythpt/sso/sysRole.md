@@ -32,3 +32,57 @@ jsonStr:
 "lastSys":null,"roleId":"151e19acae5744caa1b33e92598af53d","roleName":"系统管理员","superId":"1","type":0,"note":null}],
 "pages":null,"operates":null}
 ```
+
+###角色新增接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/add_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/add_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"roleName":"测试人员","superId":"1","note":"测试人员","type":"1"}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":"146cee1b01894228b8527904f2ff8d2b","pages":null,"operates":null}
+```
+
+###角色修改接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/update_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/update_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"roleName":"测试人员test","superId":"0","note":"测试人员test","type":"2","roleId":"146cee1b01894228b8527904f2ff8d2b"}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
