@@ -3,8 +3,8 @@
 * 案件信息标注查询接口（点击参数管理时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/xlbz/list
-	后端格式为/api/{recordLog}/xlbz/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/api/0/xlbz/case/list
+	后端格式为/api/{recordLog}/xlbz/case/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -72,8 +72,8 @@
 - 案件标注查询接口（点击案件信息标注进入案件标注页面时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/xlbz/info
-	后端格式为/api/{recordLog}/xlbz/info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/api/0/xlbz/case/info
+	后端格式为/api/{recordLog}/xlbz/case/info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
