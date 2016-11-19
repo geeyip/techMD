@@ -21,7 +21,7 @@ POST, application/json
 jsonStr:
 {
 "begin":1,"end":3,"sortName":"createTime","sortOrder":"desc",
-"queryCondition":{"roleName":"管理员","superId":"1","note":"" }
+"queryCondition":{"roleName":"管理员","superId":"1","note":""}
 }
 ```
 
