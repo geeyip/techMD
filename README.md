@@ -59,3 +59,4 @@
 ### 小类标注
 
 * [案件信息标注API](xcba/xlbz/caseList.md)
+* [人员信息标注API](xcba/xlbz/personList.md)
