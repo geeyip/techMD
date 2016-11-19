@@ -22,18 +22,12 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-  "ajlx": "", //案件类型
-  "faqh": "", //发案区划 字典代码
   "ybslsjBegin": "", //样本受理时间开始
   "ybslsjEnd": "", //样本受理时间结束
   "ajbh": "",  //案件编号
   "ajmc": "",  //案件名称
   "yblx": "",  //样本类型
-  "jyzt": "", //检验状态
   "bdzt": "", //比对状态
-  "jqbh": "", //警情编号
-  "kybh": "", //勘验编号
-  "fadd": "", //发案地点
 }
 ```
 
@@ -49,26 +43,29 @@ POST, application/json
 			"rn": "1",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
 			"caseType"://案件类型代码（提供字典）,
-			"sceneRegionalism"://发案区划代码 "",
 			"caseNo"://案件编号  "",
 			"caseName"://案件名称 "",
-			"jyaq"://简要案情 "",
-			"jqbh"://警情编号 "",
-			"incerstigationNo"://勘验编号 "",
-			"occurrCaroom"://发案地点 "",
-			"sampleName"://样本名称/物证名称 "",
+            "bdzt"://比对状态代码
+            "jyaq"://简要案情 "",
+            "slsj"://受理时间
+            "slr"://受理人
+			"sjsj"://送检时间 "",
+			"sjr"://送检人 "",
+			"jysj"://检验时间 "",
+			"jyr"://检验人 "",
 			"sampleNo"://条形码"",
 			"evidenceNo"://物证编号 "",
 			"sampleLabNo"://DNA检材编号 ,
+			"sampleName"://样本名称,
+			"flag"://类型 person object
 			"sampleType"://样本类型代码（提供字典）,
-			"slsj"://受理时间
-			"tqsj"://提取时间
-			"jyzt"://检验状态代码（提供字典）
-			"bdzt"://比对状态代码（提供字典）
-			"createUser"://录入员编号
-			"createDatetime"://录入时间
-			"updateUser"://修改人员编号
-			"updateDatetime"://修改时间
+			"fullname"://人员姓名
+			"personType"://人员类型
+			"gender"://性别
+			"cardId"://身份证号
+			"finishAt"://结束时间（暂为lims中审核时间
+			"submittime"://入库时间
+			"perLy"://人员来源
 		}
     ],
     "pages": null,
@@ -100,6 +97,7 @@ GET, application/json
 ```json
 {
   "evidenceNo": "", //物证编号
+  "flag":""//查询类别 "object"
   }
 ```
 
@@ -129,7 +127,62 @@ GET, application/json
 }
 ```
 
-### 物证已比中弹窗案案table
+### 物证已比中弹窗人案table
+
+点击查询按钮时触发
+
+#### API路径
+
+```http
+http://localhost:8080/api/0/alims/DNA/view/all
+```
+
+后端格式为`/api/{recordLog}/alims/DNA/view/all`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+  "evidenceNo": "", //物证编号
+  "flag":""//查询类别 "object" "person"
+  }
+```
+
+#### 返回值格式
+
+```json
+{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+		{
+			"rn": "1",
+			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+			"matchNo"://目标编号(物证编号,人员DNA样本编号),
+			"matchType"://比中类型（案案、案人、人案、人人） ,
+			"evidenceNo"://物证编号
+			"sampleLabNo"://DNA检材编号,
+            "caseNo"://案件编号，
+            "sampleName"://样本名称
+            "caseName"://案件名称
+			"arRybh"://比中人员编号 ,
+			"arRperName"://人员姓名 "",
+			"arPerPaper"://人员身份证号码 "",
+		}
+    ],
+    "pages": null,
+    "operates": null
+}
+````
+
+### 物证已比中弹窗人人table
 
 点击查询按钮时触发
 
@@ -152,6 +205,7 @@ GET, application/json
 ```json
 {
   "evidenceNo": "", //物证编号
+  "flag":""//查询类别 "person"
   }
 ```
 
@@ -167,7 +221,12 @@ GET, application/json
 			"rn": "1",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
 			"matchNo"://目标编号(物证编号,人员DNA样本编号),
+			"dataType":// 1:填充表格后半段 ; 0:填充表格前半段
 			"matchType"://比中类型（案案、案人、人案、人人） ,
+			"sampleLabNo"://DNA检材编号,
+			"caseNo"://案件编号，
+			"sampleName"://样本名称
+			"caseName"://案件名称
 			"arRybh"://比中人员编号 ,
 			"arRperName"://人员姓名 "",
 			"arPerPaper"://人员身份证号码 "",
