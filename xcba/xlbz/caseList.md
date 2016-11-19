@@ -108,3 +108,34 @@
         "operates": null
     }
 ```
+
+
+
+- 案件标注接口（点击案件标注页面的保存时触发）
+
+```java
+1.API路径：http://localhost:8090/api/1/xlbz/case/insert
+	后端格式为/api/{recordLog}/xlbz/case/insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            procedureName:"SP_TAG_API_INS_CASE_TAG",
+                procedureParamValueList:
+                [
+                    {fieldName:'P_CASE_NO_IN', value:''},//案件编号
+                    {fieldName:'P_CASE_TYPE_TAG_IN', value:''},//小类案别
+                    {fieldName:'P_CASE_MEANS_TAG_IN', value:''}//作案手段
+                ]
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": 1,
+        "msg": null,
+        "data": {
+            "P_INSERT_FLAG_OUT_CHAR":"1"
+        },
+        "pages": null,
+        "operates": null
+    }
+```
