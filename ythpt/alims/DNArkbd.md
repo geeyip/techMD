@@ -127,7 +127,7 @@ GET, application/json
 }
 ```
 
-### 物证已比中弹窗案案table
+### 物证已比中弹窗人案table
 
 点击查询按钮时触发
 
@@ -182,7 +182,7 @@ GET, application/json
 }
 ````
 
-### 物证已比中弹窗案案table
+### 物证已比中弹窗人人table
 
 点击查询按钮时触发
 
