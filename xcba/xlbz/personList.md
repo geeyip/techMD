@@ -71,6 +71,40 @@
 
 
 
+- 人员抽查接口
+
+```java
+1.API路径：http://localhost:8090/api/1/xlbz/person/spot_check
+	后端格式为/api/{recordLog}/xlbz/person/spot_check，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            procedureName:"SP_TAG_API_SEL_PERSON_CONTENT",
+                procedureParamValueList:
+                [
+                    {fieldName:'P_PERSON_NO_IN', value:''}//人员编号
+                ]
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": 1,
+        "msg": null,
+        "data": {
+            "P_PERSON_CONTENT_OUT_OUT_SYS_REFCURSOR":
+            [
+                {
+                    "VC_PERSON_CONTENT": ""//抽查内容
+                }
+            ]
+        },
+        "pages": null,
+        "operates": null
+    }
+```
+
+
+
 - 人员标注查询接口（点击人员信息标注进入人员标注页面时触发）
 
 ```java
