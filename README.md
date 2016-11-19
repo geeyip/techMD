@@ -54,3 +54,8 @@
 
 ### 案发地图API
 * [案发地图API](ythpt/map/案发地图API文档.md)
+
+## 杭州小类标注串并案API文档
+### 小类标注
+
+* [案件信息标注API](xcba/xlbz/caseList.md)
