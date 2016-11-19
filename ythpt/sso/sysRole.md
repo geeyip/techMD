@@ -20,8 +20,8 @@ POST, application/json
 ```
 jsonStr:
 {
-"PageNum":1,"PageSize":5,"orderBy":"createTime","sort":"desc","queryCondition":
-{"roleName":"系统管理员","superId":"1","note":""}
+"begin":1,"end":3,"sortName":"createTime","sortOrder":"desc",
+"queryCondition":{"roleName":"管理员","superId":"1","note":""}
 }
 ```
 
