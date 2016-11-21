@@ -61,7 +61,7 @@
 * [案件信息标注API](xcba/xlbz/caseList.md)
 * [人员信息标注API](xcba/xlbz/personList.md)
 
-### 小类标注
+### 系统管理
 
 * [用户管理API](xcba/system/sysUser.md)
 
