@@ -33,6 +33,7 @@
             "P_PERSON_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
+                    "VC_PERSON_NO": "",//人员编号
                     "VC_CAPTURE_UNIT": "2016-11-11 11:11:11",//抓获单位
                     "VC_HAPPEN_AREA": "",//发案区划
                     "D_CAPTURE_TIME": "",//抓获日期
@@ -48,6 +49,7 @@
                     "N_ROW_NUMBER": ""//排序
                 },
                 {
+                    "VC_PERSON_NO": "",//人员编号
                     "VC_CAPTURE_UNIT": "2016-11-11 11:11:11",//抓获单位
                     "VC_HAPPEN_AREA": "",//发案区划
                     "D_CAPTURE_TIME": "",//抓获日期

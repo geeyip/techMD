@@ -35,6 +35,7 @@
             "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
+                    "VC_CASE_NO": "",//案件编号
                     "D_HAPPEN_TIME_MIN_IN": "2016-11-11 11:11:11",//案发时间开始
                     "D_HAPPEN_TIME_MAX_IN": "",//案发时间结束
                     "VC_HAPPEN_AREA": "",//发案区划
@@ -48,6 +49,7 @@
                     "N_ROW_NUMBER": ""//排序
                 },
                 {
+                    "VC_CASE_NO": "",//案件编号
                     "D_HAPPEN_TIME_MIN_IN": "2016-11-11 11:11:11",//案发时间开始
                     "D_HAPPEN_TIME_MAX_IN": "",//案发时间结束
                     "VC_HAPPEN_AREA": "",//发案区划
