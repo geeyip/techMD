@@ -4,8 +4,7 @@
 
 ```java
 1.API路径：http://localhost:8020/login
-	后端格式为：/login（其中{recordLog}为前端传入，
-      标识是否需要记录操作日志）
+	后端格式为：/login
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -233,6 +232,27 @@
     }
 ```
 
+
+* 注销接口（点击注销按钮时触发）
+
+```java
+1.API路径：http://localhost:8020/logout
+	后端格式为：/logout
+2.请求：POST, application/json
+3.传入参数格式：
+  	jsonStr:{
+  	    "userName":"sys"//用户账号
+  	 }
+4.返回值格式：
+    {
+        "flag": 1,
+        "totalCount": 0,
+        "msg": null,
+        "data": null,
+        "pages": null,
+        "operates": null
+    }
+```
 
 
 
