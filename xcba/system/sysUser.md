@@ -226,3 +226,80 @@
     "operates":null
     }
 ```
+
+* 页面查看接口（点击列表用户账号时触发）
+
+```java
+1.API路径：http://localhost:8020/api/0/system/user/view
+	后端格式为：/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
+      标识是否需要记录操作日志）
+2.请求：GET, application/json
+3.传入参数格式：
+    jsonStr:{
+      	    "id":"test"//ID
+    }
+4.返回值格式：
+    {
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":
+        {
+        "id":"e22e527ac68846529451bf1f433a47d8",
+        "userName":"aaa",
+        "userPwd":null,
+        "newPassword":null,
+        "trueName":"23113",
+        "openFlag":"1",
+        "openFlagZw":"启用",
+        "policeId":"321312",
+        "cardId":null,
+        "userTel":null,
+        "userUnit":"1111",
+        "userUnitZh":null,
+        "userLevel":"1",
+        "ipAddress":null,
+        "createDate":"2016-11-22 09:46:32",
+        "createPid":"sys",
+        "defaultModule":null,
+        "remark":null,
+        "modifyDate":"2016-11-22 10:10:46",
+        "modifyPid":"sys",
+        "rownum":null,
+        "sysUserRoleIds":null,
+        "begin":0,
+        "end":0,
+        "roleId":null,
+        "roleName":null,
+        "roleNameString":" 派出所用户、分县局用户",
+        "sortName":null,
+        "sortOrder":null,
+        "orderByString":null,
+        "token":null
+        },
+    "pages":null,
+    "operates":null
+    }
+```
+
+* 页面删除接口（点击列表删除按钮时触发）
+
+```java
+1.API路径：http://localhost:8020/api/0/system/user/view
+	后端格式为：/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
+      标识是否需要记录操作日志）
+2.请求：POST, application/json
+3.传入参数格式：
+    jsonStr:{
+      	    "id":"test"//ID
+    }
+4.返回值格式：
+    {
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":null,
+    "pages":null,
+    "operates":null
+    }
+```
