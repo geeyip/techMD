@@ -271,38 +271,28 @@
   标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
-[
-    {
-        "name": "deploy_place",
-        "value": "滨州市公安局刑事技术一体化平台"
-    },
-    {
-        "name": "system-version",
-        "value": "V1.0.0"
-    },
-    {
-        "name": "test",
-        "value": "1111"
-    },
-    {
-        "name": "qqq",
-        "value": "qqqaa"
-    }
-]
+    jsonStr:{
+        "englishName": "qqq111",
+        "paramSort": "5",
+        "chineseName": "qqqqwww11",
+        "remark": "ewqeqe",
+        "value": "qqqaa112",
+        "paramEditId": "31AA744AB97C4F09B4505C6F65BA617D",
+        "defaultValue": "qqq",
+        "hideFlag": "0",
+        "dictType": "1",
+        "paramType": "1",
+        "configId": "629AD78EE04340519A841F2D3A08F851"
+     }
 4.返回值格式：
-{
-    "englishName": "qqq111",
-    "paramSort": "5",
-    "chineseName": "qqqqwww11",
-    "remark": "ewqeqe",
-    "value": "qqqaa112",
-    "paramEditId": "31AA744AB97C4F09B4505C6F65BA617D",
-    "defaultValue": "qqq",
-    "hideFlag": "0",
-    "dictType": "1",
-    "paramType": "1",
-    "configId": "629AD78EE04340519A841F2D3A08F851"
-}
+    {
+    "flag": 1,
+    "totalCount": 0,
+    "msg": "success",
+    "data": null,
+    "pages": null,
+    "operates": null
+    }
 ```
 
 
