@@ -8,8 +8,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
-  	    "userName":"sys",//用户账号
-  	    "userPwd":"sys"//用户密码
+  	    "username":"sys",//用户账号
+  	    "password":"sys"//用户密码
   	 }
 4.返回值格式：
   	{
@@ -186,8 +186,6 @@
                     "en": "administrator"
                 }
             ],
-            "socketServer": null,
-            "uploadServer": null,
             "currentUser": {
                 "id": "8af67d6247aa82060147aa8206c40000",
                 "userName": "sys",
@@ -224,8 +222,13 @@
             "clientKey": "HjVhY003qberNQ%2Frpavq43qTnO0RWwQqg4FMvPPRXENj8kSiYtjOiE1InKh2VwazuO5fPMrbOKen%0D%0
                             AXr44U4KnNrTLohhODacgR%2FwvF9jpKdiZ63G7FcvIErFnbAl6h8HK9VMd9M%2FdiNXPBPU5iOlxNuc
                             h%0D%0ATLNKNCpa%2F8WD7aZ8re0%3D",
-            "xckyUrl": null,
-            "sysParam": null
+            "sysParam": {
+                        "dataInterface": "http://192.168.1.151:8080/datacenter/api/apiService?token=pubservice",
+                        "deploy_place": "滨州市公安局刑事技术一体化平台",
+                        "caseLinkAddress": null,
+                        "personLinkAddress": null,
+                        "system-version": "V1.0.0"
+                    }
         },
         "pages": null,
         "operates": null
@@ -241,7 +244,7 @@
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
-  	    "userName":"sys"//用户账号
+  	    "username":"sys"//用户账号
   	 }
 4.返回值格式：
     {
