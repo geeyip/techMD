@@ -220,6 +220,91 @@
     "pages": null,
     "operates": null
     }
+```
+
+
+* 页面更新接口（点击保存按钮时触发）
+
+```java
+1.API路径：http://localhost:8020/api/1/system/param/edit
+	后端格式为：/api/{recordLog}/system/param/edit（其中{recordLog}为前端传入，
+      标识是否需要记录操作日志）
+2.请求：POST, application/json
+3.传入参数格式：
+    jsonStr:{
+        [
+            {
+                "name": "deploy_place",
+                "value": "滨州市公安局刑事技术一体化平台"
+            },
+            {
+                "name": "system-version",
+                "value": "V1.0.0"
+            },
+            {
+                "name": "test",
+                "value": "1111"
+            },
+            {
+                "name": "qqq",
+                "value": "qqqaa"
+            }
+        ]
+    }
+4.返回值格式：
+    {
+        "flag": 1,
+        "totalCount": 0,
+        "msg": "success",
+        "data": null,
+        "pages": null,
+        "operates": null
+    }
+ ```
+
+
+* 页面修改接口（点击参数名时触发）
+
+```java
+1.API路径：http://localhost:8020/api/1/system/param/update
+后端格式为：/api/{recordLog}/system/param/update（其中{recordLog}为前端传入，
+  标识是否需要记录操作日志）
+2.请求：POST, application/json
+3.传入参数格式：
+[
+    {
+        "name": "deploy_place",
+        "value": "滨州市公安局刑事技术一体化平台"
+    },
+    {
+        "name": "system-version",
+        "value": "V1.0.0"
+    },
+    {
+        "name": "test",
+        "value": "1111"
+    },
+    {
+        "name": "qqq",
+        "value": "qqqaa"
+    }
+]
+4.返回值格式：
+{
+    "englishName": "qqq111",
+    "paramSort": "5",
+    "chineseName": "qqqqwww11",
+    "remark": "ewqeqe",
+    "value": "qqqaa112",
+    "paramEditId": "31AA744AB97C4F09B4505C6F65BA617D",
+    "defaultValue": "qqq",
+    "hideFlag": "0",
+    "dictType": "1",
+    "paramType": "1",
+    "configId": "629AD78EE04340519A841F2D3A08F851"
+}
+```
+
 
 
 
