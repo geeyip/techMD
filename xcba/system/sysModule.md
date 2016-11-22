@@ -95,7 +95,7 @@
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
-  	moduelId:ABCDEFGHABCDEFGHABCDEFGH22222209
+  	jsonStr:{"moduleId":"ABCDEFGHABCDEFGHABCDEFGH22222209"}
 4.返回值格式：
     {
         "flag": 1,
