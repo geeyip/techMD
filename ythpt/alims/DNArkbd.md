@@ -223,9 +223,10 @@ GET, application/json
 			"matchNo"://目标编号(物证编号,人员DNA样本编号),
 			"dataType":// 1:填充表格后半段 ; 0:填充表格前半段
 			"matchType"://比中类型（案案、案人、人案、人人） ,
-			"sampleLabNo"://DNA检材编号,
+			"bzEampleLabNo"://DNA检材编号,
 			"caseNo"://案件编号，
-			"sampleName"://样本名称
+			"bzEvidenceNo"://比中物证编号
+			"bzSampleName"://样本名称
 			"caseName"://案件名称
 			"arRybh"://比中人员编号 ,
 			"arRperName"://人员姓名 "",
