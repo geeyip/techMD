@@ -11,7 +11,7 @@
   	jsonStr:{
   	    "userName":"test",//用户账户
   	    "trueName":"test",//用户姓名
-  	    "roleName":"test",//角色字符串(输入中文)
+  	    "roleName":"test",//角色字符串(字典选择)
   	    "userUnit":"440000000000",//用户单位代码
   	    "openFlag":"1",//是否启用(输入代码:1:有效,0:无效)
   	    "begin":1,
