@@ -63,5 +63,6 @@
 
 ### 系统管理
 
-* [用户管理API](xcba/system/sysUser.md)
+* [登录用户管理API](xcba/system/sysUser.md)
+* [系统角色管理API](xcba/system/sysRole.md)
 
