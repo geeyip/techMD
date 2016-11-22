@@ -63,4 +63,33 @@
 ```
 
 
+* 页面新增接口（点击保存按钮时触发）
+
+```java
+1.API路径：http://localhost:8020/api/1/system/user/add
+	后端格式为：/api/{recordLog}/system/user/add（其中{recordLog}为前端传入，
+      标识是否需要记录操作日志）
+2.请求：POST, application/json
+3.传入参数格式：
+  	jsonStr:{
+  	    "userName":"test",//用户账户
+  	    "trueName":"test",//用户姓名
+  	    "userPwd":"123456",//用户密码
+  	    "openFlag":"1",//用户账户是否有效(传入代码)
+  	    "userUnit":"440000000000",//用户单位代码
+  	    "policeId":"1234567",//用户警号
+        "cardId":"400162199111201271",//身份证号
+        "userTel":"18368894577",//电话号码
+        "remark":"test"//备注
+  	 }
+4.返回值格式：
+  	{
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":"e22e527ac68846529451bf1f433a47d8",//ID
+    "pages":null,
+    "operates":null
+}
+```
 
