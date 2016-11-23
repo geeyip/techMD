@@ -61,6 +61,10 @@
 * [案件信息标注API](xcba/xlbz/caseList.md)
 * [人员信息标注API](xcba/xlbz/personList.md)
 
+### 字典
+
+* [案件类别字典API](xcba/dict/caseKind.md)
+
 ### 系统管理
 
 * [登录API](xcba/system/login.md)
