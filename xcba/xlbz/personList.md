@@ -33,36 +33,36 @@
             "P_PERSON_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_PERSON_NO": "",//人员编号
-                    "VC_CAPTURE_UNIT": "2016-11-11 11:11:11",//抓获单位
-                    "VC_HAPPEN_AREA": "",//发案区划
-                    "D_CAPTURE_TIME": "",//抓获日期
-                    "VC_PERSON_TYPE": "",//人员类别
-                    "VC_NAME": "",//姓名
-                    "VC_ID_CARD_NO": "",//身份证号
-                    "VC_HOUSEHOLD_DETAIL": "",//户籍地详址
-                    "VC_PERS_CASE_KIND": "",//案件类别
-                    "VC_PERS_CASE_KIND2": "",//案件类别1
-                    "VC_TAG_P_CASE_KIND": "",//小类案别
-                    "VC_TAG_PERSON_CRI_MEANS": "",//作案手段
-                    "C_TAG_FLAG": "",//待标注、已标注
-                    "N_ROW_NUMBER": ""//排序
+                    "personno": "",//人员编号
+                    "unit": "2016-11-11 11:11:11",//抓获单位
+                    "area": "",//发案区划
+                    "time": "",//抓获日期
+                    "ptype": "",//人员类别
+                    "name": "",//姓名
+                    "cardno": "",//身份证号
+                    "household": "",//户籍地详址
+                    "casekind": "",//案件类别
+                    "casekind2": "",//案件类别1
+                    "tagckind": "",//小类案别
+                    "tagmeans": "",//作案手段
+                    "flag": "",//待标注、已标注
+                    "order": ""//排序
                 },
                 {
-                    "VC_PERSON_NO": "",//人员编号
-                    "VC_CAPTURE_UNIT": "2016-11-11 11:11:11",//抓获单位
-                    "VC_HAPPEN_AREA": "",//发案区划
-                    "D_CAPTURE_TIME": "",//抓获日期
-                    "VC_PERSON_TYPE": "",//人员类别
-                    "VC_NAME": "",//姓名
-                    "VC_ID_CARD_NO": "",//身份证号
-                    "VC_HOUSEHOLD_DETAIL": "",//户籍地详址
-                    "VC_PERS_CASE_KIND": "",//案件类别
-                    "VC_PERS_CASE_KIND2": "",//案件类别1
-                    "VC_TAG_P_CASE_KIND": "",//小类案别
-                    "VC_TAG_PERSON_CRI_MEANS": "",//作案手段
-                    "C_TAG_FLAG": "",//待标注、已标注
-                    "N_ROW_NUMBER": ""//排序
+                    "personno": "",//人员编号
+                    "unit": "2016-11-11 11:11:11",//抓获单位
+                    "area": "",//发案区划
+                    "time": "",//抓获日期
+                    "ptype": "",//人员类别
+                    "name": "",//姓名
+                    "cardno": "",//身份证号
+                    "household": "",//户籍地详址
+                    "casekind": "",//案件类别
+                    "casekind2": "",//案件类别1
+                    "tagckind": "",//小类案别
+                    "tagmeans": "",//作案手段
+                    "flag": "",//待标注、已标注
+                    "order": ""//排序
                 }
             ]
         },
@@ -96,7 +96,7 @@
             "P_PERSON_CONTENT_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_PERSON_CONTENT": ""//抽查内容
+                    "content": ""//抽查内容
                 }
             ]
         },
@@ -130,15 +130,15 @@
             "P_PERSON_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_PERSON_NO": "",//人员编号
-                    "VC_SEX": "",//性别
-                    "VC_NAME": "",//姓名
-                    "VC_ID_CARD_NO": "",//身份证号
-                    "VC_HOUSEHOLD_DETAIL": "",//户籍地
-                    "D_CAPTURE_TIME": "",//抓获时间
-                    "VC_TAG_P_CASE_KIND": "",//小类案别
-                    "VC_TAG_PERSON_CRI_MEANS": "",//作案手段
-                    "VC_CRIMINAL_DETAIL": ""//违法犯罪情况
+                    "personno": "",//人员编号
+                    "sex": "",//性别
+                    "name": "",//姓名
+                    "cardno": "",//身份证号
+                    "detail": "",//户籍地
+                    "time": "",//抓获时间
+                    "tagckind": "",//小类案别
+                    "tagmeans": "",//作案手段
+                    "detail": ""//违法犯罪情况
                 }
             ]
         },

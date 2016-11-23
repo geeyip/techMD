@@ -35,32 +35,32 @@
             "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_CASE_NO": "",//案件编号
-                    "D_HAPPEN_TIME_MIN_IN": "2016-11-11 11:11:11",//案发时间开始
-                    "D_HAPPEN_TIME_MAX_IN": "",//案发时间结束
-                    "VC_HAPPEN_AREA": "",//发案区划
-                    "VC_HAPPEN_PLACE_DETAIL": "",//案发地点
-                    "VC_CASE_KIND": "",//案件类别
-                    "VC_CASE_STATUS": "",//案件状态
-                    "VC_CREATE_UNIT": "",//录入单位
-                    "VC_TAG_CASE_TYPE": "",//小类案别
-                    "VC_TAG_CASE_CRI_MEANS": "",//作案手段
-                    "C_TAG_FLAG": "",//待标注、已标注
-                    "N_ROW_NUMBER": ""//排序
+                    "caseno": "",//案件编号
+                    "begin": "2016-11-11 11:11:11",//案发时间开始
+                    "end": "",//案发时间结束
+                    "area": "",//发案区划
+                    "address": "",//案发地点
+                    "kind": "",//案件类别
+                    "status": "",//案件状态
+                    "unit": "",//录入单位
+                    "casekind": "",//小类案别
+                    "means": "",//作案手段
+                    "flag": "",//待标注、已标注
+                    "order": ""//排序
                 },
                 {
-                    "VC_CASE_NO": "",//案件编号
-                    "D_HAPPEN_TIME_MIN_IN": "2016-11-11 11:11:11",//案发时间开始
-                    "D_HAPPEN_TIME_MAX_IN": "",//案发时间结束
-                    "VC_HAPPEN_AREA": "",//发案区划
-                    "VC_HAPPEN_PLACE_DETAIL": "",//案发地点
-                    "VC_CASE_KIND": "",//案件类别
-                    "VC_CASE_STATUS": "",//案件状态
-                    "VC_CREATE_UNIT": "",//录入单位
-                    "VC_TAG_CASE_TYPE": "",//小类案别
-                    "VC_TAG_CASE_CRI_MEANS": "",//作案手段
-                    "C_TAG_FLAG": "",//待标注、已标注
-                    "N_ROW_NUMBER": ""//排序
+                    "caseno": "",//案件编号
+                    "begin": "2016-11-11 11:11:11",//案发时间开始
+                    "end": "",//案发时间结束
+                    "area": "",//发案区划
+                    "address": "",//案发地点
+                    "kind": "",//案件类别
+                    "status": "",//案件状态
+                    "unit": "",//录入单位
+                    "casekind": "",//小类案别
+                    "means": "",//作案手段
+                    "flag": "",//待标注、已标注
+                    "order": ""//排序
                 }
             ]
         },
@@ -94,7 +94,7 @@
             "P_CASE_CONTENT_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_CASE_CONTENT": ""//抽查内容
+                    "content": ""//抽查内容
                 }
             ]
         },
@@ -128,15 +128,15 @@
             "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "VC_CASE_NO": "",//案件编号
-                    "D_HAPPEN_BEGIN_TIME": "",//案发时间
-                    "VC_HAPPEN_DETAIL": "",//案发地点
-                    "VC_CREATE_UNIT": "",//选择单位
-                    "D_SOLVE_TIME": "",//破案时间
-                    "VC_CASE_STATUS": "",//案件状态
-                    "VC_CASE_SUMMARY": "",//简要案情
-                    "VC_TAG_CASE_KIND": "",//小类案别
-                    "VC_TAG_CASE_CRI_MEANS": ""//作案手段
+                    "caseno": "",//案件编号
+                    "happentime": "",//案发时间
+                    "address": "",//案发地点
+                    "unit": "",//选择单位
+                    "solvetime": "",//破案时间
+                    "status": "",//案件状态
+                    "summary": "",//简要案情
+                    "casekind": "",//小类案别
+                    "means": ""//作案手段
                 }
             ]
         },
