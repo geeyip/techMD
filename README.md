@@ -62,6 +62,10 @@
 * [人员信息标注API](xcba/xlbz/personList.md)
 * [小类代码API](xcba/xlbz/smallClassCode.md)
 
+### 统计考核
+
+* [小类标注考核API](xcba/tjkh/xlbz.md)
+
 ### 字典
 
 * [案件类别字典API](xcba/dict/caseKind.md)

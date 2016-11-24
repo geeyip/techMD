@@ -28,10 +28,10 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
         "data": {
-            "P_OUT_RECORD_AMOUNT_OUT_NUMBER":"",//返回结果数量
+            "P_OUT_RECORD_AMOUNT_OUT_NUMBER":"2",//返回结果数量
             "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
             [
                 {
