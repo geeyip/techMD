@@ -257,6 +257,44 @@
     }
 ```
 
+* 小类考核通报列表接口（进入登录页时获取数据时触发）
+
+```java
+1.API路径：http://localhost:8020/sys/xlkh/list
+	后端格式为：/sys/xlkh/list
+2.请求：POST, application/json
+3.传入参数格式：
+  	无传入参数
+4.返回值格式：
+    {
+        "flag": 1,
+        "totalCount": 0,
+        "msg": null,
+        "data": [
+            "2016-10-20",
+            "2016-11-20",
+            "2016-09-20"
+        ],
+        "pages": null,
+        "operates": null
+    }
+```
+
+
+* 小类考核通报查询接口（点击标注数据时(window.open方式)触发）
+
+```java
+1.API路径：http://localhost:8020/sys/xlkh/view
+	后端格式为：/sys/xlkh/view
+2.请求：POST, application/json
+3.传入参数格式：
+  	tagDate:"2016-09-20"
+4.返回值格式：
+    无返回值
+```
+
+
+
 
 
 
