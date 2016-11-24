@@ -1,6 +1,6 @@
 ## 小类标注代码API文档
 
-* 小类标注代码查询所有大类接口
+* 小类标注代码查询列表接口
 
 ```java
 1.API路径：http://api/0/xlbz/xldm/list
@@ -8,47 +8,10 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_BIG_TYPE"
-	        }
-4.返回值格式
-	{
-        "flag": 1,
-        "totalCount": 1,
-        "msg": null,
-        "data": {
-            "P_OUT_RECORD_AMOUNT_OUT_NUMBER":"",//返回结果数量
-            "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "key":"4000",//案件类别代码
-                    "value":"窃取手段",//案件类别中文
-                    "type":"A"//案件类别类型,A-大类,B-小类,C-手段
-                },
-                {
-                    "key":"3000",//案件类别代码
-                    "value":"暴力胁迫手段",//案件类别中文
-                    "type":"A"//案件类别类型,A-大类,B-小类,C-手段
-                }
-            ]
-        },
-        "pages": null,
-        "operates": null
-    }
-```
-
-
-* 小类标注代码分层查询案件类别接口
-
-```java
-1.API路径：http://api/0/xlbz/xldm/layeredList
-	后端格式为/api/{recordLog}/xlbz/xldm/layeredList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-2.请求：POST, application/json
-3.传入参数格式：
-	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_PART_CASE_KIND",
-	             procedureParamValueList:
+	            procedureName:"SP_TAG_API_SEL_CASE_KIND",
+	            procedureParamValueList:
                 [
-                    {fieldName:'P_DICT_KEY_IN', value:'4000'}//父级案件类别
+                    {fieldName:'P_VC_FLAG', value:'1'}//1:大类-小类-手段
                 ]
 	        }
 4.返回值格式
@@ -57,15 +20,23 @@
         "totalCount": 1,
         "msg": null,
         "data": {
-            "P_PART_KIND_OUT_OUT_SYS_REFCURSOR":
+            "P_RESULT_OUT_OUT_SYS_REFCURSOR":
             [
                 {
-                    "key":"4100",//案件类别代码
-                    "value":"破锁开锁"//案件类别中文
+                    "VC_KEY1":"4000",//大类代码
+                    "VC_NAME1":"窃取手段",//中文名
+                    "VC_KEY2":"4100"//小类代码
+                    "VC_NAME2":"破锁开锁",//中文名
+                    "VC_KEY3":"4101",//手段代码
+                    "VC_NAME3":"硬物击锁"//中文名
                 },
                 {
-                    "key":"4200",//案件类别代码
-                    "value":"破盗金柜"//案件类别中文
+                    "VC_KEY1":"4000",
+                    "VC_NAME1":"窃取手段",
+                    "VC_KEY2":"4100"
+                    "VC_NAME2":"破锁开锁",
+                    "VC_KEY3":"4101",//
+                    "VC_NAME3":"硬物击锁"
                 }
             ]
         },
