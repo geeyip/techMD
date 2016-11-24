@@ -60,6 +60,7 @@
 
 * [案件信息标注API](xcba/xlbz/caseList.md)
 * [人员信息标注API](xcba/xlbz/personList.md)
+* [小类代码API](xcba/xlbz/smallClassCode.md)
 
 ### 字典
 
