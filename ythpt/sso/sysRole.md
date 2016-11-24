@@ -191,7 +191,7 @@ systemid:XCKY
 #### 返回值格式
 ```json
 {"flag":1,"totalCount":0,"msg":null,"data":
-{"token":"862d39f7ffed4b2888fa48728d8e5398","roleId":null,"systemid":"XCKY",
+{ "token":"862d39f7ffed4b2888fa48728d8e5398","roleId":null,"systemid":"XCKY",
 "noRoleId":"146cee1b01894228b8527904f2ff8d2b","checkUsers":[],
 "uncheckUsers":[{"status":0,"createAccount":null,"createTime":0,"lastModifyTime":0,"lastModifyAccount":null,
 "lastTerminal":null,"lastSys":null,"indexNum":0,"userId":"e3c88eaaffd74d0582bbe480e208d75e",
