@@ -28,42 +28,39 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 0,
+        "totalCount": 2,
         "msg": null,
-        "data": {
-            "P_OUT_RECORD_AMOUNT_OUT_NUMBER":"2",//返回结果数量
-            "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "caseno": "",//案件编号
-                    "begin": "2016-11-11 11:11:11",//案发时间开始
-                    "end": "",//案发时间结束
-                    "area": "",//发案区划
-                    "address": "",//案发地点
-                    "kind": "",//案件类别
-                    "status": "",//案件状态
-                    "unit": "",//录入单位
-                    "casekind": "",//小类案别
-                    "means": "",//作案手段
-                    "flag": "",//待标注、已标注
-                    "order": ""//排序
-                },
-                {
-                    "caseno": "",//案件编号
-                    "begin": "2016-11-11 11:11:11",//案发时间开始
-                    "end": "",//案发时间结束
-                    "area": "",//发案区划
-                    "address": "",//案发地点
-                    "kind": "",//案件类别
-                    "status": "",//案件状态
-                    "unit": "",//录入单位
-                    "casekind": "",//小类案别
-                    "means": "",//作案手段
-                    "flag": "",//待标注、已标注
-                    "order": ""//排序
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "caseno": "",//案件编号
+                "begin": "2016-11-11 11:11:11",//案发时间开始
+                "end": "",//案发时间结束
+                "area": "",//发案区划
+                "address": "",//案发地点
+                "kind": "",//案件类别
+                "status": "",//案件状态
+                "unit": "",//录入单位
+                "casekind": "",//小类案别
+                "means": "",//作案手段
+                "flag": "",//待标注、已标注
+                "order": ""//排序
+            },
+            {
+                "caseno": "",//案件编号
+                "begin": "2016-11-11 11:11:11",//案发时间开始
+                "end": "",//案发时间结束
+                "area": "",//发案区划
+                "address": "",//案发地点
+                "kind": "",//案件类别
+                "status": "",//案件状态
+                "unit": "",//录入单位
+                "casekind": "",//小类案别
+                "means": "",//作案手段
+                "flag": "",//待标注、已标注
+                "order": ""//排序
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -82,7 +79,7 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_CONTENT",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:''}//案件编号
+                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'}//案件编号
                 ]
 	        }
 4.返回值格式
@@ -90,14 +87,12 @@
         "flag": 1,
         "totalCount": 1,
         "msg": null,
-        "data": {
-            "P_CASE_CONTENT_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "content": ""//抽查内容
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "content": ""//抽查内容
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -116,30 +111,28 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_INFO",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:''}//案件编号
+                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'}//案件编号
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
-        "data": {
-            "P_CASE_INFO_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "caseno": "",//案件编号
-                    "happentime": "",//案发时间
-                    "address": "",//案发地点
-                    "unit": "",//选择单位
-                    "solvetime": "",//破案时间
-                    "status": "",//案件状态
-                    "summary": "",//简要案情
-                    "casekind": "",//小类案别
-                    "means": ""//作案手段
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "caseno": "",//案件编号
+                "happentime": "",//案发时间
+                "address": "",//案发地点
+                "unit": "",//选择单位
+                "solvetime": "",//破案时间
+                "status": "",//案件状态
+                "summary": "",//简要案情
+                "casekind": "",//小类案别
+                "means": ""//作案手段
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -158,7 +151,7 @@
 	            procedureName:"SP_TAG_API_INS_CASE_TAG",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:''},//案件编号
+                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'},//案件编号
                     {fieldName:'P_CASE_TYPE_TAG_IN', value:''},//小类案别
                     {fieldName:'P_CASE_MEANS_TAG_IN', value:''}//作案手段
                 ]
@@ -166,11 +159,9 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
-        "data": {
-            "P_INSERT_FLAG_OUT_CHAR":"1"
-        },
+        "data": "1",
         "pages": null,
         "operates": null
     }

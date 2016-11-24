@@ -26,46 +26,43 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 2,
         "msg": null,
-        "data": {
-            "P_OUT_RECORD_AMOUNT_OUT_NUMBER":"",//返回结果数量
-            "P_PERSON_INFO_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "personno": "",//人员编号
-                    "unit": "2016-11-11 11:11:11",//抓获单位
-                    "area": "",//发案区划
-                    "time": "",//抓获日期
-                    "ptype": "",//人员类别
-                    "name": "",//姓名
-                    "cardno": "",//身份证号
-                    "household": "",//户籍地详址
-                    "casekind": "",//案件类别
-                    "casekind2": "",//案件类别1
-                    "tagckind": "",//小类案别
-                    "tagmeans": "",//作案手段
-                    "flag": "",//待标注、已标注
-                    "order": ""//排序
-                },
-                {
-                    "personno": "",//人员编号
-                    "unit": "2016-11-11 11:11:11",//抓获单位
-                    "area": "",//发案区划
-                    "time": "",//抓获日期
-                    "ptype": "",//人员类别
-                    "name": "",//姓名
-                    "cardno": "",//身份证号
-                    "household": "",//户籍地详址
-                    "casekind": "",//案件类别
-                    "casekind2": "",//案件类别1
-                    "tagckind": "",//小类案别
-                    "tagmeans": "",//作案手段
-                    "flag": "",//待标注、已标注
-                    "order": ""//排序
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "personno": "",//人员编号
+                "unit": "2016-11-11 11:11:11",//抓获单位
+                "area": "",//发案区划
+                "time": "",//抓获日期
+                "ptype": "",//人员类别
+                "name": "",//姓名
+                "cardno": "",//身份证号
+                "household": "",//户籍地详址
+                "casekind": "",//案件类别
+                "casekind2": "",//案件类别1
+                "tagckind": "",//小类案别
+                "tagmeans": "",//作案手段
+                "flag": "",//待标注、已标注
+                "order": ""//排序
+            },
+            {
+                "personno": "",//人员编号
+                "unit": "2016-11-11 11:11:11",//抓获单位
+                "area": "",//发案区划
+                "time": "",//抓获日期
+                "ptype": "",//人员类别
+                "name": "",//姓名
+                "cardno": "",//身份证号
+                "household": "",//户籍地详址
+                "casekind": "",//案件类别
+                "casekind2": "",//案件类别1
+                "tagckind": "",//小类案别
+                "tagmeans": "",//作案手段
+                "flag": "",//待标注、已标注
+                "order": ""//排序
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -84,22 +81,20 @@
 	            procedureName:"SP_TAG_API_SEL_PERSON_CONTENT",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_PERSON_NO_IN', value:''}//人员编号
+                    {fieldName:'P_PERSON_NO_IN', value:'R3301835100002016080838'}//人员编号
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
-        "data": {
-            "P_PERSON_CONTENT_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "content": ""//抽查内容
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "content": "test1"//抽查内容
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -118,30 +113,28 @@
 	            procedureName:"SP_TAG_API_SEL_PERSON_INFO",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_PERSON_NO_IN', value:''}//人员编号
+                    {fieldName:'P_PERSON_NO_IN', value:'R3301835100002016080838'}//人员编号
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
-        "data": {
-            "P_PERSON_INFO_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "personno": "",//人员编号
-                    "sex": "",//性别
-                    "name": "",//姓名
-                    "cardno": "",//身份证号
-                    "detail": "",//户籍地
-                    "time": "",//抓获时间
-                    "tagckind": "",//小类案别
-                    "tagmeans": "",//作案手段
-                    "detail": ""//违法犯罪情况
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "personno": "",//人员编号
+                "sex": "",//性别
+                "name": "",//姓名
+                "cardno": "",//身份证号
+                "detail": "",//户籍地
+                "time": "",//抓获时间
+                "tagckind": "",//小类案别
+                "tagmeans": "",//作案手段
+                "detail": ""//违法犯罪情况
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -160,7 +153,7 @@
 	            procedureName:"SP_TAG_API_INS_PERSON_TAG",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_PERSON_NO_IN', value:''},//人员编号
+                    {fieldName:'P_PERSON_NO_IN', value:'R3301835100002016080838'},//人员编号
                     {fieldName:'P_PERSON_TYPE_TAG_IN', value:''},//小类案别
                     {fieldName:'P_PERSON_MEANS_TAG_IN', value:''}//作案手段
                 ]
@@ -168,11 +161,9 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
-        "data": {
-            "P_INSERT_FLAG_OUT_CHAR":"1"
-        },
+        "data": "1",
         "pages": null,
         "operates": null
     }
