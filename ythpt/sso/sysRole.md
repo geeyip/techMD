@@ -135,15 +135,15 @@ account:"900504"
 },"pages":null,"operates":null}
 ```
 
-###角色授权接口
+###进入用户分配接口
 
 #### API路径
 
 ```http
-http://localhost:8095/api/0/system/role/permission_sso
+http://localhost:8095/api/0/system/role/_user_sso
 ```
 
-后端格式为`/api/{recordLog}/system/role/permission_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+后端格式为`/api/{recordLog}/system/role/_user_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 
 #### 请求
 
@@ -164,4 +164,43 @@ jsonStr:
 #### 返回值格式
 ```json
 {"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
+```
+
+###角色授权接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/permission_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/permission_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+roleId:146cee1b01894228b8527904f2ff8d2b
+systemid:XCKY
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":
+{"token":"862d39f7ffed4b2888fa48728d8e5398","roleId":null,"systemid":"XCKY",
+"noRoleId":"146cee1b01894228b8527904f2ff8d2b","checkUsers":[],
+"uncheckUsers":[{"status":0,"createAccount":null,"createTime":0,"lastModifyTime":0,"lastModifyAccount":null,
+"lastTerminal":null,"lastSys":null,"indexNum":0,"userId":"e3c88eaaffd74d0582bbe480e208d75e",
+"userName":"1","sex":0,"cid":"123456789009876","isPolice":0,"policeId":"1","contact":"1",
+"avatar":null,"post":null,"postName":null,"birth":0,"poli":null,"poliName":null,
+"phone":null,"fax":null,"address":null,"zipcode":null,"province":null,"provinceName":null,
+"city":null,"cityName":null,"county":null,"countyName":null,"extStr1":null,"extStr2":null,"extStr3":null,
+"account":"1","pass":"C4CA4238A0B923820DCC509A6F75849B","userType":0,"activeStatus":1,
+"orgId":"e6f8da5304e0420e8935f54e271b7e82","orgName":"南安市公安局刑侦大队四中队","orgCode":"350583240500",
+"orgType":1,"roleName":null}]},
+"pages":null,"operates":null}
 ```
