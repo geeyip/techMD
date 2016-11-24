@@ -288,7 +288,7 @@
 	后端格式为：/sys/xlkh/view
 2.请求：POST, application/json
 3.传入参数格式：
-  	tagDate:"2016-09-20"
+  	tagDate:"2016-09"
 4.返回值格式：
     无返回值
 ```
