@@ -100,7 +100,7 @@ http://localhost:8095/api/0/system/role/_permission_sso
 #### 请求
 
 ```
-POST, application/json
+GET, application/json
 ```
 
 #### 传入参数格式
@@ -133,4 +133,35 @@ account:"900504"
 {"systemId":"XCKY","resourceId":"D7ACEF7B5F664CA3B8940342039F58E1","resourceName":"案件勘验","superId":"7D3B3CBBE4374CB39A9892AAB43D4D21","name":"案件勘验","url":"sceneCollecting/xcky-ajky.html","state":"sceneCollecting/xcky-ajky.html","icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null}
 ]
 },"pages":null,"operates":null}
+```
+
+###角色授权接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/permission_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/permission_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{
+"resourceId":"5ff8a4700e5942fb86cb85b0fce0a28f,acd57f855ab44ce3a183852300124f25",
+"roleId":"146cee1b01894228b8527904f2ff8d2b",
+"systemId":"YTH"
+}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
 ```
