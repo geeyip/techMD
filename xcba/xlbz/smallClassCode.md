@@ -11,7 +11,7 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_KIND",
 	            procedureParamValueList:
                 [
-                    {fieldName:'P_VC_FLAG', value:'1'}//1:大类-小类-手段
+                    {fieldName:'P_VC_FLAG', fieldValue:'1'}//1:大类-小类-手段
                 ]
 	        }
 4.返回值格式
@@ -62,10 +62,10 @@
 	            procedureName:"SP_TAG_API_INS_TAG_CASE_KIND",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_DICT_TYPE1_IN', value:'A'},//父
-                    {fieldName:'P_DICT_TYPE2_IN', value:'B'},//子
-                    {fieldName:'P_DICT_KEY1_IN', value:'4200'},//选中的类别代码
-                    {fieldName:'P_DICT_VALUE2_IN', value:''}//新增名称
+                    {fieldName:'P_DICT_TYPE1_IN', fieldValue:'A'},//父
+                    {fieldName:'P_DICT_TYPE2_IN', fieldValue:'B'},//子
+                    {fieldName:'P_DICT_KEY1_IN', fieldValue:'4200'},//选中的类别代码
+                    {fieldName:'P_DICT_VALUE2_IN', fieldValue:''}//新增名称
                 ]
 	        }
 4.返回值格式
@@ -93,8 +93,8 @@
 	            procedureName:"SP_TAG_API_UPD_TAG_CASE_KIND",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_DICT_KEY1_IN', value:'4200'},//选中类别代码
-                    {fieldName:'P_DICT_VALUE2_IN', value:'杀人越货'}//修改后名称
+                    {fieldName:'P_DICT_KEY1_IN', fieldValue:'4200'},//选中类别代码
+                    {fieldName:'P_DICT_VALUE2_IN', fieldValue:'杀人越货'}//修改后名称
                 ]
 	        }
 4.返回值格式
