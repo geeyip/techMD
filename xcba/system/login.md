@@ -294,7 +294,39 @@
 ```
 
 
+* 首页趋势图数据接口（进入首页时触发）
 
+```java
+1.API路径：http://localhost:8020/sys/xlkh/viewChart
+	后端格式为：/sys/xlkh/viewChart
+2.请求：POST, application/json
+3.传入参数格式：
+  	jsonStr:{
+           procedureName:"SP_TAG_API_SEL_CASE_TREND"
+     }
+4.返回值格式：
+    {
+            "flag": 1,
+            "totalCount": 1,
+            "msg": null,
+            "data": {
+                "P_AVE_OUT_OUT_NUMBER":"",//13月个月案件数平局值
+                "P_REPORT_OUT_OUT_SYS_REFCURSOR":
+                [
+                    {
+                        "time": "",//时间
+                        "casenum":"110"//案件数
+                    },
+                    {
+                        "time": "",//时间
+                        "casenum":"120"//案件数
+                    }
+                ]
+            },
+            "pages": null,
+            "operates": null
+        }
+```
 
 
 
