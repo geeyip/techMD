@@ -135,15 +135,15 @@ account:"900504"
 },"pages":null,"operates":null}
 ```
 
-###进入用户分配接口
+###角色授权接口
 
 #### API路径
 
 ```http
-http://localhost:8095/api/0/system/role/_user_sso
+http://localhost:8095/api/0/system/role/permission_sso
 ```
 
-后端格式为`/api/{recordLog}/system/role/_user_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+后端格式为`/api/{recordLog}/system/role/permission_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 
 #### 请求
 
@@ -166,15 +166,15 @@ jsonStr:
 {"flag":1,"totalCount":0,"msg":"","data":null,"pages":null,"operates":null}
 ```
 
-###角色授权接口
+###进入用户分配接口
 
 #### API路径
 
 ```http
-http://localhost:8095/api/0/system/role/permission_sso
+http://localhost:8095/api/0/system/role/_user_sso
 ```
 
-后端格式为`/api/{recordLog}/system/role/permission_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+后端格式为`/api/{recordLog}/system/role/_user_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 
 #### 请求
 
