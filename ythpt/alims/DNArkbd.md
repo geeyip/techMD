@@ -57,6 +57,7 @@ POST, application/json
 			"evidenceNo"://物证编号 "",
 			"sampleLabNo"://DNA检材编号 ,
 			"sampleName"://样本名称,
+			"sampleNo"://样本编号,
 			"flag"://类型 person object
 			"sampleType"://样本类型代码（提供字典）,
 			"fullname"://人员姓名
@@ -226,7 +227,8 @@ GET, application/json
 			"bzEampleLabNo"://DNA检材编号,
 			"caseNo"://案件编号，
 			"bzEvidenceNo"://比中物证编号
-			"bzSampleName"://样本名称
+			"bzSampleName"://比中样本名称
+			"bzSampleNo"://比中DNA样本编号
 			"caseName"://案件名称
 			"arRybh"://比中人员编号 ,
 			"arRperName"://人员姓名 "",
