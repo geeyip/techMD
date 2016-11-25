@@ -17,7 +17,7 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": -1,
         "msg": null,
         "data":[
                 {
@@ -43,6 +43,32 @@
 ```
 
 
+* 小类标注代码查询所有大类接口
+
+```java
+1.API路径：http://api/0/xlbz/xldm/classList
+	后端格式为/api/{recordLog}/xlbz/xldm/classList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            pcdName:"SP_TAG_API_SEL_BIG_TYPE"
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": -1,
+        "msg": null,
+        "data":
+            [
+                {"type":"A","key":"501","name":"抢劫"},
+                {"type":"A","key":"505","name":"抢夺"}
+            ],
+        "pages": null,
+        "operates": null
+    }
+```
+
+
 * 小类标注代码查询分层数据列表接口
 
 ```java
@@ -60,7 +86,7 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": -1,
         "msg": null,
         "data": [
         .       {"key":"5010001","name":"拦路抢劫"},
@@ -97,7 +123,7 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 0,
+        "totalCount": -1,
         "msg": null,
         "data": {
             "1"//新增结果,1:成功,0:失败
@@ -126,7 +152,7 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 0,
+        "totalCount": -1,
         "msg": null,
         "data": {
             null

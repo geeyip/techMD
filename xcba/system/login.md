@@ -307,17 +307,17 @@
 4.返回值格式：
     {
             "flag": 1,
-            "totalCount": 1,
+            "totalCount": 2,//平均值
             "msg": null,
             "data":
                 [
                     {
-                        "time": "",//时间
-                        "casenum":"110"//案件数
+                        "time": "11月",//时间
+                        "casenum":"20"//案件数
                     },
                     {
-                        "time": "",//时间
-                        "casenum":"120"//案件数
+                        "time": "10月",//时间
+                        "casenum":"25"//案件数
                     }
                 ],
             "pages": null,
