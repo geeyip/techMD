@@ -85,8 +85,8 @@
         "totalCount": -1,
         "msg": null,
         "data": [
-        .       {"key":"5010001","name":"拦路抢劫"},
-                {"key":"5010003","name":"入户抢劫"}
+        .       {"prkey":"501","type":"B","key":"5010100","name":"测试小类"},
+                {"prkey":"501","type":"C","key":"5010001","name":"拦路抢劫"}
             ],
         "pages": null,
         "operates": null
