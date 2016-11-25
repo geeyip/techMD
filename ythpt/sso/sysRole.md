@@ -204,3 +204,113 @@ systemid:XCKY
 "orgType":1,"roleName":null}]},
 "pages":null,"operates":null}
 ```
+
+
+###根据id获得角色数据接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/view_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/view_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+```
+roleId:a450de5ff27e454f90d2cc5f9c178b93
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":
+{"status":0,"createAccount":"UAOP","createTime":1471245322716,"lastModifyTime":0,"lastModifyAccount":null,
+"lastTerminal":null,"lastSys":null,"indexNum":0,"roleId":"a450de5ff27e454f90d2cc5f9c178b93","roleName":"中心最高管理者",
+"superId":"1","type":1,"note":null,"systemId":null,"activeStatus":1},"pages":null,"operates":null}
+```
+
+###根据id删除角色
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/delete_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/delete_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+roleId:a450de5ff27e454f90d2cc5f9c178b93
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
+
+###角色加入用户
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/add_user_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/add_user_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+roleId:a450de5ff27e454f90d2cc5f9c178b93
+checkUsers:124125,452158
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
+
+###角色移除用户
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/role/remove_user_sso
+```
+
+后端格式为`/api/{recordLog}/system/role/remove_user_sso，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+roleId:a450de5ff27e454f90d2cc5f9c178b93
+unCheckUsers:124125,452158
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
