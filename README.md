@@ -64,6 +64,8 @@
 
 ### 统计考核
 
+* [人员抽查API](xcba/tjkh/perCheck.md)
+* [案件抽查API](xcba/tjkh/caseCheck.md)
 * [小类标注考核API](xcba/tjkh/xlbz.md)
 
 ### 字典
