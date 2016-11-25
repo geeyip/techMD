@@ -307,7 +307,7 @@
 4.返回值格式：
     {
             "flag": 1,
-            "totalCount": 1,
+            "totalCount": -1,
             "msg": null,
             "data":
                 [
