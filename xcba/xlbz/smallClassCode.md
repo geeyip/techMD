@@ -19,9 +19,7 @@
         "flag": 1,
         "totalCount": 1,
         "msg": null,
-        "data": {
-            "P_RESULT_OUT_OUT_SYS_REFCURSOR":
-            [
+        "data":[
                 {
                     "key1":"4000",//大类代码
                     "name1":"窃取手段",//中文名
@@ -38,8 +36,36 @@
                     "key3":"4101",//
                     "name3":"硬物击锁"
                 }
-            ]
-        },
+            ],
+        "pages": null,
+        "operates": null
+    }
+```
+
+
+* 小类标注代码查询分层数据列表接口
+
+```java
+1.API路径：http://api/0/xlbz/xldm/layeredList
+	后端格式为/api/{recordLog}/xlbz/xldm/layeredList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            procedureName:"SP_TAG_API_SEL_PART_CASE_KIND",
+	            procedureParamValueList:
+                [
+                    {fieldName:'P_DICT_KEY_IN', fieldValue:'501'}
+                ]
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": 1,
+        "msg": null,
+        "data": [
+        .       {"key":"5010001","name":"拦路抢劫"},
+                {"key":"5010003","name":"入户抢劫"}
+            ],
         "pages": null,
         "operates": null
     }
@@ -71,10 +97,10 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
         "data": {
-            "P_INSERT_FLAG_OUT_CHAR":"1"//新增结果,1:成功,0:失败
+            "1"//新增结果,1:成功,0:失败
         },
         "pages": null,
         "operates": null
@@ -100,10 +126,10 @@
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": 0,
         "msg": null,
         "data": {
-            "P_UPDATE_FLAG_OUT_CHAR":"1"//修改结果,1:成功,0:失败
+            null
         },
         "pages": null,
         "operates": null
