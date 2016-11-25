@@ -11,7 +11,7 @@
 	            pcdName:"SP_TAG_API_SEL_CASE_KIND",
 	            pcdParamValList:
                 [
-                    {fieldName:'P_VC_FLAG', fieldValue:'1'}//1:大类-小类-手段
+                    {fName:'P_VC_FLAG', fVal:'1'}//1:大类-小类-手段
                 ]
 	        }
 4.返回值格式
@@ -54,7 +54,7 @@
 	            pcdName:"SP_TAG_API_SEL_PART_CASE_KIND",
 	            pcdParamValList:
                 [
-                    {fieldName:'P_DICT_KEY_IN', fieldValue:'501'}
+                    {fName:'P_DICT_KEY_IN', fVal:'501'}
                 ]
 	        }
 4.返回值格式
@@ -88,10 +88,10 @@
 	            pcdName:"SP_TAG_API_INS_TAG_CASE_KIND",
                 pcdParamValList:
                 [
-                    {fieldName:'P_DICT_TYPE1_IN', fieldValue:'A'},//父
-                    {fieldName:'P_DICT_TYPE2_IN', fieldValue:'B'},//子
-                    {fieldName:'P_DICT_KEY1_IN', fieldValue:'4200'},//选中的类别代码
-                    {fieldName:'P_DICT_VALUE2_IN', fieldValue:''}//新增名称
+                    {fName:'P_DICT_TYPE1_IN', fVal:'A'},//父
+                    {fName:'P_DICT_TYPE2_IN', fVal:'B'},//子
+                    {fName:'P_DICT_KEY1_IN', fVal:'4200'},//选中的类别代码
+                    {fName:'P_DICT_VALUE2_IN', fVal:''}//新增名称
                 ]
 	        }
 4.返回值格式
@@ -119,8 +119,8 @@
 	            pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",
                 pcdParamValList:
                 [
-                    {fieldName:'P_DICT_KEY1_IN', fieldValue:'4200'},//选中类别代码
-                    {fieldName:'P_DICT_VALUE2_IN', fieldValue:'杀人越货'}//修改后名称
+                    {fName:'P_DICT_KEY1_IN', fVal:'4200'},//选中类别代码
+                    {fName:'P_DICT_VALUE2_IN', fVal:'杀人越货'}//修改后名称
                 ]
 	        }
 4.返回值格式
