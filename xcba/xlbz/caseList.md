@@ -100,6 +100,35 @@
 
 
 
+- 案件抽查更新接口
+
+```java
+1.API路径：http://localhost:8090/api/1/xlbz/case/check_insert
+	后端格式为/api/{recordLog}/xlbz/case/check_insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            pcdName:"SP_TAG_API_INS_CASE_CONTENT",
+                pcdParamValList:
+                [
+                    {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'},//案件编号
+                    {fName:'P_CASE_CONTENT_IN', fVal:'6666'},//内容
+                    {fName:'P_CREATE_UNIT_IN', fVal:'330185'}//单位
+                ]
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": -1,
+        "msg": null,
+        "data": "1",
+        "pages": null,
+        "operates": null
+    }
+```
+
+
+
 - 案件标注查询接口（点击案件信息标注进入案件标注页面时触发）
 
 ```java
