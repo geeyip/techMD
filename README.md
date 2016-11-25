@@ -69,6 +69,7 @@
 ### 字典
 
 * [案件类别字典API](xcba/dict/caseKind.md)
+* [录入单位字典API](xcba/dict/dictUnit.md)
 
 ### 系统管理
 
