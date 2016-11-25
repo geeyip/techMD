@@ -3,16 +3,14 @@
 * 小类标注代码查询列表接口
 
 ```java
-1.API路径：http://api/0/xlbz/xldm/list
+1.API路径：http://localhost:8020/api/0/xlbz/xldm/list
 	后端格式为/api/{recordLog}/xlbz/xldm/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_KIND",
 	            pcdParamValMap:
-                [
-                    {fName:'P_VC_FLAG', fVal:'1'}//1:大类-小类-手段
-                ]
+                    {"flag":"1"}//1:大类-小类-手段
 	        }
 4.返回值格式
 	{
@@ -79,9 +77,7 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PART_CASE_KIND",
 	            pcdParamValMap:
-                [
-                    {fName:'P_DICT_KEY_IN', fVal:'501'}
-                ]
+                    {"dictkey":"501"}
 	        }
 4.返回值格式
 	{
@@ -113,21 +109,14 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_TAG_CASE_KIND",
                 pcdParamValMap:
-                [
-                    {fName:'P_DICT_TYPE1_IN', fVal:'A'},//父
-                    {fName:'P_DICT_TYPE2_IN', fVal:'B'},//子
-                    {fName:'P_DICT_KEY1_IN', fVal:'4200'},//选中的类别代码
-                    {fName:'P_DICT_VALUE2_IN', fVal:''}//新增名称
-                ]
+                    {"dicttyp1":"A","dicttyp2":"B","dictkey1":"4200","dictval2":"测试名称"}//父,子,选中的类别代码,新增名称
 	        }
 4.返回值格式
 	{
         "flag": 1,
         "totalCount": -1,
         "msg": null,
-        "data": {
-            "1"//新增结果,1:成功,0:失败
-        },
+        "data": "1",//新增结果,1:成功,0:失败,
         "pages": null,
         "operates": null
     }
@@ -144,19 +133,14 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",
                 pcdParamValMap:
-                [
-                    {fName:'P_DICT_KEY1_IN', fVal:'4200'},//选中类别代码
-                    {fName:'P_DICT_VALUE2_IN', fVal:'杀人越货'}//修改后名称
-                ]
+                    {"dictkey1":"4200","dictval2":"杀人越货"}//选中类别代码,修改后名称
 	        }
 4.返回值格式
 	{
         "flag": 1,
         "totalCount": -1,
         "msg": null,
-        "data": {
-            null
-        },
+        "data": null,
         "pages": null,
         "operates": null
     }
