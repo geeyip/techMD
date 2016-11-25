@@ -10,18 +10,18 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_ALL_INFO",
                 pcdParamValMap:
-                [
-                    {fName:'P_VC_PERSON_NO_IN', fVal:''},//人员编号
-                    {fName:'P_D_CREATE_TIME_MIN_IN', fVal:'2016-11-11 11:11:11'},//录入日期开始
-                    {fName:'P_D_CREATE_TIME_MAX_IN', fVal:''},//录入日期结束
-                    {fName:'P_VC_TAG_P_CASE_TYPE_IN', fVal:''},//小类案别
-                    {fName:'P_VC_PERSON_TYPE_IN', fVal:''},//人员类别 0：犯罪；1：违法
-                    {fName:'P_D_CAPTURE_TIME_MIN_IN', fVal:''},//抓获日期开始
-                    {fName:'P_D_CAPTURE_TIME_MAX_IN', fVal:''},//抓获日期结束
-                    {fName:'P_VC_CREATE_UNIT_IN', fVal:''},//管辖单位
-                    {fName:'P_N_RECORD_ORDER', fVal:''},//取值开始
-                    {fName:'P_N_RECORD_COUNT', fVal:''}//取值截止
-                ]
+                {
+                    'pno':'',//人员编号
+                    'crttmmin':'',//录入日期开始
+                    'crttmmax':'',//录入日期结束
+                    'pcstype':'',//小类案别
+                    'ptype':'',//人员类别 0：犯罪；1：违法
+                    'cptmmin':'',//抓获日期开始
+                    'cptmax':'',//抓获日期结束
+                    'crtunit':'',//管辖单位
+                    'rcdorder':'',//取值开始
+                    'rcdcount':''//取值截止
+                }
 	        }
 4.返回值格式
 	{
@@ -80,9 +80,9 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_CONTENT",
                 pcdParamValMap:
-                [
-                    {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'}//人员编号
-                ]
+                {
+                    'pno':'R3301835100002016080838'//人员编号
+                }
 	        }
 4.返回值格式
 	{
@@ -112,11 +112,11 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_PERSON_CONTENT",
                 pcdParamValMap:
-                [
-                    {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'},//人员编号
-                    {fName:'P_PERSON_CONTENT_IN', fVal:'2333'},//内容
-                    {fName:'P_CREATE_UNIT_IN', fVal:'330183'}//单位
-                ]
+                {
+                    'pno':'R3301835100002016080838',//人员编号
+                    'pcontent':'2333',//内容
+                    'crtunit':'330183'//单位
+                }
 	        }
 4.返回值格式
 	{
@@ -141,9 +141,9 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_INFO",
                 pcdParamValMap:
-                [
-                    {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'}//人员编号
-                ]
+                {
+                    'pno':'R3301835100002016080838'//人员编号
+                }
 	        }
 4.返回值格式
 	{
@@ -181,11 +181,11 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_PERSON_TAG",
                 pcdParamValMap:
-                [
-                    {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'},//人员编号
-                    {fName:'P_PERSON_TYPE_TAG_IN', fVal:''},//小类案别
-                    {fName:'P_PERSON_MEANS_TAG_IN', fVal:''}//作案手段
-                ]
+                {
+                    'pno':'R3301835100002016080838',//人员编号
+                    'ptype':'',//小类案别
+                    'pmeans':''//作案手段
+                }
 	        }
 4.返回值格式
 	{

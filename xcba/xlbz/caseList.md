@@ -10,20 +10,20 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_ALL_INFO",
                 pcdParamValMap:
-                [
-                    {fName:'P_VC_CASE_NO_IN', fVal:''},//案件编号
-                    {fName:'P_D_CREATE_TIME_MIN_IN', fVal:'2016-11-11 11:11:11'},//录入日期开始
-                    {fName:'P_D_CREATE_TIME_MAX_IN', fVal:''},//录入日期结束
-                    {fName:'P_VC_TAG_CASE_TYPE_IN', fVal:''},//小类案别
-                    {fName:'P_VC_CASE_BRIEF_IN', fVal:''},//简要案情
-                    {fName:'P_D_HAPPEN_TIME_MIN_IN', fVal:''},//案发时间开始
-                    {fName:'P_D_HAPPEN_TIME_MAX_IN', fVal:''},//案发时间结束
-                    {fName:'P_VC_CREATE_UNIT_IN', fVal:''},//管辖单位
-                    {fName:'P_C_USURPATION_FLAG_IN', fVal:''},//是否侵财 1:侵财；0：非侵财
-                    {fName:'P_VC_CASE_STATUS_IN', fVal:''},//案件状态
-                    {fName:'P_N_RECORD_ORDER', fVal:''},//取值开始
-                    {fName:'P_N_RECORD_COUNT', fVal:''}//取值截止
-                ]
+                {
+                    'cno':'',//案件编号
+                    'crttmmin':'',//录入日期开始
+                    'crttmmax':'',//录入日期结束
+                    'ctype':'',//小类案别
+                    'cbrief':'',//简要案情
+                    'hptmmin':'',//案发时间开始
+                    'hptmmax':'',//案发时间结束
+                    'crtunit':'',//管辖单位
+                    'usurflg':'',//是否侵财 1:侵财；0：非侵财
+                    'cstatus':'',//案件状态
+                    'rcdorder':'',//取值开始
+                    'rcdcount':''//取值截止
+                }
 	        }
 4.返回值格式
 	{
@@ -78,9 +78,9 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_CONTENT",
                 pcdParamValMap:
-                [
-                    {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'}//案件编号
-                ]
+                {
+                    'cno':'A3301855500002016090001'//案件编号
+                }
 	        }
 4.返回值格式
 	{
@@ -110,11 +110,11 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_CASE_CONTENT",
                 pcdParamValMap:
-                [
-                    {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'},//案件编号
-                    {fName:'P_CASE_CONTENT_IN', fVal:'6666'},//内容
-                    {fName:'P_CREATE_UNIT_IN', fVal:'330185'}//单位
-                ]
+                {
+                    'cno':'A3301855500002016090001',//案件编号
+                    'ccontent':'6666',//内容
+                    'crtunit':'330185'//单位
+                }
 	        }
 4.返回值格式
 	{
@@ -139,9 +139,9 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_INFO",
                 pcdParamValMap:
-                [
-                    {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'}//案件编号
-                ]
+                {
+                    'cno':'A3301855500002016090001'//案件编号
+                }
 	        }
 4.返回值格式
 	{
@@ -179,11 +179,11 @@
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_CASE_TAG",
                 pcdParamValMap:
-                [
-                    {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'},//案件编号
-                    {fName:'P_CASE_TYPE_TAG_IN', fVal:''},//小类案别
-                    {fName:'P_CASE_MEANS_TAG_IN', fVal:''}//作案手段
-                ]
+                {
+                    'cno':'A3301855500002016090001',//案件编号
+                    'ctype':'',//小类案别
+                    'cmeans':''//作案手段
+                }
 	        }
 4.返回值格式
 	{
