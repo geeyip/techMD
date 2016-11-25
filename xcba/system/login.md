@@ -309,9 +309,7 @@
             "flag": 1,
             "totalCount": 1,
             "msg": null,
-            "data": {
-                "P_AVE_OUT_OUT_NUMBER":"",//13月个月案件数平局值
-                "P_REPORT_OUT_OUT_SYS_REFCURSOR":
+            "data":
                 [
                     {
                         "time": "",//时间
@@ -321,8 +319,7 @@
                         "time": "",//时间
                         "casenum":"120"//案件数
                     }
-                ]
-            },
+                ],
             "pages": null,
             "operates": null
         }
