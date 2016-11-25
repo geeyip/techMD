@@ -11,8 +11,8 @@
 	            procedureName:"SP_TAG_API_SEL_REP_TIME_LIMIT",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_MIN_TIME_IN', value:''},//统计开始时间
-                    {fieldName:'P_MAX_TIME_IN', value:''}//统计结束时间
+                    {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
+                    {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
                 ]
 	        }
 4.返回值格式
@@ -67,8 +67,8 @@
 	            procedureName:"SP_TAG_API_SEL_REP_TAG",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_MIN_TIME_IN', value:''},//统计开始时间
-                    {fieldName:'P_MAX_TIME_IN', value:''}//统计结束时间
+                    {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
+                    {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
                 ]
 	        }
 4.返回值格式
@@ -123,8 +123,8 @@
 	            procedureName:"SP_TAG_API_SEL_REP_CHECK",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_MIN_TIME_IN', value:''},//统计开始时间
-                    {fieldName:'P_MAX_TIME_IN', value:''}//统计结束时间
+                    {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
+                    {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
                 ]
 	        }
 4.返回值格式

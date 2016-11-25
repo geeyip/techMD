@@ -11,18 +11,18 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_ALL_INFO",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_VC_CASE_NO_IN', value:''},//案件编号
-                    {fieldName:'P_D_CREATE_TIME_MIN_IN', value:'2016-11-11 11:11:11'},//录入日期开始
-                    {fieldName:'P_D_CREATE_TIME_MAX_IN', value:''},//录入日期结束
-                    {fieldName:'P_VC_TAG_CASE_TYPE_IN', value:''},//小类案别
-                    {fieldName:'P_VC_CASE_BRIEF_IN', value:''},//简要案情
-                    {fieldName:'P_D_HAPPEN_TIME_MIN_IN', value:''},//案发时间开始
-                    {fieldName:'P_D_HAPPEN_TIME_MAX_IN', value:''},//案发时间结束
-                    {fieldName:'P_VC_CREATE_UNIT_IN', value:''},//管辖单位
-                    {fieldName:'P_C_USURPATION_FLAG_IN', value:''},//是否侵财 1:侵财；0：非侵财
-                    {fieldName:'P_VC_CASE_STATUS_IN', value:''},//案件状态
-                    {fieldName:'P_N_RECORD_ORDER', value:''},//取值开始
-                    {fieldName:'P_N_RECORD_COUNT', value:''}//取值截止
+                    {fieldName:'P_VC_CASE_NO_IN', fieldValue:''},//案件编号
+                    {fieldName:'P_D_CREATE_TIME_MIN_IN', fieldValue:'2016-11-11 11:11:11'},//录入日期开始
+                    {fieldName:'P_D_CREATE_TIME_MAX_IN', fieldValue:''},//录入日期结束
+                    {fieldName:'P_VC_TAG_CASE_TYPE_IN', fieldValue:''},//小类案别
+                    {fieldName:'P_VC_CASE_BRIEF_IN', fieldValue:''},//简要案情
+                    {fieldName:'P_D_HAPPEN_TIME_MIN_IN', fieldValue:''},//案发时间开始
+                    {fieldName:'P_D_HAPPEN_TIME_MAX_IN', fieldValue:''},//案发时间结束
+                    {fieldName:'P_VC_CREATE_UNIT_IN', fieldValue:''},//管辖单位
+                    {fieldName:'P_C_USURPATION_FLAG_IN', fieldValue:''},//是否侵财 1:侵财；0：非侵财
+                    {fieldName:'P_VC_CASE_STATUS_IN', fieldValue:''},//案件状态
+                    {fieldName:'P_N_RECORD_ORDER', fieldValue:''},//取值开始
+                    {fieldName:'P_N_RECORD_COUNT', fieldValue:''}//取值截止
                 ]
 	        }
 4.返回值格式
@@ -79,13 +79,13 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_CONTENT",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'}//案件编号
+                    {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'}//案件编号
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 1,
+        "totalCount": -1,
         "msg": null,
         "data":
         [
@@ -111,13 +111,13 @@
 	            procedureName:"SP_TAG_API_SEL_CASE_INFO",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'}//案件编号
+                    {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'}//案件编号
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 0,
+        "totalCount": -1,
         "msg": null,
         "data":
         [
@@ -151,15 +151,15 @@
 	            procedureName:"SP_TAG_API_INS_CASE_TAG",
                 procedureParamValueList:
                 [
-                    {fieldName:'P_CASE_NO_IN', value:'A3301855500002016090001'},//案件编号
-                    {fieldName:'P_CASE_TYPE_TAG_IN', value:''},//小类案别
-                    {fieldName:'P_CASE_MEANS_TAG_IN', value:''}//作案手段
+                    {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'},//案件编号
+                    {fieldName:'P_CASE_TYPE_TAG_IN', fieldValue:''},//小类案别
+                    {fieldName:'P_CASE_MEANS_TAG_IN', fieldValue:''}//作案手段
                 ]
 	        }
 4.返回值格式
 	{
         "flag": 1,
-        "totalCount": 0,
+        "totalCount": -1,
         "msg": null,
         "data": "1",
         "pages": null,
