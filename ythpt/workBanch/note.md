@@ -39,7 +39,7 @@ POST, application/json
 "investigationTimeStart":null,"investigationTimeEnd":null,"evidenceAmount":null,"scenePhotoAmount":null,
 "scenePictureAmount":null,"sceneVideoAmount":null,"sceneEvidenceAmount":null,"baseStationAmount":null,"sceneArea":null,
 "isToCase":null,"lawId":null,"exposureProcess":null,"director":null,"content":null,
-"updatedInvestNoteId":"8a023cd4559650470155965f46ba015a",
+"updatedInvestNoteId":"8a023cd4559650470155965f46ba015a","fileName":"k4441234.doc",
 "unQualifyReason":null,"reservation01":null,"reservation02":null,"reservation03":null,"reservation04":null,
 "reservation05":null,"reservation06":null,"reservation07":null,"reservation08":null,"reservation09":null,
 "reservation10":null,"createUser":null,"createUserId":null,"initServerNo":null,"sceneRegionalism":null,"id":null,
