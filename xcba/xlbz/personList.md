@@ -8,8 +8,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_PERSON_ALL_INFO",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_PERSON_ALL_INFO",
+                pcdParamValList:
                 [
                     {fieldName:'P_VC_PERSON_NO_IN', fieldValue:''},//人员编号
                     {fieldName:'P_D_CREATE_TIME_MIN_IN', fieldValue:'2016-11-11 11:11:11'},//录入日期开始
@@ -78,8 +78,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_PERSON_CONTENT",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_PERSON_CONTENT",
+                pcdParamValList:
                 [
                     {fieldName:'P_PERSON_NO_IN', fieldValue:'R3301835100002016080838'}//人员编号
                 ]
@@ -110,8 +110,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_PERSON_INFO",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_PERSON_INFO",
+                pcdParamValList:
                 [
                     {fieldName:'P_PERSON_NO_IN', fieldValue:'R3301835100002016080838'}//人员编号
                 ]
@@ -150,8 +150,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_INS_PERSON_TAG",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_INS_PERSON_TAG",
+                pcdParamValList:
                 [
                     {fieldName:'P_PERSON_NO_IN', fieldValue:'R3301835100002016080838'},//人员编号
                     {fieldName:'P_PERSON_TYPE_TAG_IN', fieldValue:''},//小类案别

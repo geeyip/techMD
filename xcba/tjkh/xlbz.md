@@ -8,8 +8,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_REP_TIME_LIMIT",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_REP_TIME_LIMIT",
+                pcdParamValList:
                 [
                     {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
                     {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
@@ -20,37 +20,35 @@
         "flag": 1,
         "totalCount": 1,
         "msg": null,
-        "data": {
-            "P_REPORT_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "cttlnum": "",//案件应标数
-                    "ctagnum": "",//案件已标数
-                    "cratio": "",//案件标注率
-                    "cscore": "",//案件得分
-                    "pttlnum": "",//人员应标数
-                    "ptagnum": "",//人员已标数
-                    "pratio": "",//人员标注率
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                },
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "cttlnum": "",//案件应标数
-                    "ctagnum": "",//案件已标数
-                    "cratio": "",//案件标注率
-                    "cscore": "",//案件得分
-                    "pttlnum": "",//人员应标数
-                    "ptagnum": "",//人员已标数
-                    "pratio": "",//人员标注率
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "cttlnum": "",//案件应标数
+                "ctagnum": "",//案件已标数
+                "cratio": "",//案件标注率
+                "cscore": "",//案件得分
+                "pttlnum": "",//人员应标数
+                "ptagnum": "",//人员已标数
+                "pratio": "",//人员标注率
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            },
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "cttlnum": "",//案件应标数
+                "ctagnum": "",//案件已标数
+                "cratio": "",//案件标注率
+                "cscore": "",//案件得分
+                "pttlnum": "",//人员应标数
+                "ptagnum": "",//人员已标数
+                "pratio": "",//人员标注率
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -64,8 +62,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_REP_TAG",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_REP_TAG",
+                pcdParamValList:
                 [
                     {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
                     {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
@@ -76,37 +74,35 @@
         "flag": 1,
         "totalCount": 1,
         "msg": null,
-        "data": {
-            "P_REPORT_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "cttlnum": "",//案件应标数
-                    "ctagnum": "",//案件已标数
-                    "cratio": "",//案件标注率
-                    "cscore": "",//案件得分
-                    "pttlnum": "",//人员应标数
-                    "ptagnum": "",//人员已标数
-                    "pratio": "",//人员标注率
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                },
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "cttlnum": "",//案件应标数
-                    "ctagnum": "",//案件已标数
-                    "cratio": "",//案件标注率
-                    "cscore": "",//案件得分
-                    "pttlnum": "",//人员应标数
-                    "ptagnum": "",//人员已标数
-                    "pratio": "",//人员标注率
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "cttlnum": "",//案件应标数
+                "ctagnum": "",//案件已标数
+                "cratio": "",//案件标注率
+                "cscore": "",//案件得分
+                "pttlnum": "",//人员应标数
+                "ptagnum": "",//人员已标数
+                "pratio": "",//人员标注率
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            },
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "cttlnum": "",//案件应标数
+                "ctagnum": "",//案件已标数
+                "cratio": "",//案件标注率
+                "cscore": "",//案件得分
+                "pttlnum": "",//人员应标数
+                "ptagnum": "",//人员已标数
+                "pratio": "",//人员标注率
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            }
+        ],
         "pages": null,
         "operates": null
     }
@@ -120,8 +116,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_REP_CHECK",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_REP_CHECK",
+                pcdParamValList:
                 [
                     {fieldName:'P_MIN_TIME_IN', fieldValue:''},//统计开始时间
                     {fieldName:'P_MAX_TIME_IN', fieldValue:''}//统计结束时间
@@ -132,29 +128,27 @@
         "flag": 1,
         "totalCount": 1,
         "msg": null,
-        "data": {
-            "P_REPORT_OUT_OUT_SYS_REFCURSOR":
-            [
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "ctagnum": "",//案件抽查数
-                    "cscore": "",//案件得分
-                    "ptagnum": "",//人员应标数
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                },
-                {
-                    "time": "2016-11-11",//日期
-                    "unit": "",//单位
-                    "ctagnum": "",//案件抽查数
-                    "cscore": "",//案件得分
-                    "ptagnum": "",//人员应标数
-                    "pscore": "",//人员得分
-                    "ttlscore": ""//总得分
-                }
-            ]
-        },
+        "data":
+        [
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "ctagnum": "",//案件抽查数
+                "cscore": "",//案件得分
+                "ptagnum": "",//人员应标数
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            },
+            {
+                "time": "2016-11-11",//日期
+                "unit": "",//单位
+                "ctagnum": "",//案件抽查数
+                "cscore": "",//案件得分
+                "ptagnum": "",//人员应标数
+                "pscore": "",//人员得分
+                "ttlscore": ""//总得分
+            }
+        ],
         "pages": null,
         "operates": null
     }

@@ -8,7 +8,7 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_WEB_CASE_KIND"
+	            pcdName:"SP_TAG_API_SEL_WEB_CASE_KIND"
 	        }
 4.返回值格式
 	{

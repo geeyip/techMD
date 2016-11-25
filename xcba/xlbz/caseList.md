@@ -8,8 +8,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_CASE_ALL_INFO",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_CASE_ALL_INFO",
+                pcdParamValList:
                 [
                     {fieldName:'P_VC_CASE_NO_IN', fieldValue:''},//案件编号
                     {fieldName:'P_D_CREATE_TIME_MIN_IN', fieldValue:'2016-11-11 11:11:11'},//录入日期开始
@@ -76,8 +76,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_CASE_CONTENT",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_CASE_CONTENT",
+                pcdParamValList:
                 [
                     {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'}//案件编号
                 ]
@@ -108,8 +108,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_SEL_CASE_INFO",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_SEL_CASE_INFO",
+                pcdParamValList:
                 [
                     {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'}//案件编号
                 ]
@@ -148,8 +148,8 @@
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
-	            procedureName:"SP_TAG_API_INS_CASE_TAG",
-                procedureParamValueList:
+	            pcdName:"SP_TAG_API_INS_CASE_TAG",
+                pcdParamValList:
                 [
                     {fieldName:'P_CASE_NO_IN', fieldValue:'A3301855500002016090001'},//案件编号
                     {fieldName:'P_CASE_TYPE_TAG_IN', fieldValue:''},//小类案别
