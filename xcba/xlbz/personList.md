@@ -9,7 +9,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_ALL_INFO",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_VC_PERSON_NO_IN', fVal:''},//人员编号
                     {fName:'P_D_CREATE_TIME_MIN_IN', fVal:'2016-11-11 11:11:11'},//录入日期开始
@@ -79,7 +79,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_CONTENT",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'}//人员编号
                 ]
@@ -111,7 +111,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_PERSON_CONTENT",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'},//人员编号
                     {fName:'P_PERSON_CONTENT_IN', fVal:'2333'},//内容
@@ -140,7 +140,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PERSON_INFO",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'}//人员编号
                 ]
@@ -180,7 +180,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_PERSON_TAG",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_PERSON_NO_IN', fVal:'R3301835100002016080838'},//人员编号
                     {fName:'P_PERSON_TYPE_TAG_IN', fVal:''},//小类案别

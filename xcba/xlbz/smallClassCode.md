@@ -9,7 +9,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_KIND",
-	            pcdParamValList:
+	            pcdParamValMap:
                 [
                     {fName:'P_VC_FLAG', fVal:'1'}//1:大类-小类-手段
                 ]
@@ -78,7 +78,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_PART_CASE_KIND",
-	            pcdParamValList:
+	            pcdParamValMap:
                 [
                     {fName:'P_DICT_KEY_IN', fVal:'501'}
                 ]
@@ -112,7 +112,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_TAG_CASE_KIND",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_DICT_TYPE1_IN', fVal:'A'},//父
                     {fName:'P_DICT_TYPE2_IN', fVal:'B'},//子
@@ -143,7 +143,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_DICT_KEY1_IN', fVal:'4200'},//选中类别代码
                     {fName:'P_DICT_VALUE2_IN', fVal:'杀人越货'}//修改后名称

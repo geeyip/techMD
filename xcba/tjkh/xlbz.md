@@ -9,7 +9,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_TIME_LIMIT",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_MIN_TIME_IN', fVal:''},//统计开始时间
                     {fName:'P_MAX_TIME_IN', fVal:''}//统计结束时间
@@ -63,7 +63,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_TAG",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_MIN_TIME_IN', fVal:''},//统计开始时间
                     {fName:'P_MAX_TIME_IN', fVal:''}//统计结束时间
@@ -117,7 +117,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_CHECK",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_MIN_TIME_IN', fVal:''},//统计开始时间
                     {fName:'P_MAX_TIME_IN', fVal:''}//统计结束时间

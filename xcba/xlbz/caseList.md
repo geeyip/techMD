@@ -9,7 +9,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_ALL_INFO",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_VC_CASE_NO_IN', fVal:''},//案件编号
                     {fName:'P_D_CREATE_TIME_MIN_IN', fVal:'2016-11-11 11:11:11'},//录入日期开始
@@ -77,7 +77,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_CONTENT",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'}//案件编号
                 ]
@@ -109,7 +109,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_CASE_CONTENT",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'},//案件编号
                     {fName:'P_CASE_CONTENT_IN', fVal:'6666'},//内容
@@ -138,7 +138,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_CASE_INFO",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'}//案件编号
                 ]
@@ -178,7 +178,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_INS_CASE_TAG",
-                pcdParamValList:
+                pcdParamValMap:
                 [
                     {fName:'P_CASE_NO_IN', fVal:'A3301855500002016090001'},//案件编号
                     {fName:'P_CASE_TYPE_TAG_IN', fVal:''},//小类案别
