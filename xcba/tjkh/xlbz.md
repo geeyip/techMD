@@ -9,7 +9,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_TIME_LIMIT",
-                pcdParamValMap:{'mintime':'2016-08-20', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
+                pcdParamValMap:{'mintime':'2016-08-21', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
 	        }
 4.返回值格式
 	{
@@ -90,7 +90,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_TAG",
-                pcdParamValMap:{'mintime':'2016-08-20', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
+                pcdParamValMap:{'mintime':'2016-08-21', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
 	        }
 4.返回值格式
 	{
@@ -171,7 +171,7 @@
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_CHECK",
-                pcdParamValMap:{'mintime':'2016-08-20', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
+                pcdParamValMap:{'mintime':'2016-08-21', 'maxtime':'2016-09-20'}//统计开始时间,统计结束时间
 	        }
 4.返回值格式
 	{
