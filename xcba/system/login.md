@@ -5,7 +5,7 @@
 ```java
 1.API路径：http://192.168.1.120:8020/xlcb/login
 	后端格式为：/login
-	前端调用:$post('http://192.168.1.120:8020/xlcb/login',{"username":"sys","password":"sys"},o=>info(o))
+	前端调用:$post('http://192.168.1.120:8020/xlcb/login',{"username":"sys","password":"sys"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -242,7 +242,7 @@
 ```java
 1.API路径：http://192.168.1.120:8020/xlcb/logout
 	后端格式为：/logout
-	前端调用:$post('http://192.168.1.120:8020/xlcb/logout',{"username":"sys","password":"sys"},o=>info(o))
+	前端调用:$post('http://192.168.1.120:8020/xlcb/logout',{"username":"sys","password":"sys"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -264,7 +264,7 @@
 ```java
 1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/list
 	后端格式为：/sys/xlkh/list
-	前端调用：$post('http://192.168.1.120:8020/xlcb/sys/xlkh/list',null,o=>info(o))
+	前端调用：$post('http://192.168.1.120:8020/xlcb/sys/xlkh/list',null,o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	无传入参数
@@ -303,7 +303,7 @@
 ```java
 1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/viewChart
 	后端格式为：/sys/xlkh/viewChart
-	前段调用:$post('http://192.168.1.120:8020/xlcb/sys/xlkh/viewChart',{pcdName:"SP_TAG_API_SEL_CASE_TREND"},o=>info(o))
+	前段调用:$post('http://192.168.1.120:8020/xlcb/sys/xlkh/viewChart',{pcdName:"SP_TAG_API_SEL_CASE_TREND"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
