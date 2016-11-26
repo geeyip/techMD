@@ -54,3 +54,31 @@
 
 ### 案发地图API
 * [案发地图API](ythpt/map/案发地图API文档.md)
+
+## 杭州小类标注串并案API文档
+### 小类标注
+
+* [案件信息标注API](xcba/xlbz/caseList.md)
+* [人员信息标注API](xcba/xlbz/personList.md)
+* [小类代码API](xcba/xlbz/smallClassCode.md)
+
+### 统计考核
+
+* [人员抽查API](xcba/tjkh/perCheck.md)
+* [案件抽查API](xcba/tjkh/caseCheck.md)
+* [小类标注考核API](xcba/tjkh/xlbz.md)
+
+### 字典
+
+* [案件类别字典API](xcba/dict/caseKind.md)
+* [录入单位字典API](xcba/dict/dictUnit.md)
+
+### 系统管理
+
+* [登录API](xcba/system/login.md)
+* [登录用户管理API](xcba/system/sysUser.md)
+* [系统角色管理API](xcba/system/sysRole.md)
+* [系统参数管理API](xcba/system/sysParam.md)
+* [系统模块管理API](xcba/system/sysModule.md)
+* [系统登录日志API](xcba/system/sysLoginLog.md)
+
