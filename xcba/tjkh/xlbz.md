@@ -61,7 +61,7 @@
 	            pcdName:"SP_TAG_API_SEL_REP_EXPLAIN",
                 pcdParamValMap:
                 {
-                    'rptname':'SP_TAG_API_SEL_REP_TIME_LIMIT'//对应报表的存储过程名称
+                    'rptname':'SP_TAG_API_SEL_REP_TIME_LIMIT',//对应报表的存储过程名称
                     'time':'2016-09-20'//查询截止时间
                 }
 	        }
@@ -142,7 +142,7 @@
 	            pcdName:"SP_TAG_API_SEL_REP_EXPLAIN",
                 pcdParamValMap:
                 {
-                    'rptname':'SP_TAG_API_SEL_REP_TAG'//对应报表的存储过程名称
+                    'rptname':'SP_TAG_API_SEL_REP_TAG',//对应报表的存储过程名称
                     'time':'2016-09-20'//查询截止时间
                 }
 	        }
@@ -215,7 +215,7 @@
 	            pcdName:"SP_TAG_API_SEL_REP_EXPLAIN",
                 pcdParamValMap:
                 {
-                    'rptname':'SP_TAG_API_SEL_REP_CHECK'//对应报表的存储过程名称
+                    'rptname':'SP_TAG_API_SEL_REP_CHECK',//对应报表的存储过程名称
                     'time':'2016-09-20'//查询截止时间
                 }
 	        }
@@ -230,6 +230,33 @@
                 "content": ""//质量内容
             }
         ],
+        "pages": null,
+        "operates": null
+    }
+```
+
+* 标注质量报表质量更新接口
+
+```java
+1.API路径：http://localhost:8090/api/1/tjkh/xlbz/zl_update
+	后端格式为/api/{recordLog}/tjkh/xlbz/zl_update，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+	jsonStr:{
+	            pcdName:"SP_TAG_API_UPD_REP_EXPLAIN",
+                pcdParamValMap:
+                {
+                    'rptname':'SP_TAG_API_SEL_REP_CHECK',//对应报表的存储过程名称
+                    'time':'2016-09-20',//查询截止时间
+                    'content':'test'//更新内容
+                }
+	        }
+4.返回值格式
+	{
+        "flag": 1,
+        "totalCount": -1,
+        "msg": null,
+        "data":"1",
         "pages": null,
         "operates": null
     }
