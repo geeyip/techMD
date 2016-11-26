@@ -331,6 +331,52 @@
 ```
 
 
+* 首页八大小类案别接口（进入首页时触发）
+
+```java
+1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/EightMajorKind
+	后端格式为：sys/xlkh/EightMajorKind
+	前段调用:$post('http://192.168.1.120:8020/xlcb/sys/xlkh/EightMajorKind',null,o=>info(o),true)
+2.请求：POST, application/json
+3.传入参数格式：
+  	无参
+4.返回值格式：
+    {
+            "flag": 1,
+            "totalCount": -1,
+            "msg": null,
+            "data":
+                [
+                    {
+                      key: "602",
+                      kind: "1",
+                      order: 1,
+                      type: "A",
+                      value: "入室盗窃"
+                    },
+                    {
+                        key: "6020100",
+                        kind: "1",
+                        order: 2,
+                        prkey: "602",
+                        type: "B",
+                        value: "居民住宅盗窃(入户盗窃)"
+                    },
+                    {
+                        key: "6020101",
+                        kind: "1",
+                        order: 3,
+                        prkey: "6020100",
+                        type: "C",
+                        value: "溜门盗窃"
+                    }
+                ],
+            "pages": null,
+            "operates": null
+        }
+```
+
+
 
 
 
