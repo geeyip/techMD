@@ -120,17 +120,14 @@ startId:"acd57f855ab44ce3a183852300124f25"
 [{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
 "resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
 ":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
-"roleId":"11c1c54720e04024b641f25fd843c81c"},
 "superMenus":
 [{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
 "resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
 ":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
-"roleId":"11c1c54720e04024b641f25fd843c81c"},
 "currentMenus":
 [{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
 "resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
 ":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
-"roleId":"11c1c54720e04024b641f25fd843c81c"},
 "pages":null,"operates":null}
 ```
 
