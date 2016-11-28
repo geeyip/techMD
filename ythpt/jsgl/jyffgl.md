@@ -22,7 +22,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-  "perofession": "", //使用专业
+  "profession": "", //使用专业
   "standards": "", //检测标准(方法)
   "calibrationNo": "",  //编号(含年号)
   "publisher": "",  //编制者/发布者
@@ -42,7 +42,7 @@ POST, application/json
 		{
 			"rn": "1",
 			"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-			"perofession"://使用专业（提供字典）,
+			"profession"://使用专业（提供字典）,
 			"standards"://检测标准(方法)  "",
 			"calibrationNo"://检测编号 "",
             "publisher"://发布人
@@ -83,7 +83,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-    "perofession"://使用专业（提供字典）,
+    "profession"://使用专业（提供字典）,
     "standards"://检测标准(方法)  "",
     "calibrationNo"://检测编号 "",
     "publisher"://发布人
@@ -128,7 +128,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-    "perofession"://使用专业（提供字典）,
+    "profession"://使用专业（提供字典）,
     "standards"://检测标准(方法)  "",
     "calibrationNo"://检测编号 "",
     "publisher"://发布人
