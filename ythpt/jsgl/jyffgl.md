@@ -7,10 +7,10 @@
 #### API路径
 
 ```http
-http://localhost:8080/api/0/jsgl/calibration/manage/query
+http://localhost:8080/api/0/jsgl/calibration/manage/list
 ```
 
-后端格式为`/api/{recordLog}/jsgl/calibration/manage/query`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+后端格式为`/api/{recordLog}/jsgl/calibration/manage/list`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 
 #### 请求
 
