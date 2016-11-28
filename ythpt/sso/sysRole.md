@@ -105,8 +105,8 @@ GET, application/json
 
 #### 传入参数格式
 ```
-systemId:"XCKY",
-account:"900504"
+systemId:"ALIMS",
+roleId:"11c1c54720e04024b641f25fd843c81c"
 ```
 
 #### 返回值格式
