@@ -106,7 +106,8 @@ GET, application/json
 #### 传入参数格式
 ```
 systemId:"ALIMS",
-roleId:"11c1c54720e04024b641f25fd843c81c"
+roleId:"11c1c54720e04024b641f25fd843c81c",
+startId:"acd57f855ab44ce3a183852300124f25"
 ```
 
 #### 返回值格式
@@ -119,7 +120,18 @@ roleId:"11c1c54720e04024b641f25fd843c81c"
 [{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
 "resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
 ":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
-"roleId":"11c1c54720e04024b641f25fd843c81c"},"pages":null,"operates":null}
+"roleId":"11c1c54720e04024b641f25fd843c81c"},
+"superMenus":
+[{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
+"resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
+":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
+"roleId":"11c1c54720e04024b641f25fd843c81c"},
+"currentMenus":
+[{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
+"resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
+":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
+"roleId":"11c1c54720e04024b641f25fd843c81c"},
+"pages":null,"operates":null}
 ```
 
 ###角色授权接口
