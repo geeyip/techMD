@@ -47,7 +47,9 @@
                 "unit": "",//录入单位
                 "unitname": "",//录入单位中文
                 "casekind": "",//小类案别
+                "typename": "",//小类案别中文
                 "means": "",//作案手段
+                "meanname": "",//作案手段中文
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             },
@@ -66,7 +68,9 @@
                 "unit": "",//录入单位
                 "unitname": "",//录入单位中文
                 "casekind": "",//小类案别
+                "typename": "",//小类案别中文
                 "means": "",//作案手段
+                "meanname": "",//作案手段中文
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             }
@@ -171,7 +175,9 @@
                 "stname": "",//案件状态中文
                 "summary": "",//简要案情
                 "casekind": "",//小类案别
-                "means": ""//作案手段
+                "kindname": "",//小类案别中文
+                "means": "",//作案手段
+                "meanname": ""//作案手段中文
             }
         ],
         "pages": null,

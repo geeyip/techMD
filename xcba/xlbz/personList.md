@@ -47,7 +47,9 @@
                 "casekind2": "",//案件类别1
                 "kindname2": "",//案件类别1中文
                 "tagckind": "",//小类案别
+                "tagcname": "",//小类案别中文
                 "tagmeans": "",//作案手段
+                "tagmname": "",//作案手段
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             },
@@ -68,7 +70,9 @@
                 "casekind2": "",//案件类别1
                 "kindname2": "",//案件类别1中文
                 "tagckind": "",//小类案别
+                "tagcname": "",//小类案别中文
                 "tagmeans": "",//作案手段
+                "tagmname": "",//作案手段
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             }
@@ -171,7 +175,9 @@
                 "detail": "",//户籍地
                 "time": "",//抓获时间
                 "tagckind": "",//小类案别
+                "kindname": "",//小类案别
                 "tagmeans": "",//作案手段
+                "meanname": "",//作案手段
                 "detail": ""//违法犯罪情况
             }
         ],
