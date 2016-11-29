@@ -24,10 +24,11 @@ POST, application/json
 
 ``` json
 {
-  "invitationName": "",     //耗材名称
-  "invitationCode": "",     //耗材编号
-  "storagePeron": "",       //保管人
-  "storageDate": "",        //入库时间
+  "invitationName": "",          //耗材名称
+  "invitationCode": "",          //耗材编号
+  "storagePeron": "",            //保管人
+  "storageDateStart": "",        //入库时间开始
+  "storageDateEnd": "",          //入库时间结束
   "begin": 1,
   "end": 200
 }
@@ -458,8 +459,9 @@ POST, application/json
 {
   "invitationName": "",     //耗材名称
   "invitationCode": "",     //耗材编号
-  "receiveUser": "",       //领用人
-  "receiveDate": "",        //领用时间
+  "receiveUser": "",        //领用人
+  "receiveDateStart": "",   //领用时间开始
+  "receiveDateEnd": "",     //领用时间结束
   "begin": 1,
   "end": 200
 }
