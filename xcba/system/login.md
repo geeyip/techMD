@@ -3,8 +3,9 @@
 * 登录接口（点击登录按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/login
+1.API路径：http://192.168.1.120:8020/xlcb/login
 	后端格式为：/login
+	前端调用:$post('http://192.168.1.120:8020/xlcb/login',{"username":"sys","password":"sys"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -239,8 +240,9 @@
 * 注销接口（点击注销按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/logout
+1.API路径：http://192.168.1.120:8020/xlcb/logout
 	后端格式为：/logout
+	前端调用:$post('http://192.168.1.120:8020/xlcb/logout',{"username":"sys","password":"sys"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -260,8 +262,9 @@
 * 小类考核通报列表接口（进入登录页时获取数据时触发）
 
 ```java
-1.API路径：http://localhost:8020/sys/xlkh/list
+1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/list
 	后端格式为：/sys/xlkh/list
+	前端调用：$post('http://192.168.1.120:8020/xlcb/sys/xlkh/list',null,o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	无传入参数
@@ -284,8 +287,9 @@
 * 小类考核通报查询接口（点击标注数据时(window.open方式)触发）
 
 ```java
-1.API路径：http://localhost:8020/sys/xlkh/view
+1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/view
 	后端格式为：/sys/xlkh/view
+	前端调用:window.open(http://192.168.1.120:8020/xlcb/sys/xlkh/view?tagDate=2016-09)
 2.请求：POST, application/json
 3.传入参数格式：
   	tagDate:"2016-09"
@@ -297,8 +301,9 @@
 * 首页趋势图数据接口（进入首页时触发）
 
 ```java
-1.API路径：http://localhost:8020/sys/xlkh/viewChart
+1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/viewChart
 	后端格式为：/sys/xlkh/viewChart
+	前段调用:$post('http://192.168.1.120:8020/xlcb/sys/xlkh/viewChart',{pcdName:"SP_TAG_API_SEL_CASE_TREND"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
   	jsonStr:{
@@ -318,6 +323,52 @@
                     {
                         "time": "10月",//时间
                         "casenum":"25"//案件数
+                    }
+                ],
+            "pages": null,
+            "operates": null
+        }
+```
+
+
+* 首页八大小类案别接口（进入首页时触发）
+
+```java
+1.API路径：http://192.168.1.120:8020/xlcb/sys/xlkh/EightMajorKind
+	后端格式为：sys/xlkh/EightMajorKind
+	前段调用:$post('http://192.168.1.120:8020/xlcb/sys/xlkh/EightMajorKind',null,o=>info(o),true)
+2.请求：POST, application/json
+3.传入参数格式：
+  	无参
+4.返回值格式：
+    {
+            "flag": 1,
+            "totalCount": -1,
+            "msg": null,
+            "data":
+                [
+                    {
+                      key: "602",
+                      kind: "1",
+                      order: 1,
+                      type: "A",
+                      value: "入室盗窃"
+                    },
+                    {
+                        key: "6020100",
+                        kind: "1",
+                        order: 2,
+                        prkey: "602",
+                        type: "B",
+                        value: "居民住宅盗窃(入户盗窃)"
+                    },
+                    {
+                        key: "6020101",
+                        kind: "1",
+                        order: 3,
+                        prkey: "6020100",
+                        type: "C",
+                        value: "溜门盗窃"
                     }
                 ],
             "pages": null,

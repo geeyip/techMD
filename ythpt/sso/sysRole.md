@@ -105,34 +105,30 @@ GET, application/json
 
 #### 传入参数格式
 ```
-systemId:"XCKY",
-account:"900504"
+systemId:"ALIMS",
+roleId:"11c1c54720e04024b641f25fd843c81c",
+startId:"acd57f855ab44ce3a183852300124f25"
 ```
 
 #### 返回值格式
 ```json
-{"flag":1,"totalCount":0,"msg":null,"data":{
-"allMenus":
-[{"systemId":"XCKY","resourceId":"1EB4B74996094FEA9CA221F408BB9B5B","resourceName":"现场信息录入","superId":"7D3B3CBBE4374CB39A9892AAB43D4D21","name":"现场信息录入","url":"sceneCollecting/xcky-xcxxlr.html","state":"sceneCollecting/xcky-xcxxlr.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"EBCDEFGHABCDEFGHABCDEFGH22222201","resourceName":"首页","superId":null,"name":"首页","url":"fst-page.html","state":"fst-page.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"ABCDEFGHABCDEFGHABCDEFGH22222208","resourceName":"登录用户管理","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"登录用户管理","url":"system/sys-dlyhgl.html","state":"system/sys-dlyhgl.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"7D3B3CBBE4374CB39A9892AAB43D4D21","resourceName":"现场勘验","superId":null,"name":"现场勘验","url":null,"state":null,"icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"D7ACEF7B5F664CA3B8940342039F58E1","resourceName":"案件勘验","superId":"7D3B3CBBE4374CB39A9892AAB43D4D21","name":"案件勘验","url":"sceneCollecting/xcky-ajky.html","state":"sceneCollecting/xcky-ajky.html","icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"ABCDEFGHABCDEFGHABCDEFGH22222207","resourceName":"系统角色管理","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"系统角色管理","url":"system/sys-xtjsgl.html","state":"system/sys-xtjsgl.html","icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"D1BDEFGHABCDEFGHABCDEFGA22222201","resourceName":"系统参数管理","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"系统参数管理","url":"system/sys-xtcsgl.html","state":"system/sys-xtcsgl.html","icon":null,"visibleState":0,"orderNum":3,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"ABCDEFGHABCDEFGHABCDEFGH22222209","resourceName":"系统管理","superId":null,"name":"系统管理","url":null,"state":null,"icon":null,"visibleState":0,"orderNum":3,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"3EDC3A43BB21420CA404853F6E7D0B74","resourceName":"系统模块管理","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"系统模块管理","url":"system/sys-xtmkgl.html","state":"system/sys-xtmkgl.html","icon":null,"visibleState":0,"orderNum":4,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"9D2D4A5BEB7843B699C2176E945F23D3","resourceName":"系统登录日志","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"系统登录日志","url":"system/sys-loginlog.html","state":"system/sys-loginlog.html","icon":null,"visibleState":0,"orderNum":5,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"0757F585692449019CF791EFA3021F02","resourceName":"系统导航","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"系统导航","url":"system/sys-xtdh.html","state":"system/sys-xtdh.html","icon":null,"visibleState":0,"orderNum":6,"note":null,"menuType":0,"children":null}
-],
-"account":"900504","systemId":"XCKY","authedMenus":
-[{"systemId":"XCKY","resourceId":"1EB4B74996094FEA9CA221F408BB9B5B","resourceName":"现场信息录入","superId":"7D3B3CBBE4374CB39A9892AAB43D4D21","name":"现场信息录入","url":"sceneCollecting/xcky-xcxxlr.html","state":"sceneCollecting/xcky-xcxxlr.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"EBCDEFGHABCDEFGHABCDEFGH22222201","resourceName":"首页","superId":null,"name":"首页","url":"fst-page.html","state":"fst-page.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"ABCDEFGHABCDEFGHABCDEFGH22222208","resourceName":"登录用户管理","superId":"ABCDEFGHABCDEFGHABCDEFGH22222209","name":"登录用户管理","url":"system/sys-dlyhgl.html","state":"system/sys-dlyhgl.html","icon":null,"visibleState":0,"orderNum":1,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"7D3B3CBBE4374CB39A9892AAB43D4D21","resourceName":"现场勘验","superId":null,"name":"现场勘验","url":null,"state":null,"icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null},
-{"systemId":"XCKY","resourceId":"D7ACEF7B5F664CA3B8940342039F58E1","resourceName":"案件勘验","superId":"7D3B3CBBE4374CB39A9892AAB43D4D21","name":"案件勘验","url":"sceneCollecting/xcky-ajky.html","state":"sceneCollecting/xcky-ajky.html","icon":null,"visibleState":0,"orderNum":2,"note":null,"menuType":0,"children":null}
-]
-},"pages":null,"operates":null}
+{"flag":1,"totalCount":0,"msg":null,"data":{"allMenus":
+[{"systemId":"ALIMS","resourceId":"d3afe865a4954dfea7145503aee7147b","resourceName":"123213",
+"resourceEnName":"12321313","superId":"5ff8a4700e5942fb86cb85b0fce0a28f","name":"123213",
+"url":null,"state":null,"icon":null,"visibleState":0,"orderNum":0,"note":null,"menuType":1,"children":null}],
+"menuType":0,"systemId":"ALIMS","authedMenus":
+[{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
+"resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
+"":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
+"superMenus":
+[{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
+"resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
+"":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
+"currentMenus":
+[{"systemId":"ALIMS","resourceId":"f1fc77a98af544698b167013aec2d29a","resourceName":"个人待办事项一览",
+"resourceEnName":"test","superId":"2643dd360b6443938a3dce5ae09006e9","name":"个人待办事项一览",
+"":1,"orderNum":1,"note":"teste","menuType":0,"children":null}],
+"pages":null,"operates":null}
 ```
 
 ###角色授权接口

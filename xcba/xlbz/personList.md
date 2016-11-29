@@ -32,33 +32,47 @@
         [
             {
                 "personno": "",//人员编号
-                "unit": "2016-11-11 11:11:11",//抓获单位
+                "unit": "",//抓获单位
+                "unitname": "",//抓获单位中文
                 "area": "",//发案区划
+                "areaname": "",//发案区划中文
                 "time": "",//抓获日期
                 "ptype": "",//人员类别
                 "name": "",//姓名
                 "cardno": "",//身份证号
                 "household": "",//户籍地详址
+                "cridetail": "",//犯罪情况
                 "casekind": "",//案件类别
+                "kindname": "",//案件类别中文
                 "casekind2": "",//案件类别1
+                "kindname2": "",//案件类别1中文
                 "tagckind": "",//小类案别
+                "tagcname": "",//小类案别中文
                 "tagmeans": "",//作案手段
+                "tagmname": "",//作案手段
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             },
             {
                 "personno": "",//人员编号
-                "unit": "2016-11-11 11:11:11",//抓获单位
+                "unit": "",//抓获单位
+                "unitname": "",//抓获单位中文
                 "area": "",//发案区划
+                "areaname": "",//发案区划中文
                 "time": "",//抓获日期
                 "ptype": "",//人员类别
                 "name": "",//姓名
                 "cardno": "",//身份证号
                 "household": "",//户籍地详址
+                "cridetail": "",//犯罪情况
                 "casekind": "",//案件类别
+                "kindname": "",//案件类别中文
                 "casekind2": "",//案件类别1
+                "kindname2": "",//案件类别1中文
                 "tagckind": "",//小类案别
+                "tagcname": "",//小类案别中文
                 "tagmeans": "",//作案手段
+                "tagmname": "",//作案手段
                 "flag": "",//待标注、已标注
                 "order": ""//排序
             }
@@ -155,12 +169,15 @@
             {
                 "personno": "",//人员编号
                 "sex": "",//性别
+                "sexname": "",//性别中文
                 "name": "",//姓名
                 "cardno": "",//身份证号
                 "detail": "",//户籍地
                 "time": "",//抓获时间
                 "tagckind": "",//小类案别
+                "kindname": "",//小类案别
                 "tagmeans": "",//作案手段
+                "meanname": "",//作案手段
                 "detail": ""//违法犯罪情况
             }
         ],
