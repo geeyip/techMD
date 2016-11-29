@@ -120,3 +120,36 @@ jsonStr:
 ```json
 {"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
+
+###获取单个字典接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/dict_mng/dict_info
+```
+
+后端格式为`/api/{recordLog}/system/dict_mng/dict_info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"id":"1cb90ba884d74e468b3efc0b727d9b22"}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":1,"msg":null,"data":{"rownum":null,"id":"1cb90ba884d74e468b3efc0b727d9b22",
+"user":null,"del":null,"secrecy":null,"createDate":null,"modifyDate":null,"transferTime":null,"rev1":null,
+"rev2":null,"rev3":null,"rev4":null,"rev5":null,"rev6":null,"rev7":null,"rev8":null,"begin":0,"end":0,
+"sortOrder":null,"sortName":null,"orderByString":null,"key":"12","value":"警情查询","parentKey":"CXLBDM",
+"localId":null,"root":"CXLBDM","keys":null,"queryString":null,"queryType":null,"py":"AJCXDM","openFlag":"0",
+"defaultRoot":null,"remark":"234","sort":2,"isParent":null,"dictLevel":"0","leafFlag":null,"dictKey":"12",
+"dictValue":"警情查询"},"pages":null,"operates":null}
+```
