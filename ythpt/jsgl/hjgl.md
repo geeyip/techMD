@@ -123,6 +123,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
+    "id"://数据id,
     "departments"://科(室)：（提供字典）,
     "laboratory"://实验室房号  "",
     "charger"://科技术负责人 "",
