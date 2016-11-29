@@ -65,3 +65,32 @@ jsonStr:
 ```json
 {"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
+
+###字典修改接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/dict_mng/edit
+```
+
+后端格式为`/api/{recordLog}/system/dict_mng/edit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"id":"b5d4cba6767346a8b6c63578f2bf5b42","dictValue":"警情查询11","dictKey":"111","openFlag":"1",
+"py":"AJ","sort":"3","remark":"235",root:"CXLBDM",parentKey:"11"}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
+
