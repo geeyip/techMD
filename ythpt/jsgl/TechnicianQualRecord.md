@@ -4,7 +4,7 @@
 
 列表 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/{techId}/qual/1/list
 ```
 
@@ -12,7 +12,7 @@
 
 新增 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/{techId}/qual/1/add
 ```
 
@@ -20,7 +20,7 @@
 
 修改 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/qual/{id}/edit
 ```
 
@@ -28,7 +28,7 @@
 
 删除 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/qual/{id}/delete
 ```
 
@@ -38,7 +38,7 @@
 
 列表
 
-```http
+```
 /api/{recordLog}/jsgl/technician/{techId}/qual/2/list
 ```
 
@@ -46,7 +46,7 @@
 
 新增 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/{techId}/qual/2/add
 ```
 
@@ -54,7 +54,7 @@
 
 修改 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/qual/{id}/edit
 ```
 
@@ -62,7 +62,7 @@
 
 删除 
 
-```http
+```
 /api/{recordLog}/jsgl/technician/qual/{id}/delete
 ```
 
