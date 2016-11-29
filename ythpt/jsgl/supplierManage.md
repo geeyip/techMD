@@ -21,44 +21,44 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "supplierName": "",     //供应商名称
-        "supplierContent": "",  //供应内容
-        "contactPerson": "",    //联系人
-        "vocation": "",         //职务
-        "telephone": "",        //电话/手机
-        "address": "",          //地址
-        "postcode": "",         //邮编
-        "begin": 1,
-        "end": 200
-    }
+{
+    "supplierName": "",     //供应商名称
+    "supplierContent": "",  //供应内容
+    "contactPerson": "",    //联系人
+    "vocation": "",         //职务
+    "telephone": "",        //电话/手机
+    "address": "",          //地址
+    "postcode": "",         //邮编
+    "begin": 1,
+    "end": 200
+}
 ```
 
 #### 返回值格式
 
 ```json
-    {
-        "flag": 1,
-        "totalCount": 1,
-        "msg": null,
-        "data": [
-            {
-                "rownum": "1",
-                "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-                "supplierName": "",                         //供应商名称
-                "supplierContent": "",                      //供应内容
-                "contactPerson": "",                        //联系人
-                "vocation": "",                             //职务
-                "telephone": "",                            //电话/手机
-                "address": "",                              //地址
-                "postcode": "",                             //邮编
-                "remark": "",                               //备注
-            }
-        ],
-        "pages": null,
-        "operates": null
-    }
-````
+{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+        {
+            "rownum": "1",
+            "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+            "supplierName": "",                         //供应商名称
+            "supplierContent": "",                      //供应内容
+            "contactPerson": "",                        //联系人
+            "vocation": "",                             //职务
+            "telephone": "",                            //电话/手机
+            "address": "",                              //地址
+            "postcode": "",                             //邮编
+            "remark": "",                               //备注
+        }
+    ],
+    "pages": null,
+    "operates": null
+}
+```
 
 ### 新增供应商信息接口
 
@@ -81,29 +81,29 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "supplierName": "",                         //供应商名称
-        "supplierContent": "",                      //供应内容
-        "contactPerson": "",                        //联系人
-        "vocation": "",                             //职务
-        "telephone": "",                            //电话/手机
-        "address": "",                              //地址
-        "postcode": "",                             //邮编
-        "remark": "",                               //备注
-    }
+{
+    "supplierName": "",                         //供应商名称
+    "supplierContent": "",                      //供应内容
+    "contactPerson": "",                        //联系人
+    "vocation": "",                             //职务
+    "telephone": "",                            //电话/手机
+    "address": "",                              //地址
+    "postcode": "",                             //邮编
+    "remark": "",                               //备注
+}
 ```
 
 #### 返回值格式
 
 ```json
-    {
-        "flag":1,
-        "totalCount":0,
-        "msg":null,
-        "data":null,
-        "pages":null,
-        "operates":null
-    }
+{
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":null,
+    "pages":null,
+    "operates":null
+}
 ```
 
 ### 修改供应商信息接口
@@ -127,34 +127,34 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "id": ""
-    }
+{
+    "id": ""
+}
 ```
 
 #### 返回值格式
 
 ```json
-    {
-        "flag": 1,
-        "totalCount": 1,
-        "msg": null,
-        "data": [
-            {
-                "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-                "supplierName": "",                         //供应商名称
-                "supplierContent": "",                      //供应内容
-                "contactPerson": "",                        //联系人
-                "vocation": "",                             //职务
-                "telephone": "",                            //电话/手机
-                "address": "",                              //地址
-                "postcode": "",                             //邮编
-                "remark": "",                               //备注
-            }
-        ],
-        "pages": null,
-        "operates": null
-    }
+{
+    "flag": 1,
+    "totalCount": 1,
+    "msg": null,
+    "data": [
+        {
+            "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+            "supplierName": "",                         //供应商名称
+            "supplierContent": "",                      //供应内容
+            "contactPerson": "",                        //联系人
+            "vocation": "",                             //职务
+            "telephone": "",                            //电话/手机
+            "address": "",                              //地址
+            "postcode": "",                             //邮编
+            "remark": "",                               //备注
+        }
+    ],
+    "pages": null,
+    "operates": null
+}
 ```
 
 ### 保存修改供应商信息接口
@@ -178,29 +178,29 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "supplierName": "",                         //供应商名称
-        "supplierContent": "",                      //供应内容
-        "contactPerson": "",                        //联系人
-        "vocation": "",                             //职务
-        "telephone": "",                            //电话/手机
-        "address": "",                              //地址
-        "postcode": "",                             //邮编
-        "remark": "",                               //备注
-    }
+{
+    "supplierName": "",                         //供应商名称
+    "supplierContent": "",                      //供应内容
+    "contactPerson": "",                        //联系人
+    "vocation": "",                             //职务
+    "telephone": "",                            //电话/手机
+    "address": "",                              //地址
+    "postcode": "",                             //邮编
+    "remark": "",                               //备注
+}
 ```
 
 #### 返回值格式
 
 ```json
-    {
-        "flag":1,
-        "totalCount":0,
-        "msg":null,
-        "data":null,
-        "pages":null,
-        "operates":null
-    }
+{
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":null,
+    "pages":null,
+    "operates":null
+}
 ```
 
 ### 删除供应商信息接口
@@ -224,23 +224,23 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "id": ""
-    }
+{
+    "id": ""
+}
 ```
 
 
 #### 返回值格式
 
 ```json
-    {
-        "flag":1,
-        "totalCount":0,
-        "msg":null,
-        "data":null,
-        "pages":null,
-        "operates":null
-    }
+{
+    "flag":1,
+    "totalCount":0,
+    "msg":null,
+    "data":null,
+    "pages":null,
+    "operates":null
+}
 ```
 
 ### 查看供应商信息接口
@@ -264,35 +264,35 @@ POST, application/json
 #### 传入参数格式
 **jsonStr:**
 ```json
-    {
-        "id": ""
-    }
+{
+    "id": ""
+}
 ```
 
 
 #### 返回值格式
 
 ```json
+{
+"flag": 1,
+"totalCount": 1,
+"msg": null,
+"data": [
     {
-    "flag": 1,
-    "totalCount": 1,
-    "msg": null,
-    "data": [
-        {
-            "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-            "supplierName": "",                         //供应商名称
-            "supplierContent": "",                      //供应内容
-            "contactPerson": "",                        //联系人
-            "vocation": "",                             //职务
-            "telephone": "",                            //电话/手机
-            "address": "",                              //地址
-            "postcode": "",                             //邮编
-            "remark": "",                               //备注
-        }
-    ],
-    "pages": null,
-    "operates": null
+        "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+        "supplierName": "",                         //供应商名称
+        "supplierContent": "",                      //供应内容
+        "contactPerson": "",                        //联系人
+        "vocation": "",                             //职务
+        "telephone": "",                            //电话/手机
+        "address": "",                              //地址
+        "postcode": "",                             //邮编
+        "remark": "",                               //备注
     }
+],
+"pages": null,
+"operates": null
+}
 ```
 
 ### 供应商信息导出excel接口
@@ -309,9 +309,6 @@ http://localhost:8081/ythpt/api/1/jsgl/supplier/export
 
 #### 请求
 
-```
-POST, application/json
-```
 
 #### 传入参数格式
 
