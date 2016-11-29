@@ -94,3 +94,29 @@ jsonStr:
 {"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ```
 
+###字典删除接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/dict_mng/delete
+```
+
+后端格式为`/api/{recordLog}/system/dict_mng/delete，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"id":"3db0f3190ce049d6803b233c074a61ae"}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
