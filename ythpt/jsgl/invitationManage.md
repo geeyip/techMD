@@ -1,4 +1,4 @@
-##耗材管理API文档
+## 耗材管理API文档
 
 ### 耗材管理页面查询接口
 
@@ -6,7 +6,7 @@
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/api/1/jsgl/asset/invitation/list
 ```
 
@@ -14,46 +14,48 @@ http://localhost:8081/api/1/jsgl/asset/invitation/list
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-    "invitationName": "",     //耗材名称
-    "invitationCode": "",     //耗材编号
-    "storagePeron": "",       //保管人
-    "storageDate": "",        //入库时间
-    "begin": 1,
-    "end": 200
+  "invitationName": "",     //耗材名称
+  "invitationCode": "",     //耗材编号
+  "storagePeron": "",       //保管人
+  "storageDate": "",        //入库时间
+  "begin": 1,
+  "end": 200
 }
 ```
 
 #### 返回值格式
 
-```json
+``` json
 {
-"flag": 1,
-"totalCount": 1,
-"msg": null,
-"data": [
-{
-"rownum": "1",
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDateStr": "",                         //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"storageNumber": "",                          //在库数量
-"infoRemark": "",                             //备注
-}
-],
-"pages": null,
-"operates": null
+  "flag": 1,
+  "totalCount": 1,
+  "msg": null,
+  "data": [
+    {
+      "rownum": "1",
+      "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+      "invitationName": "",                         //耗材名称
+      "invitationCode": "",                         //耗材编号
+      "storageDateStr": "",                         //入库时间
+      "totalNumber": "",                            //耗材数量
+      "storagePerson": "",                          //保管人
+      "storagePersonId": "",                        //保管人id
+      "storageNumber": "",                          //在库数量
+      "infoRemark": "",                             //备注
+    }
+  ],
+  "pages": null,
+  "operates": null
 }
 ```
 
@@ -63,7 +65,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/add
 ```
 
@@ -71,34 +73,36 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/add
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDate": "",                            //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"infoRemark": "",                             //备注
+  "invitationName": "",                         //耗材名称
+  "invitationCode": "",                         //耗材编号
+  "storageDate": "",                            //入库时间
+  "totalNumber": "",                            //耗材数量
+  "storagePerson": "",                          //保管人
+  "storagePersonId": "",                        //保管人id
+  "infoRemark": "",                             //备注
 }
 ```
 
 #### 返回值格式
 
-```json
+``` json
 {
-"flag":1,
-"totalCount":0,
-"msg":null,
-"data":null,
-"pages":null,
-"operates":null
+  "flag":1,
+  "totalCount":0,
+  "msg":null,
+  "data":null,
+  "pages":null,
+  "operates":null
 }
 ```
 
@@ -108,7 +112,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 ```
 
@@ -116,39 +120,41 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"id": ""
+  "id": ""
 }
 ```
 
 #### 返回值格式
 
-```json
+``` json
 {
-"flag": 1,
-"totalCount": 1,
-"msg": null,
-"data": [
-{
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDate": "",                            //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"infoRemark": "",                             //备注
-}
-],
-"pages": null,
-"operates": null
+  "flag": 1,
+  "totalCount": 1,
+  "msg": null,
+  "data": [
+      {
+        "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+        "invitationName": "",                         //耗材名称
+        "invitationCode": "",                         //耗材编号
+        "storageDate": "",                            //入库时间
+        "totalNumber": "",                            //耗材数量
+        "storagePerson": "",                          //保管人
+        "storagePersonId": "",                        //保管人id
+        "infoRemark": "",                             //备注
+      }
+  ],
+  "pages": null,
+  "operates": null
 }
 ```
 
@@ -158,7 +164,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/edit
 ```
 
@@ -166,35 +172,37 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/edit
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDate": "",                            //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"infoRemark": "",                             //备注
+  "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+  "invitationName": "",                         //耗材名称
+  "invitationCode": "",                         //耗材编号
+  "storageDate": "",                            //入库时间
+  "totalNumber": "",                            //耗材数量
+  "storagePerson": "",                          //保管人
+  "storagePersonId": "",                        //保管人id
+  "infoRemark": "",                             //备注
 }
 ```
 
 #### 返回值格式
 
-```json
+``` json
 {
-"flag":1,
-"totalCount":0,
-"msg":null,
-"data":null,
-"pages":null,
-"operates":null
+  "flag":1,
+  "totalCount":0,
+  "msg":null,
+  "data":null,
+  "pages":null,
+  "operates":null
 }
 ```
 
@@ -204,7 +212,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/delete
 ```
 
@@ -212,29 +220,32 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/delete
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
-{
-"id": ""
+
+``` json
+{	
+  "id": ""
 }
 ```
 
 
+
 #### 返回值格式
 
-```json
+``` json
 {
-"flag":1,
-"totalCount":0,
-"msg":null,
-"data":null,
-"pages":null,
-"operates":null
+  "flag":1,
+  "totalCount":0,
+  "msg":null,
+  "data":null,
+  "pages":null,
+  "operates":null
 }
 ```
 
@@ -244,7 +255,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 ```
 
@@ -252,40 +263,43 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"id": ""
+  "id": ""
 }
 ```
 
 
+
 #### 返回值格式
 
-```json
+``` json
 {
-"flag": 1,
-"totalCount": 1,
-"msg": null,
-"data": [
-{
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDate": "",                            //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"infoRemark": "",                             //备注
-}
-],
-"pages": null,
-"operates": null
+  "flag": 1,
+  "totalCount": 1,
+  "msg": null,
+  "data": [
+    {
+      "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+      "invitationName": "",                         //耗材名称
+      "invitationCode": "",                         //耗材编号
+      "storageDate": "",                            //入库时间
+      "totalNumber": "",                            //耗材数量
+      "storagePerson": "",                          //保管人
+      "storagePersonId": "",                        //保管人id
+      "infoRemark": "",                             //备注
+    }
+  ],
+  "pages": null,
+  "operates": null
 }
 ```
 
@@ -295,7 +309,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 ```
 
@@ -303,41 +317,44 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/invitation_info
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"id": ""
+	"id": ""
 }
 ```
 
 
+
 #### 返回值格式
 
-```json
+``` json
 {
-"flag": 1,
-"totalCount": 1,
-"msg": null,
-"data": [
-{
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"storageDate": "",                            //入库时间
-"totalNumber": "",                            //耗材数量
-"storagePerson": "",                          //保管人
-"storagePersonId": "",                        //保管人id
-"storageNumber":"",                           //在库数量
-"infoRemark": "",                             //备注
-}
-],
-"pages": null,
-"operates": null
+  "flag": 1,
+  "totalCount": 1,
+  "msg": null,
+  "data": [
+    {
+      "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+      "invitationName": "",                         //耗材名称
+      "invitationCode": "",                         //耗材编号
+      "storageDate": "",                            //入库时间
+      "totalNumber": "",                            //耗材数量
+      "storagePerson": "",                          //保管人
+      "storagePersonId": "",                        //保管人id
+      "storageNumber":"",                           //在库数量
+      "infoRemark": "",                             //备注
+    }
+  ],
+  "pages": null,
+  "operates": null
 }
 ```
 
@@ -347,7 +364,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/record_add
 ```
 
@@ -355,36 +372,39 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/record_add
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"invitationId": "DC3BE807E29C43DFAE58B12A",   //耗材信息id
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"receiveDate": "",                            //领用时间
-"receiveNum": "",                             //领用数量
-"receiveUser": "",                            //领用人
-"techId": "",                                 //领用人id
-"recordRemark": "",                           //备注
+  "invitationId": "DC3BE807E29C43DFAE58B12A",   //耗材信息id
+  "invitationName": "",                         //耗材名称
+  "invitationCode": "",                         //耗材编号
+  "receiveDate": "",                            //领用时间
+  "receiveNum": "",                             //领用数量
+  "receiveUser": "",                            //领用人
+  "techId": "",                                 //领用人id
+  "recordRemark": "",                           //备注
 }
 ```
 
 
+
 #### 返回值格式
 
-```json
+``` json
 {
-"flag":1,
-"totalCount":0,
-"msg":null,
-"data":null,
-"pages":null,
-"operates":null
+  "flag":1,
+  "totalCount":0,
+  "msg":null,
+  "data":null,
+  "pages":null,
+  "operates":null
 }
 ```
 
@@ -394,7 +414,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/export
 ```
 
@@ -403,7 +423,9 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/export
 #### 请求
 
 
+
 #### 传入参数格式
+
 
 
 #### 返回值格式
@@ -416,7 +438,7 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/export
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/api/1/jsgl/asset/invitation/record_list
 ```
 
@@ -424,45 +446,47 @@ http://localhost:8081/api/1/jsgl/asset/invitation/record_list
 
 #### 请求
 
-```
+``` 
 POST, application/json
 ```
 
 #### 传入参数格式
+
 **jsonStr:**
-```json
+
+``` json
 {
-"invitationName": "",     //耗材名称
-"invitationCode": "",     //耗材编号
-"receiveUser": "",       //领用人
-"receiveDate": "",        //领用时间
-"begin": 1,
-"end": 200
+  "invitationName": "",     //耗材名称
+  "invitationCode": "",     //耗材编号
+  "receiveUser": "",       //领用人
+  "receiveDate": "",        //领用时间
+  "begin": 1,
+  "end": 200
 }
 ```
 
 #### 返回值格式
 
-```json
+``` json
 {
-"flag": 1,
-"totalCount": 1,
-"msg": null,
-"data": [
-{
-"rownum": "1",
-"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
-"invitationName": "",                         //耗材名称
-"invitationCode": "",                         //耗材编号
-"receiveDateStr": "",                         //领用时间
-"receiveNum": "",                             //领用数量
-"receiveUser": "",                            //领用人
-"techId": "",                                 //领用人id
-"recordRemark": "",                           //备注
-}
-],
-"pages": null,
-"operates": null
+  "flag": 1,
+  "totalCount": 1,
+  "msg": null,
+  "data": [
+    {
+      "rownum": "1",
+      "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
+      "invitationName": "",                         //耗材名称
+      "invitationCode": "",                         //耗材编号
+      "receiveDateStr": "",                         //领用时间
+      "receiveNum": "",                             //领用数量
+      "receiveUser": "",                            //领用人
+      "techId": "",                                 //领用人id
+      "recordRemark": "",                           //备注
+    }
+  ],
+  "pages": null,
+  "operates": null
 }
 ```
 
@@ -472,7 +496,7 @@ POST, application/json
 
 #### API路径
 
-```http
+``` http
 http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/record_export
 ```
 
@@ -481,7 +505,9 @@ http://localhost:8081/ythpt/api/1/jsgl/asset/invitation/record_export
 #### 请求
 
 
+
 #### 传入参数格式
+
 
 
 #### 返回值格式
