@@ -36,3 +36,32 @@ jsonStr:
 "queryType":null,"py":"JKLB","openFlag":"有效","defaultRoot":null,"remark":null,
 "sort":0,"isParent":"1","dictKey":"JKLBDM","dictValue":"监控类别代码"}],"pages":null,"operates":null}
 ```
+
+
+###字典新增接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/dict_mng/add
+```
+
+后端格式为`/api/{recordLog}/system/dict_mng/add，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+jsonStr:
+{"dictLevel":"0","dictValue":"查询类别代码","dictKey":"CXLBDM","openFlag":"1",
+"py":"CXLBDM","root":"CXLBDM","sort":"1","leafFlag":"0","remark":"233","parentKey":""}
+```
+
+#### 返回值格式
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+```
