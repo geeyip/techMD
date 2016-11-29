@@ -128,6 +128,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
+    "id"://数据id,
     "profession"://使用专业（提供字典）,
     "standards"://检测标准(方法)  "",
     "calibrationNo"://检测编号 "",
