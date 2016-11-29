@@ -195,8 +195,8 @@
 * 页面新增接口（点击新增按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/param/add
-	后端格式为：/api/{recordLog}/system/param/add（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/param/add
+	后端格式为：/xlcb/api/{recordLog}/system/param/add（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -226,8 +226,8 @@
 * 页面更新接口（点击保存按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/param/edit
-	后端格式为：/api/{recordLog}/system/param/edit（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/param/edit
+	后端格式为：/xlcb/api/{recordLog}/system/param/edit（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -266,8 +266,8 @@
 * 页面修改接口（点击参数名时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/param/update
-后端格式为：/api/{recordLog}/system/param/update（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/param/update
+后端格式为：/xlcb/api/{recordLog}/system/param/update（其中{recordLog}为前端传入，
   标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：

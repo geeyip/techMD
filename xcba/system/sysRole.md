@@ -3,8 +3,8 @@
 * 页面查询接口（点击查询按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/list
-	后端格式为：/api/{recordLog}/system/role/list（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/list
+	后端格式为：/xlcb/api/{recordLog}/system/role/list（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -72,8 +72,8 @@
 * 页面新增接口（点击新增按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/add
-	后端格式为：/api/{recordLog}/system/role/add（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/add
+	后端格式为：/xlcb/api/{recordLog}/system/role/add（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -98,8 +98,8 @@
 * 页面删除接口（点击列表删除按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/delete
-	后端格式为：/api/{recordLog}/system/role/delete（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/delete
+	后端格式为：/xlcb/api/{recordLog}/system/role/delete（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -121,8 +121,8 @@
 * 页面进入修改接口（点击列表修改按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/role/_edit
-	后端格式为：/api/{recordLog}/system/role/_edit（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/role/_edit
+	后端格式为：/xlcb/api/{recordLog}/system/role/_edit（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -180,8 +180,8 @@
 * 页面修改接口（点击修改按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/edit
-	后端格式为：/api/{recordLog}/system/role/edit（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/edit
+	后端格式为：/xlcb/api/{recordLog}/system/role/edit（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -205,8 +205,8 @@
 * 页面选择权限接口（点击列表选择权限按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/role/_permission
-	后端格式为：/api/{recordLog}/system/role/_permission（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/role/_permission
+	后端格式为：/xlcb/api/{recordLog}/system/role/_permission（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -465,8 +465,8 @@
 * 页面权限接口（点击授权按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/permission
-	后端格式为：/api/{recordLog}/system/role/permission（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/permission
+	后端格式为：/xlcb/api/{recordLog}/system/role/permission（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -493,8 +493,8 @@
 * 页面角色分配用户接口（点击列表分配用户按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/role/_user
-	后端格式为：/api/{recordLog}/system/role/_user（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/role/_user
+	后端格式为：/xlcb/api/{recordLog}/system/role/_user（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -594,8 +594,8 @@
 * 页面角色加入用户接口（角色分配用户页面触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/add_user
-	后端格式为：/api/{recordLog}/system/role/add_user（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/add_user
+	后端格式为：/xlcb/api/{recordLog}/system/role/add_user（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -618,8 +618,8 @@
 * 页面角色移除用户接口（角色分配用户页面触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/role/remove_user
-	后端格式为：/api/{recordLog}/system/role/remove_user（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/role/remove_user
+	后端格式为：/xlcb/api/{recordLog}/system/role/remove_user（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：

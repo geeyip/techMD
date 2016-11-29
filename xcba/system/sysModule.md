@@ -3,7 +3,7 @@
 * 页面查询接口（初始进入模块）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/module
+1.API路径：http://localhost:8020/xlcb/api/0/system/module
 	后端格式为：api/{recordLog}/system/module（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
@@ -90,7 +90,7 @@
 * 页面模块查看接口（查看模块信息）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/view
+1.API路径：http://localhost:8020/xlcb/api/0/system/view
 	后端格式为：api/{recordLog}/system/view（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
@@ -172,7 +172,7 @@
 * 页面模块添加接口（添加模块）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/add
+1.API路径：http://localhost:8020/xlcb/api/1/system/add
 	后端格式为：api/{recordLog}/system/add（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
@@ -207,7 +207,7 @@
 * 页面模块修改接口（修改模块）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/update
+1.API路径：http://localhost:8020/xlcb/api/1/system/update
 	后端格式为：api/{recordLog}/system/update（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
@@ -242,7 +242,7 @@
 * 页面模块删除接口（删除模块）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/delete
+1.API路径：http://localhost:8020/xlcb/api/1/system/delete
 	后端格式为：api/{recordLog}/system/delete（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json

@@ -224,7 +224,7 @@
                             AXr44U4KnNrTLohhODacgR%2FwvF9jpKdiZ63G7FcvIErFnbAl6h8HK9VMd9M%2FdiNXPBPU5iOlxNuc
                             h%0D%0ATLNKNCpa%2F8WD7aZ8re0%3D",
             "sysParam": {
-                        "dataInterface": "http://192.168.1.151:8080/datacenter/api/apiService?token=pubservice",
+                        "dataInterface": "http://192.168.1.151:8080/datacenter/xlcb/api/xlcb/apiService?token=pubservice",
                         "deploy_place": "滨州市公安局刑事技术一体化平台",
                         "caseLinkAddress": null,
                         "personLinkAddress": null,

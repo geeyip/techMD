@@ -3,8 +3,8 @@
 * 页面查询接口（点击查询按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/user/list
-	后端格式为：/api/{recordLog}/system/user/list（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/user/list
+	后端格式为：/xlcb/api/{recordLog}/system/user/list（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -66,8 +66,8 @@
 * 页面新增接口（点击保存按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/user/add
-	后端格式为：/api/{recordLog}/system/user/add（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/user/add
+	后端格式为：/xlcb/api/{recordLog}/system/user/add（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -97,8 +97,8 @@
 * 页面进入修改接口（点击列表修改按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/user/_edit
-	后端格式为：/api/{recordLog}/system/user/_edit（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/user/_edit
+	后端格式为：/xlcb/api/{recordLog}/system/user/_edit（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -199,8 +199,8 @@
 * 页面修改接口（点击修改按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/1/system/user/edit
-	后端格式为：/api/{recordLog}/system/user/edit（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/1/system/user/edit
+	后端格式为：/xlcb/api/{recordLog}/system/user/edit（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：
@@ -230,8 +230,8 @@
 * 页面查看接口（点击列表用户账号时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/user/view
-	后端格式为：/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/user/view
+	后端格式为：/xlcb/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：GET, application/json
 3.传入参数格式：
@@ -285,8 +285,8 @@
 * 页面删除接口（点击列表删除按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/user/view
-	后端格式为：/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
+1.API路径：http://localhost:8020/xlcb/api/0/system/user/view
+	后端格式为：/xlcb/api/{recordLog}/system/user/view（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
 3.传入参数格式：

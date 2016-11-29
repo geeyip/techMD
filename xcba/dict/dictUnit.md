@@ -3,8 +3,8 @@
 * 录入单位字典查询接口（点击录入单位时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/dict/dict_unit
-	后端格式为/api/{recordLog}/dict/dict_unit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/dict/dict_unit
+	后端格式为/xlcb/api/{recordLog}/dict/dict_unit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{

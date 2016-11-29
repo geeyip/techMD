@@ -3,8 +3,8 @@
 * 标注时效报表查询接口（点击案件类别时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/xlbz_sx
-	后端格式为/api/{recordLog}/tjkh/xlbz/xlbz_sx，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/xlbz_sx
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/xlbz_sx，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -55,8 +55,8 @@
 * 标注时效报表质量查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/sx_bzzl
-	后端格式为/api/{recordLog}/tjkh/xlbz/sx_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/sx_bzzl
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/sx_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -86,8 +86,8 @@
 * 标注率报表查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/xlbz_lv
-	后端格式为/api/{recordLog}/tjkh/xlbz/xlbz_lv，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/xlbz_lv
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/xlbz_lv，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -138,8 +138,8 @@
 * 标注率报表质量查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/lv_bzzl
-	后端格式为/api/{recordLog}/tjkh/xlbz/lv_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/lv_bzzl
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/lv_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -169,8 +169,8 @@
 * 标注质量报表查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/xlbz_zl
-	后端格式为/api/{recordLog}/tjkh/xlbz/xlbz_zl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/xlbz_zl
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/xlbz_zl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -213,8 +213,8 @@
 * 标注质量报表质量查询接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/zl_bzzl
-	后端格式为/api/{recordLog}/tjkh/xlbz/zl_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/zl_bzzl
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/zl_bzzl，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -244,8 +244,8 @@
 * 标注质量报表质量更新接口
 
 ```java
-1.API路径：http://localhost:8090/api/1/tjkh/xlbz/zl_update
-	后端格式为/api/{recordLog}/tjkh/xlbz/zl_update，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/1/tjkh/xlbz/zl_update
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/zl_update，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -271,8 +271,8 @@
 * 小类标注考核Excel导出接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/xlbzkhExcel
-	后端格式为/api/{recordLog}/tjkh/xlbz/xlbzkhExcel，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/xlbzkhExcel
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/xlbzkhExcel，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：GET, application/json
 3.传入参数格式：
 	jsonStr:{}
@@ -283,8 +283,8 @@
 * 小类标注考核Word导出接口
 
 ```java
-1.API路径：http://localhost:8090/api/0/tjkh/xlbz/xlbzkhWord
-	后端格式为/api/{recordLog}/tjkh/xlbz/xlbzkhWord，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/tjkh/xlbz/xlbzkhWord
+	后端格式为/xlcb/api/{recordLog}/tjkh/xlbz/xlbzkhWord，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：GET, application/json
 3.传入参数格式：
 	jsonStr:{}

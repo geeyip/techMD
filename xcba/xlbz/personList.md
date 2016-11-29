@@ -3,8 +3,8 @@
 * 人员信息标注查询接口（点击参数管理时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/xlbz/person/list
-	后端格式为/api/{recordLog}/xlbz/person/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/xlbz/person/list
+	后端格式为/xlcb/api/{recordLog}/xlbz/person/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -87,8 +87,8 @@
 - 人员抽查接口
 
 ```java
-1.API路径：http://localhost:8090/api/1/xlbz/person/spot_check
-	后端格式为/api/{recordLog}/xlbz/person/spot_check，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/1/xlbz/person/spot_check
+	后端格式为/xlcb/api/{recordLog}/xlbz/person/spot_check，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -119,8 +119,8 @@
 - 人员抽查更新接口
 
 ```java
-1.API路径：http://localhost:8090/api/1/xlbz/person/check_insert
-	后端格式为/api/{recordLog}/xlbz/person/check_insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/1/xlbz/person/check_insert
+	后端格式为/xlcb/api/{recordLog}/xlbz/person/check_insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -148,8 +148,8 @@
 - 人员标注查询接口（点击人员信息标注进入人员标注页面时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/0/xlbz/person/info
-	后端格式为/api/{recordLog}/xlbz/person/info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/0/xlbz/person/info
+	后端格式为/xlcb/api/{recordLog}/xlbz/person/info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -172,7 +172,7 @@
                 "sexname": "",//性别中文
                 "name": "",//姓名
                 "cardno": "",//身份证号
-                "detail": "",//户籍地
+                "address": "",//户籍地
                 "time": "",//抓获时间
                 "tagckind": "",//小类案别
                 "kindname": "",//小类案别
@@ -191,8 +191,8 @@
 - 人员标注接口（点击人员标注页面的保存时触发）
 
 ```java
-1.API路径：http://localhost:8090/api/1/xlbz/person/insert
-	后端格式为/api/{recordLog}/xlbz/person/insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+1.API路径：http://localhost:8090/xlcb/api/1/xlbz/person/insert
+	后端格式为/xlcb/api/{recordLog}/xlbz/person/insert，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{

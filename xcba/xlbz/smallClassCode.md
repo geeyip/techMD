@@ -3,9 +3,9 @@
 * 小类标注代码查询列表接口
 
 ```java
-1.API路径：http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/list
-	后端格式为/api/{recordLog}/xlbz/xldm/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端调用:$post('http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/list',{pcdName:"SP_TAG_API_SEL_CASE_KIND",
+1.API路径：http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/list
+	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/list，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/list',{pcdName:"SP_TAG_API_SEL_CASE_KIND",
 	        pcdParamValMap:{"flag":"1"}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
@@ -46,9 +46,9 @@
 * 小类标注代码查询所有大类接口
 
 ```java
-1.API路径：http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/classList
-	后端格式为/api/{recordLog}/xlbz/xldm/classList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端调用:$post('http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/classList',{pcdName:"SP_TAG_API_SEL_BIG_TYPE"},o=>info(o),true)
+1.API路径：http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/classList
+	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/classList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/classList',{pcdName:"SP_TAG_API_SEL_BIG_TYPE"},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -73,9 +73,9 @@
 * 小类标注代码查询分层数据列表接口
 
 ```java
-1.API路径：http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/layeredList
-	后端格式为/api/{recordLog}/xlbz/xldm/layeredList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端调用:$post('http://192.168.1.120:8020/xlcb/api/0/xlbz/xldm/layeredList',
+1.API路径：http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/layeredList
+	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/layeredList，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/0/xlbz/xldm/layeredList',
 	        {pcdName:"SP_TAG_API_SEL_PART_CASE_KIND",pcdParamValMap:{"dictkey":"501"}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
@@ -102,9 +102,9 @@
 * 小类标注代码新增接口
 
 ```java
-1.API路径：http://192.168.1.120:8020/xlcb/api/1/xlbz/xldm/add
-	后端格式为/api/{recordLog}/xlbz/xldm/add，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端调用:$post('http://192.168.1.120:8020/xlcb/api/1/xlbz/xldm/add',
+1.API路径：http://192.168.1.120:8020/xlcb/xlcb/api/1/xlbz/xldm/add
+	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/add，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/1/xlbz/xldm/add',
     	        {pcdName:"SP_TAG_API_INS_TAG_CASE_KIND",pcdParamValMap:
                  {"dicttyp1":"","dicttyp2":"A","dictkey1":"","dictval2":"测试大类1","dictkind":"2"}},o=>info(o),true)
 2.请求：POST, application/json
@@ -134,9 +134,9 @@
 * 小类标注代码修改接口
 
 ```java
-1.API路径：http://192.168.1.120:8020/xlcb/api/1/xlbz/xldm/edit
-	后端格式为/api/{recordLog}/xlbz/xldm/edit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端调用:$post('http://192.168.1.120:8020/xlcb/api/1/xlbz/xldm/edit',
+1.API路径：http://192.168.1.120:8020/xlcb/xlcb/api/1/xlbz/xldm/edit
+	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/edit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/1/xlbz/xldm/edit',
         	        {pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",pcdParamValMap:
                      {"dictkey1":"805","dictval2":"测试大类22"}},o=>info(o),true)
 2.请求：POST, application/json

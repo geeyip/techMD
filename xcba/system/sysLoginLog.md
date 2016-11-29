@@ -3,7 +3,7 @@
 * 页面查询接口（点击查询按钮时触发）
 
 ```java
-1.API路径：http://localhost:8020/api/0/system/login/log
+1.API路径：http://localhost:8020/xlcb/api/0/system/login/log
 	后端格式为：api/{recordLog}/system/login/log（其中{recordLog}为前端传入，
       标识是否需要记录操作日志）
 2.请求：POST, application/json
