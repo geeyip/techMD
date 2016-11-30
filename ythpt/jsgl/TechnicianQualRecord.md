@@ -81,6 +81,7 @@
 
 * 证书(照片ID)：bookPhotoId
 
+* 证书图片Base64：bookPhoto
 
 * 专业：major
 
@@ -90,6 +91,7 @@
 "getTime":"2012-12-12",
 "overTime":"2013-12-11",
 "bookPhotoId":"ea5a7546f4b94149a70bc86ece246bc9",
+“bookPhoto": "",
 "major":"心理学"
 }
 ```
