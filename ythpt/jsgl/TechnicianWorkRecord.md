@@ -22,6 +22,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
+"techId": ""，             //技术人员id
 "workUnit": ""             //工作单位
 "workPost": ""             //职务/职称
 "startTimeStart": "",     //开始时间起始
