@@ -257,8 +257,8 @@ POST, application/json
     "msg": null,
     "data":[
            		{
-           			"KEY"://单位代码 "",
-           			"VALUE"://单位名称 "",
+           			"key"://单位代码 "",
+           			"value"://单位名称 "",
            		}
                ],
     "pages": null,
