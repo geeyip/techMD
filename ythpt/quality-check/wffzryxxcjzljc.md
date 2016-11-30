@@ -98,3 +98,47 @@ GET, application/json
     "operates": null
 }
 ````
+
+### 采集单位自定义字典
+
+
+#### API路径
+
+```http
+http://localhost:8080/api/0/jsgl/organizations/dict_unit_stat
+```
+
+后端格式为`/api/{recordLog}/jsgl/organizations/dict_unit_stat`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+
+  }
+```
+
+#### 返回值格式
+
+```json
+{
+    "flag": 1,
+    "totalCount": null,
+    "msg": null,
+    "data":[
+           		{
+           			"key"://单位代码 "",
+           			"value"://单位名称 "",
+           			"parentId"://父Id ""
+           		}
+               ],
+    "pages": null,
+    "operates": null
+}
+````

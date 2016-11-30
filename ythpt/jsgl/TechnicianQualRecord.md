@@ -5,7 +5,7 @@
 列表 
 
 ```
-/api/{recordLog}/jsgl/technician/{techId}/qual/1/list
+/api/{recordLog}/jsgl/technician/qual/1/list?techId={techId}
 ```
 
 * `techId` 技术人员ID 
@@ -13,7 +13,7 @@
 新增 
 
 ```
-/api/{recordLog}/jsgl/technician/{techId}/qual/1/add
+/api/{recordLog}/jsgl/technician/qual/1/add?techId={techId}
 ```
 
 * `techId` 技术人员ID 
@@ -21,7 +21,7 @@
 修改 
 
 ```
-/api/{recordLog}/jsgl/technician/qual/{id}/edit
+/api/{recordLog}/jsgl/technician/qual/edit?id={id}
 ```
 
 * `id` 技术资格记录ID
@@ -29,7 +29,7 @@
 删除 
 
 ```
-/api/{recordLog}/jsgl/technician/qual/{id}/delete
+/api/{recordLog}/jsgl/technician/qual/delete?id={id}
 ```
 
 * `id` 技术资格记录ID
@@ -39,7 +39,7 @@
 列表
 
 ```
-/api/{recordLog}/jsgl/technician/{techId}/qual/2/list
+/api/{recordLog}/jsgl/technician/qual/2/list?techId={techId}
 ```
 
 * `techId` 技术人员ID
@@ -47,7 +47,7 @@
 新增 
 
 ```
-/api/{recordLog}/jsgl/technician/{techId}/qual/2/add
+/api/{recordLog}/jsgl/technician/qual/2/add?techId={techId}
 ```
 
 * `techId` 技术人员ID
@@ -55,7 +55,7 @@
 修改 
 
 ```
-/api/{recordLog}/jsgl/technician/qual/{id}/edit
+/api/{recordLog}/jsgl/technician/qual/edit?id={id}
 ```
 
 * `id` 鉴定资格记录ID
@@ -63,7 +63,7 @@
 删除 
 
 ```
-/api/{recordLog}/jsgl/technician/qual/{id}/delete
+/api/{recordLog}/jsgl/technician/qual/delete?id={id}
 ```
 
 * `id` 鉴定资格记录ID
@@ -72,12 +72,9 @@
 
 * 资格证编号：bookNo
 
-
 * 取得时间：getTime
 
-
 * 到期时间：overTime
-
 
 * 证书(照片ID)：bookPhotoId
 
