@@ -22,6 +22,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
+"techId": ""，             //技术人员id
 "startTimeStart": "",     //开始时间起始
 "startTimeEnd": ""        //开始时间终止
 "begin": 1,
