@@ -91,7 +91,7 @@
 "getTime":"2012-12-12",
 "overTime":"2013-12-11",
 "bookPhotoId":"ea5a7546f4b94149a70bc86ece246bc9",
-“bookPhoto": "",
+"bookPhoto": "图片Base64编码字符串",
 "major":"心理学"
 }
 ```
