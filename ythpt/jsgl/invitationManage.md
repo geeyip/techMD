@@ -147,7 +147,7 @@ POST, application/json
         "id": "DC3BE807E29C43DFAE58B12A4EA93D3A",
         "invitationName": "",                         //耗材名称
         "invitationCode": "",                         //耗材编号
-        "storageDate": "",                            //入库时间
+        "storageDateStr": "",                         //入库时间
         "totalNumber": "",                            //耗材数量
         "storagePerson": "",                          //保管人
         "storagePersonId": "",                        //保管人id
@@ -387,6 +387,7 @@ POST, application/json
   "invitationName": "",                         //耗材名称
   "invitationCode": "",                         //耗材编号
   "receiveDate": "",                            //领用时间
+  "storageNumber":"",                           //在库数量
   "receiveNum": "",                             //领用数量
   "receiveUser": "",                            //领用人
   "techId": "",                                 //领用人id
