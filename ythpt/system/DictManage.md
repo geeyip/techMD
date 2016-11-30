@@ -153,3 +153,29 @@ jsonStr:
 "defaultRoot":null,"remark":"234","sort":2,"isParent":null,"dictLevel":"0","leafFlag":null,"dictKey":"12",
 "dictValue":"警情查询"},"pages":null,"operates":null}
 ```
+
+###字典导出接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/system/dict_mng/export
+```
+
+后端格式为`/api/{recordLog}/system/dict_mng/export，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+无传入参数
+```
+
+#### 返回值格式
+```json
+无返回参数
+```
