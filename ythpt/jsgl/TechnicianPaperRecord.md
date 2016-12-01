@@ -81,14 +81,14 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-"techId": "",                                   // 技术人员id
-"paperTitle",                                   // 论文著作标题
-"paperAuthor",                                  // 作者
-"publishName",                                  // 刊物名称
-"publishDate",                                  // 发布出版时间
-"publishRank",                                  // 排名
-"publishNo",                                    // 刊号
-"publishUnit",                                  // 刊物(论文交流)主办单位
+"techId": "",                                       // 技术人员id
+"paperTitle": "",                                   // 论文著作标题
+"paperAuthor": "",                                  // 作者
+"publishName": "",                                  // 刊物名称
+"publishDate": "",                                  // 发布出版时间
+"publishRank": "",                                  // 排名
+"publishNo": "",                                    // 刊号
+"publishUnit": ""                                   // 刊物(论文交流)主办单位
 }
 ```
 
@@ -143,13 +143,13 @@ POST, application/json
 {
 "id": "",
 "techId": "",                                   // 技术人员id
-"paperTitle",                                   // 论文著作标题
-"paperAuthor",                                  // 作者
-"publishName",                                  // 刊物名称
-"publishDateStr",                               // 发布出版时间
-"publishRank",                                  // 排名
-"publishNo",                                    // 刊号
-"publishUnit",                                  // 刊物(论文交流)主办单位
+"paperTitle":"",                                // 论文著作标题
+"paperAuthor":"",                               // 作者
+"publishName":"",                               // 刊物名称
+"publishDateStr":"",                            // 发布出版时间
+"publishRank":"",                               // 排名
+"publishNo":"",                                 // 刊号
+"publishUnit":""                                // 刊物(论文交流)主办单位
 }
 ],
 "pages": null,
@@ -180,14 +180,14 @@ POST, application/json
 ```json
 {
 "id": "",
-"techId": "",                                   // 技术人员id
-"paperTitle",                                   // 论文著作标题
-"paperAuthor",                                  // 作者
-"publishName",                                  // 刊物名称
-"publishDate",                                  // 发布出版时间
-"publishRank",                                  // 排名
-"publishNo",                                    // 刊号
-"publishUnit",                                  // 刊物(论文交流)主办单位
+"techId": "",                                        // 技术人员id
+"paperTitle":"",                                     // 论文著作标题
+"paperAuthor":"",                                    // 作者
+"publishName":"",                                    // 刊物名称
+"publishDate":"",                                    // 发布出版时间
+"publishRank":"",                                    // 排名
+"publishNo":"",                                      // 刊号
+"publishUnit":""                                     // 刊物(论文交流)主办单位
 }
 ```
 

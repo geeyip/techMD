@@ -83,13 +83,15 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-"techId": "",                                   // 技术人员id
-"startTime": "",                                // 开始时间
-"endTime": "",                                  // 结束时间
-"workDetail": "",                               // 完成情况
-"workRole":"",                                  // 本人作用
-"workResult":"",                                // 完成效果
-"workFileId":""                                 // 附件id
+"techId": ""                            //技术人员id
+"studyClass": "",                       //培训班名称
+"major": "",                            //所属专业
+"studyUnit": "",                        //培训单位
+"startTime": "",                        //培训开始时间
+"endTime": "",                          //培训结束时间
+"studyTime": "",                        //培训时长
+"hasBook":"",                           //是否发证
+"bookPhotoId":""                        //证书照片ID
 }
 ```
 
@@ -150,8 +152,8 @@ POST, application/json
 "startTime": "",                        //培训开始时间
 "endTime": "",                          //培训结束时间
 "studyTime": "",                        //培训时长
-"hasBook",                              //是否发证
-"bookPhotoId"                           //证书照片ID
+"hasBook": "",                          //是否发证
+"bookPhotoId": "",                      //证书照片ID
 }
 ],
 "pages": null,

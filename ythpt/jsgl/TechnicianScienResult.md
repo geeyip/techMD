@@ -22,9 +22,9 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-"techId": ""，             //技术人员id
+"techId": "",             //技术人员id
 "startTimeStart": "",     //开始时间起始
-"startTimeEnd": ""        //开始时间终止
+"startTimeEnd": "",       //开始时间终止
 "begin": 1,
 "end": 200
 }
@@ -77,10 +77,10 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-    "techId": "",                                   // 技术人员id
+    "techId": "28c7590816d34f04867c03b1ce1f73d6",   // 技术人员id
     "startTime": "",                                // 开始时间
     "endTime": "",                                  // 结束时间
-    "workDetail": "",                               // 完成情况
+    "workDetail": "1",                              // 完成情况
     "workRole":"",                                  // 本人作用
     "workResult":"",                                // 完成效果
     "workFileId":""                                 // 附件id
@@ -174,7 +174,7 @@ POST, application/json
 ```json
 {
 "id": "",
-"techId": ""                             //技术人员id
+"techId": "",                            //技术人员id
 "startTime": "",                         //开始时间
 "endTime": "",                           //结束时间
 "workResult": "",                        //完成情况及效果、获何奖励
