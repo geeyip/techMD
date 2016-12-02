@@ -124,7 +124,15 @@
         "flag": 1,
         "totalCount": -1,
         "msg": null,
-        "data": "1",//新增结果,1:成功,0:失败,
+        "data": [
+            {
+                "key1":"823",//大类
+                "key2":"",//小类
+                "key3":"",//手段
+                "kind":"1",//A-B-C、A-C
+                "flag":"1"
+            }
+        ],//新增结果,1:成功,0:失败,
         "pages": null,
         "operates": null
     }
