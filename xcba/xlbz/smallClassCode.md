@@ -124,7 +124,15 @@
         "flag": 1,
         "totalCount": -1,
         "msg": null,
-        "data": "1",//新增结果,1:成功,0:失败,
+        "data": [
+            {
+                "key1":"823",//大类
+                "key2":"",//小类
+                "key3":"",//手段
+                "kind":"1",//A-B-C、A-C
+                "flag":"1"
+            }
+        ],//新增结果,1:成功,0:失败,
         "pages": null,
         "operates": null
     }
@@ -138,20 +146,28 @@
 	后端格式为/xlcb/api/{recordLog}/xlbz/xldm/edit，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 	前端调用:$post('http://192.168.1.120:8020/xlcb/xlcb/api/1/xlbz/xldm/edit',
         	        {pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",pcdParamValMap:
-                     {"dictkey1":"805","dictval2":"测试大类22"}},o=>info(o),true)
+                     {"type1":"A","key1":"4200","value1":"杀人越货","kind":"1"}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_UPD_TAG_CASE_KIND",
                 pcdParamValMap:
-                    {"dictkey1":"4200","dictval2":"杀人越货"}//选中类别代码,修改后名称
+                    {"type1":"A","key1":"4200","value1":"杀人越货","kind":"1"}
 	        }
 4.返回值格式
 	{
         "flag": 1,
         "totalCount": -1,
         "msg": null,
-        "data": null,
+        "data": [
+            {
+                "key1":"823",//大类
+                "key2":"",//小类
+                "key3":"",//手段
+                "kind":"1",//A-B-C、A-C
+                "flag":"1"
+            }
+        ],
         "pages": null,
         "operates": null
     }
