@@ -30,3 +30,32 @@ POST, application/json
 ```json
 {"flag":1,"totalCount":0,"msg":null,"data":[],"pages":null,"operates":null}
 ```
+
+
+### 人员详细页面接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/workbench/person/person_Info
+```
+
+后端格式为`/api/{recordLog}/workbench/person/person_Info，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+GET, application/json
+```
+
+#### 传入参数格式
+```json
+pno:R3501222916002010080037
+```
+
+#### 返回值格式
+
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":{"hitInfo":null,"personInfo":null},"pages":null,"operates":null}
+```
+
