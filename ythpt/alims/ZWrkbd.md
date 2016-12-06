@@ -90,8 +90,8 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-     "inveId" : '' //现勘ID
-     "hjlx" : '' //痕迹/物证类型
+     "inveId" : '现勘ID',
+     "hjlx" : '痕迹/物证类型'
 }
 ```
 
@@ -109,10 +109,67 @@ POST, application/json
                 "wzmc": "匕首",                       //物证名称
                 "wzlx": "",                          //物证类型
                 "photoStr": "",                      //物证照片
-                "zwbh": "某某单位",                    //指纹编号
+                "zwbh": "某某单位"                     //指纹编号
             }
         ],
         "pages": null,
         "operates": null
 }
 ```
+
+### 指纹比中页面查询接口
+
+点击查询按钮时触发
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/1/alims/zwbd/list
+```
+
+后端格式为`/api/{recordLog}/alims/zwbd/list`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+"sfrk": "", //指纹入库状态  1-已入库 0-未入库
+"sfbz": "", //指纹比对状态  1-比中 0-未比中
+"zwbh": "",  //指纹编号
+"ajbh": "",  //案件编号
+"kybh": "",  //勘验编号
+"ajmc": "",  //案件名称
+"begin": 1,
+"end": 200
+}
+```
+
+#### 返回值格式
+
+```json
+{
+"flag": 1,
+"totalCount": 1,
+"msg": null,
+"data": [
+{
+"rownum": "1",
+"id": "DC3BE807E29C43DFAE58B12A4EA93D3A",  //指纹id
+"zwbh": "ZA110145656985321323",            //案件编号
+"ajbh": "A110145656985321322",             //警情编号
+"kybh": "",                                //案件名称
+"ajmc": "x",                               //案件类别
+"sfrk": "0",                               //是否入库 1-已入库 0-未入库
+"sfbz": "1"                               //是否比中 1-比中 0-未比中
+}
+],
+"pages": null,
+"operates": null
+}
+````

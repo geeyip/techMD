@@ -168,7 +168,7 @@
         [
             {
                 "caseno": "",//案件编号
-                "happentime": "",//案发时间
+                "begintime": "",//案发时间
                 "address": "",//案发地点
                 "unit": "",//选择单位
                 "unitname": "",//选择单位中文
