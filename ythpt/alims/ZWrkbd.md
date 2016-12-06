@@ -90,8 +90,8 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-     "inveId" : '' //现勘ID
-     "hjlx" : '' //痕迹/物证类型
+     "inveId" : '现勘ID',
+     "hjlx" : '痕迹/物证类型'
 }
 ```
 
@@ -109,7 +109,7 @@ POST, application/json
                 "wzmc": "匕首",                       //物证名称
                 "wzlx": "",                          //物证类型
                 "photoStr": "",                      //物证照片
-                "zwbh": "某某单位",                    //指纹编号
+                "zwbh": "某某单位"                     //指纹编号
             }
         ],
         "pages": null,
@@ -166,7 +166,7 @@ POST, application/json
 "kybh": "",                                //案件名称
 "ajmc": "x",                               //案件类别
 "sfrk": "0",                               //是否入库 1-已入库 0-未入库
-"sfbz": "1",                               //是否比中 1-比中 0-未比中
+"sfbz": "1"                               //是否比中 1-比中 0-未比中
 }
 ],
 "pages": null,
