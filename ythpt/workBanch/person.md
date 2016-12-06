@@ -56,6 +56,12 @@ pno:R3501222916002010080037
 #### 返回值格式
 
 ```json
-{"flag":1,"totalCount":0,"msg":null,"data":{"hitInfo":null,"personInfo":null},"pages":null,"operates":null}
+{"flag":1,"totalCount":0,"msg":null,"data":{"perFootPrint":[],"jzInfo":[],"hitInfo":null,"falsePerson":
+[{"ryzt":"未抓获","sfzh":"522624197906082612","sex":null,"pno":"R3506272305002009100007","lrsj":"1899-12-30 09:00:00",
+"ryxm":"杨通刚","hjd":"贵州省三穗县良上乡上寨村土地塘组"},{"ryzt":"未抓获","sfzh":"522624197906082612","sex":null,
+"pno":"R3506272305002009120001","lrsj":"2009-12-07 09:31:39","ryxm":"杨通刚","hjd":"贵州省三穗县良上乡上寨村土地塘组"}],
+"perDna":[],"perHandPrint":[],"personInfo":[{"edulevel":"文盲","unit":"（无）","phone":"（无）","sex":"男",
+"alias":"（无）","national":"中国","name":"杨通刚","pdetail":"（无）","idcard":"522624197906082612",
+"hdetail":"贵州省三穗县良上乡上寨村土地塘组","nation":"苗族"}]},"pages":null,"operates":null}
 ```
 
