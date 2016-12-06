@@ -61,9 +61,34 @@ pno:R3501222916002010080037
 	"totalCount": 0,
 	"msg": null,
 	"data": {
-		"perFootPrint": [],
-		"jzInfo": [],
-		"hitInfo": null,
+		"perFootPrint": [{
+			"zjbh": "a24",
+			"tqdw": "a30",
+			"hjd": "a77",
+			"sfzh": "a72",
+			"tqsj": "a76",
+			"pno": "a75",
+			"ryxm": "a17"
+		}],
+		"jzInfo": [{
+			"ryly": "a53",
+			"hjd": "a36",
+			"cjsj": "a30",
+			"ryzt": "a30",
+			"sfzh": "a94",
+			"ryno": "a54",
+			"cjdw": "a70",
+			"ryxm": "a99"
+		}],
+		"hitInfo": [{
+			"detail": "a64",
+			"status": "a60",
+			"cno": "a22",
+			"type": "a30",
+			"haptime": "a2",
+			"kno": "a44",
+			"kind": "a30"
+		}],
 		"falsePerson": [{
 			"ryzt": "未抓获",
 			"sfzh": "522624197906082612",
@@ -82,8 +107,24 @@ pno:R3501222916002010080037
 			"ryxm": "杨通刚",
 			"hjd": "贵州省三穗县良上乡上寨村土地塘组"
 		}],
-		"perDna": [],
-		"perHandPrint": [],
+		"perDna": [{
+			"rybh": "a51",
+			"sjdw": "a51",
+			"dno": "a82",
+			"hjd": "a19",
+			"sfzh": "a76",
+			"sjsj": "a59",
+			"ryxm": "a74"
+		}],
+		"perHandPrint": [{
+			"hjd": "a51",
+			"sfzh": "a48",
+			"nydw": "a18",
+			"pno": "a97",
+			"nyrq": "a98",
+			"ryxm": "a69",
+			"ryzwxx": "a64"
+		}],
 		"personInfo": [{
 			"edulevel": "文盲",
 			"unit": "（无）",
