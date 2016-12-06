@@ -55,8 +55,84 @@ cno:A3502127400002016051000
 #### 返回值格式
 
 ```json
-{"flag":1,"totalCount":0,"msg":null,"data":{"dnaInfo":[],"caseInfo":[{"cno":"A3502127400002016051000",
-"unit":"厦门市公安局祥平派出所","detail":"福建省厦门市同安区祥平街道霞煌路58号",
-"hadate":"2016-05-13 00:00:00","cname":"陈茂生"}],"handPrintInfo":[],"footInfo":[],
-"investigationInfo":[]},"pages":null,"operates":null}
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": {
+		"dnaInfo": [{
+			"position": "a22",
+			"unit": "a45",
+			"time": "a27",
+			"dno": "a90",
+			"name": "a82",
+			"type": "a88",
+			"user": "a74",
+			"labno": "a98"
+		}],
+		"hitInfo": [{
+			"ryly": "a26",
+			"lrsj": "a2",
+			"hjd": "a78",
+			"ryzt": "a63",
+			"sfzh": "a80",
+			"pno": "a74",
+			"lx": "a10",
+			"ryxm": "a73"
+		}],
+		"caseInfo": [{
+			"summary": "a23",
+			"unit": "a65",
+			"rno": "a4",
+			"detail": "a99",
+			"status": "a1",
+			"hadate": "2016-12-06",
+			"cno": "a37",
+			"place": "a55",
+			"user": "a74",
+			"redate": "2016-12-06",
+			"kind": "a10",
+			"cname": "a38",
+			"sodate": "2016-12-06"
+		}],
+		"handPrintInfo": [{
+			"position": "a28",
+			"unit": "a58",
+			"detail": "a55",
+			"time": "a72",
+			"colltime": "a59",
+			"hno": "a54",
+			"user": "a65",
+			"kind": "a89"
+		}],
+		"footInfo": [{
+			"position": "a36",
+			"unit": "a69",
+			"colltime": "a88",
+			"collby": "a49",
+			"type": "a16",
+			"fno": "a37"
+		}],
+		"investigationInfo": [{
+			"lotude": "a2",
+			"location": "a62",
+			"latude": "a69",
+			"means": "a38",
+			"way": "a91",
+			"addr": "a24",
+			"charcs": "a28",
+			"content": "a7",
+			"unit": "a78",
+			"time": "a87",
+			"order": "a33",
+			"name": "a95",
+			"value": "a11",
+			"critime": "a38",
+			"kno": "a68",
+			"user": "a58"
+		}]
+	},
+	"pages": null,
+	"operates": null
+}
 ```
