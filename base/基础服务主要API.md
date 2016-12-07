@@ -1,5 +1,30 @@
 ##  基础服务主要API
 
+### 连接socket
+
+引入`socket.io.js`
+
+```javascript
+var socket = null;
+var userInfo = {
+  userId:  'sys',
+  userName: '管理员',
+  userUnit: '厦门市公安局',
+  systemId: 'YTHPT',
+  systemPlace: '350200000000'
+};
+//连接Socket
+socket = io.connect('http://192.168.1.155:3000');
+//登录事件
+socket.emit('login', userInfo);
+//监听登出
+socket.on('logoutAll', function(){
+  logout();
+});
+```
+
+
+
 ### 获取在线用户
 
 获取在线用户集合与在线用户数
@@ -84,3 +109,93 @@ API返回JSON对象示例
 * `flag` 查询标记，1-成果 0-异常
 * `totalCount`查询数据总条数
 * `data`分页数据，其中`rn`为数据序号
+
+
+
+### 文件上传服务
+
+**文件上传**
+
+```http
+POST http://ip:port/api/file/upload
+```
+
+上传表单示例
+
+```html
+<form method="post" action="http://ip:port/api/file/upload" enctype='multipart/form-data'>
+    <fieldset>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">选择文件</label>
+            <div class="col-sm-5">
+                <input id="test" name="test" type="file" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <button id="btnSub" class="btn btn-sm btn-primary" type="submit">上 传</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+```
+
+* `enctype='multipart/form-data'` 表单的`enctype`需要指定为`multipart/form-data`
+* 目前只支持单文件的上传，多文件上传开发中
+
+异步上传示例
+
+```javascript
+var formData = new FormData();
+formData.append("myfile", document.getElementById("test").files[0]);   
+$.ajax({
+    url: "http://localhost:3000/api/file/upload",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (data) {
+      if(data.flag == '1'){
+        alert('上传成功');
+        console.log(data.fileId);
+      }
+    },
+    error: function () {
+      alert("上传失败！");
+    }
+});
+```
+
+上传成功返回示例
+
+```json
+{
+  "flag":1,
+  "msg":"上传成功",
+  "fileId":"5846908f0d0b16013dcc3c3b"
+}
+```
+
+* `fileId` 服务端生成的文件唯一ID，下载与删除文件需要传递此ID
+
+  ​
+
+**文件下载**
+
+```http
+GET http://ip:port/api/file/download/{id}
+```
+
+* `id`  文件ID
+* 需要浏览器中直接预览文件，比如图片、文本，需要传递参数`preview`，可在API后加 `?preview=true`
+
+**文件删除**
+
+```http
+GET http://ip:port/api/file/delete/{id}
+```
+
+* `id`  文件ID
+
+### 客户端个更新相关
+

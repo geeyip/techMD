@@ -51,6 +51,7 @@ GET, application/json
 #### 传入参数格式
 ```json
 pno:R3501222916002010080037
+pcdName:SP_INT_API_SEL_CASE_INFO//值不为空时返回单块信息
 ```
 
 #### 返回值格式
