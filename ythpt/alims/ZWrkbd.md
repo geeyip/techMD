@@ -117,7 +117,7 @@ POST, application/json
 }
 ```
 
-### 指纹比中页面查询接口
+### 指纹比对页面查询接口
 
 点击查询按钮时触发
 
@@ -167,6 +167,69 @@ POST, application/json
 "ajmc": "x",                               //案件类别
 "sfrk": "0",                               //是否入库 1-已入库 0-未入库
 "sfbz": "1"                               //是否比中 1-比中 0-未比中
+}
+],
+"pages": null,
+"operates": null
+}
+````
+
+### 指纹比中审核页面查询接口
+
+点击查询按钮时触发
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/1/alims/zwbzsh/list
+```
+
+后端格式为`/api/{recordLog}/alims/zwbzsh/list`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+"sjzt": "",       //数据状态
+"bzfs": "",       //比对方式
+"xczwbh": "",     //现场指纹编号
+"szzwbh": "",    //十指指纹编号
+"ajbh": "",      //案件编号
+"bzr": "",       //比中人
+"bzsjStart": "",      //开始比中时间
+"bzsjEnd": "",       //结束比中时间
+"lrsjStart": "",      //开始录入时间
+"lrsjEnd": "",       //结束录入时间
+"begin": 1,
+"end": 200
+}
+```
+
+#### 返回值格式
+
+```json
+{
+"flag": 1,
+"totalCount": 1,
+"msg": null,
+"data": [
+{
+"rownum": "1",
+"hitId": "",       //比中id
+"ajbh": "",        //案件编号
+"xczwbh": "",     //现场指纹编号
+"szzwbh": "",     //十指指纹编号
+"bzfs":"",        //比中方式
+"bzr":"",         //比中人
+"bzsj":"",        //比中时间
+"lrsj":"",        //录入时间
+"sjzt": ""       //数据状态
 }
 ],
 "pages": null,
