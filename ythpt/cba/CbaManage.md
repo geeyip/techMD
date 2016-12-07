@@ -33,7 +33,7 @@ POST, application/json
   "checkState": "", //市局审核情况
   "kno": "", //先看编号
   "caseNo": "", //案件编号
-  "person": "", //人员编号
+  "persNo": "", //人员编号
 }
 ```
 
@@ -74,3 +74,23 @@ POST, application/json
     "operates": null
 }
 ```
+### 串并案查看接口
+
+点击查看按钮时触发
+
+#### API路径
+
+```http
+openIE:
+http://192.168.1.169:8080/xjpt/bunchDetailForView.action?cbaid=//串并案编号
+```
+
+### 串并案修改接口
+
+点击修改按钮时触发
+
+#### API路径
+
+```http
+openIE:
+path: localData.get('sysParam').xjptAddress + '/bunchDetailForView.action?cbaid='+//串并案编号
