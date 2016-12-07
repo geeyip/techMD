@@ -143,6 +143,29 @@ POST http://ip:port/api/file/upload
 * `enctype='multipart/form-data'` 表单的`enctype`需要指定为`multipart/form-data`
 * 目前只支持单文件的上传，多文件上传开发中
 
+异步上传示例
+
+```javascript
+var formData = new FormData();
+formData.append("myfile", document.getElementById("test").files[0]);   
+$.ajax({
+    url: "http://localhost:3000/api/file/upload",
+    type: "POST",
+    data: formData,
+    contentType: false,
+    processData: false,
+    success: function (data) {
+      if(data.flag == '1'){
+        alert('上传成功');
+        console.log(data.fileId);
+      }
+    },
+    error: function () {
+      alert("上传失败！");
+    }
+});
+```
+
 上传成功返回示例
 
 ```json
@@ -164,7 +187,7 @@ GET http://ip:port/api/file/download/{id}
 ```
 
 * `id`  文件ID
-* 需要浏览器中直接预览文件，比如图片，需要传递参数`preview`，可在API后加 `?preview=true`
+* 需要浏览器中直接预览文件，比如图片、文本，需要传递参数`preview`，可在API后加 `?preview=true`
 
 **文件删除**
 
