@@ -53,6 +53,16 @@ cno:A3502127400002016051000
 pcdName:SP_INT_API_SEL_CASE_INFO//值不为空时返回单块信息
 ```
 
+### 存储过程枚举
+```json
+SP_INT_API_SEL_CASE_INFO("SP_INT_API_SEL_CASE_INFO", "caseInfo", "查询案件基本信息"), //一体化查询案件基本信息
+SP_INT_API_SEL_REL_CASE_SCENE("SP_INT_API_SEL_REL_CASE_SCENE", "investigationInfo", "查询勘验现场信息"),//一体化查询勘验现场信息
+SP_INT_API_SEL_REL_CASE_HAND("SP_INT_API_SEL_REL_CASE_HAND", "handPrintInfo" , "查询提取现场指纹"),//一体化查询提取现场指纹
+SP_INT_API_SEL_REL_CASE_DNA("SP_INT_API_SEL_REL_CASE_DNA", "dnaInfo", "查询提取现场DNA"),//一体化查询提取现场DNA
+SP_INT_API_SEL_REL_CASE_FOOT("SP_INT_API_SEL_REL_CASE_FOOT", "footInfo", "查询提取现场足迹"),//一体化查询提取现场足迹
+SP_CET_API_SEL_CASE_HIT_INFO("SP_CET_API_SEL_CASE_HIT_INFO", "hitInfo", "查询案件涉案比中情况"),//一体化查案询件涉案比中情况
+```
+
 #### 返回值格式
 
 ```json

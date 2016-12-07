@@ -53,6 +53,16 @@ GET, application/json
 pno:R3501222916002010080037
 pcdName:SP_INT_API_SEL_CASE_INFO//值不为空时返回单块信息
 ```
+### 存储过程枚举
+```json
+SP_INT_API_SEL_PERSON_INFO("SP_INT_API_SEL_PERSON_INFO", "personInfo", "查询人员基本信息"),//一体化查询人员基本信息
+SP_CET_API_SEL_PERSON_HIT_INFO("SP_CET_API_SEL_PERSON_HIT_INFO", "hitInfo", "查询涉案比中情况"),//一体化查询涉案比中情况
+SP_CET_API_SEL_PERSON("SP_CET_API_SEL_PERSON", "jzInfo", "查询警综人员记录"),//一体化查询警综人员记录
+SP_CET_API_SEL_FALSE_PERSON("SP_CET_API_SEL_FALSE_PERSON", "falsePerson", "查询冒名警综人员"),//一体化查询冒名警综人员
+SP_CET_API_SEL_PER_DNA("SP_CET_API_SEL_PER_DNA", "perDna", "查询提取人员DNA"),//一体化查询提取人员DNA
+SP_CET_API_SEL_PER_FOOTPRINT("SP_CET_API_SEL_PER_FOOTPRINT", "perFootPrint", "查询提取人员足迹"),//一体化查询提取人员足迹
+SP_CET_API_SEL_PER_HANDPRINT("SP_CET_API_SEL_PER_HANDPRINT", "perHandPrint", "查询人员指纹记录"),//一体化查询人员指纹记录
+```
 
 #### 返回值格式
 
