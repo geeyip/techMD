@@ -82,7 +82,7 @@ POST, application/json
 
 ```http
 openIE:
-http://192.168.1.169:8080/xjpt/bunchDetailForView.action?cbaid=//串并案编号
+path: localData.get('sysParam').xjptAddress + '/bunchDetailForView.action?cbaid='+//串并案编号
 ```
 
 ### 串并案修改接口
@@ -93,4 +93,4 @@ http://192.168.1.169:8080/xjpt/bunchDetailForView.action?cbaid=//串并案编号
 
 ```http
 openIE:
-path: localData.get('sysParam').xjptAddress + '/bunchDetailForView.action?cbaid='+//串并案编号
+path: localData.get('sysParam').xjptAddress + '/pages/singleJhLogin.action?jh='+localData.get('currentUser').policeNo+'&cbaId='+//串并案编号
