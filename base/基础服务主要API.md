@@ -199,3 +199,27 @@ GET http://ip:port/api/file/delete/{id}
 
 ### 客户端个更新相关
 
+```http
+GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPlace}&version={version}
+```
+
+* `systemId`  系统ID，必须传递
+* `systemPlace` 系统12位部署地代码，必须传递
+* `version` 客户端本地版本序列号
+
+返回示例
+
+```json
+{
+  "latestVersion":1481103947524,
+  "localVersion":"-1",
+  "update":true,
+  "fileId":"5847da4ac1a2d82a8ca537b4"
+}
+```
+
+* `latestVersion`最新版本序列号
+* `localVersion`本地版本序列号
+* `update` 是否需要更新
+* `fileId`更新包文件ID
+
