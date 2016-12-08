@@ -23,14 +23,14 @@ POST, application/json
   "createDateBegin": "", //串并时间开始
   "createDateEnd": "", //串并时间结束
   "cbyj": "", //串并依据 指纹/足迹/DNA/手段特点 (直接传中文)
-  "cblyCn": "", //串并来源
+  "cblyCn": "", //串并来源 字典：CBZTDM
   "cbaid": "",  //串并号
   "cbmc": "",  //串并名称
   "cblb": "", //串并类别 字典：CBLBDM
   "paNum": "",  //是否存在破案 1：存在破案 0：不存在破案
   "cbdw": "", //串并单位 字典：GXSDM
-  "checkStateProv": "",//省厅审核情况
-  "checkState": "", //市局审核情况
+  "checkStateProv": "",//省厅审核情况 字典：SHZTDM 对应值
+  "checkState": "", //市局审核情况 字典：SHZTDM 对应值
   "kno": "", //先看编号
   "caseNo": "", //案件编号
   "persNo": "", //人员编号
