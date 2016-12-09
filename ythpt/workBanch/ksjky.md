@@ -152,3 +152,53 @@ GET, application/json
 //data中的list字段：id 技术人员编号 trueName 真实姓名 kys 勘验数 mobilephoneNo 电话
 ```
 
+
+###新增警情接口
+
+#### API路径
+
+```http
+http://localhost:8095/api/0/workbench/jqxx/add
+```
+
+后端格式为`/api/{recordLog}/workbench/jqxx/add，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+```
+$post('http://localhost:8090/api/0/workbench/jqxx/add', {
+	slBjslh: '141221',
+	sljjsj: '2016-05-09',
+	gxdwdm: '350200000000',
+	ab: 'ccc',
+	sljjry: '李四',
+	fadd: '海越大厦',
+	zyaq: '抢夺案',
+	sspq: '01',
+	appointUnit: '350200000000',
+	appointTime: '2016-05-09'
+},
+function(res) {
+	log(res)
+},
+true)
+```
+
+#### 返回值格式
+```json
+{
+	flag: 1,
+	totalCount: 0,
+	msg: null,
+	data: null,
+	pages: null…
+}
+```
+
+
+
