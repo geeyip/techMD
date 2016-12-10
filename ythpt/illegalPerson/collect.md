@@ -22,17 +22,19 @@ POST, application/json
 $post('http://localhost:8090/api/0/illegalperson/collect/list', {
 	"pcdName": "SP_INT_API_SEL_CRI_PERSON",
 	"pcdParamValMap": {
-		pno: '',
+		pno: '',//人员编号
 		hno: '',//指纹编号
-		name: '',
-		sex: '',
-		idcard: '',
-		place: '',
-		unit: '',
-		status: '',
-		collflag: '',
-		birdaymi: '',
-		birdayma: ''
+		name: '',//姓名
+		sex: '',//性别
+		idcard: '',//出生日期
+		place: '',//籍贯
+		unit: '',//录入单位
+		status: '',//人员状态
+		collflag: '',//是否采集
+		birdaymi: '',//出生日期最小
+		birdayma: ''//出生日期最大
+		lrsjma:'',//录入时间最大
+		lrsjmi:''录入时间最小
 	},
 	"begin": "1",
 	"end": "5"
@@ -59,61 +61,10 @@ true)
 		"status": "未抓获",
 		"name": "杨通刚",
 		"idcard": "522624197906082612",
-		"hno": null,
+		"hno": null,//指纹编号
 		"house": "贵州省三穗县良上乡上寨村土地塘组",
-		"pno": "R3506272305002009100007"
-	},
-	{
-		"unit": null,
-		"num": 2,
-		"sex": "1",
-		"collflag": "0",
-		"birday": "1988-03-15 00:00:00",
-		"status": "未抓获",
-		"name": "陈志",
-		"idcard": "35012819880315431X",
-		"hno": null,
-		"house": "厦门市思明区体育路61号",
-		"pno": "0000000207120000603379"
-	},
-	{
-		"unit": null,
-		"num": 3,
-		"sex": "1",
-		"collflag": "0",
-		"birday": "1990-11-15 00:00:00",
-		"status": "未抓获",
-		"name": "柏孟林",
-		"idcard": "431121199011154734",
-		"hno": null,
-		"house": "湖南省永州市",
-		"pno": "0000000207120000603356"
-	},
-	{
-		"unit": null,
-		"num": 4,
-		"sex": "1",
-		"collflag": "0",
-		"birday": "1989-07-28 00:00:00",
-		"status": "未抓获",
-		"name": "郭小坪",
-		"idcard": "350212198907281553",
-		"hno": null,
-		"house": "后村村洞庭二210号",
-		"pno": "0000000000000000112668"
-	},
-	{
-		"unit": null,
-		"num": 5,
-		"sex": "1",
-		"collflag": "0",
-		"birday": "1962-05-23 00:00:00",
-		"status": "未抓获",
-		"name": "刘代权",
-		"idcard": "522124196205230414",
-		"hno": null,
-		"house": "贵州省正安县石矸村大山组",
-		"pno": "0000000000000000112453"
+		"pno": "R3506272305002009100007",
+		 lrsj: "1899-12-30 09:00:00"//录入时间
 	}],
 	"pages": null,
 	"operates": null
