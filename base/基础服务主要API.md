@@ -199,6 +199,7 @@ GET http://ip:port/api/file/delete/{id}
 
 ### 客户端个更新相关
 
+客户端检查更新
 ```http
 GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPlace}&version={version}
 ```
@@ -223,3 +224,9 @@ GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPla
 * `update` 是否需要更新
 * `fileId`更新包文件ID
 
+客户端安装包下载
+```http
+GET http://ip:port/api/client/install?systemId={systemId}&systemPlace={systemPlace}
+```
+* `systemId`  系统ID，必须传递
+* `systemPlace` 系统12位部署地代码，必须传递
