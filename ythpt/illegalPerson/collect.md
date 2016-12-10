@@ -29,7 +29,7 @@ $post('http://localhost:8090/api/0/illegalperson/collect/list', {
 		idcard: '',//出生日期
 		place: '',//籍贯
 		unit: '',//录入单位
-		status: '',//人员状态
+		status: '',//人员状态(字典：RYZTDM)
 		collflag: '',//是否采集
 		birdaymi: '',//出生日期最小
 		birdayma: ''//出生日期最大
