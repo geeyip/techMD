@@ -23,7 +23,7 @@ $post('http://localhost:8090/api/0/illegalperson/collect/list', {
 	"pcdName": "SP_INT_API_SEL_CRI_PERSON",
 	"pcdParamValMap": {
 		pno: '',
-		hno: '',
+		hno: '',//指纹编号
 		name: '',
 		sex: '',
 		idcard: '',
