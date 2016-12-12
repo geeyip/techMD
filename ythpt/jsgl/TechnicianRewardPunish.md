@@ -82,7 +82,7 @@
 
 * 证书图片Base64：rpPhoto
 
-* 备注：rpRemark
+* 备注：remark
 
 ```json
 {
@@ -91,7 +91,7 @@
     "rpReason":"456",
     "rpPublisher":"789" ,
     "rpPhotoId":"1111111" ,
-    "rpRemark":"000"
+    "remark":"000"
 }
 ```
 
