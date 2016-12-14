@@ -20,7 +20,7 @@ POST, application/json
 **jsonStr:**
 ```json
 {
-    "jqNo":"35021120160504500002",//警情编号
+    "jcjSystemId":"PC021120160504500002",//警情编号
     "createDateStr":"2015-01-02 10:00:03",//反馈时间
     "zaMeans":"01,05"//作案手段
 }
@@ -54,7 +54,7 @@ POST, application/json
 ```json
 {
     "type":"1",//指派类型：1警情，2案件
-    "appointNo":"35021120160504500002",//指派编号:警情/案件编号
+    "appointNo":"PC021120160504500002",//指派编号:警情id/案件编号
     "ryNames":"454,张三",// 技术人员姓名
     "ryIds":"bfed55b9feb3420e8a8028a26636c2e9,15c3339fd8174f59826328535a4df08a"//技术人员id
 }
