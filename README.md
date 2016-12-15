@@ -67,6 +67,7 @@
 * [人员抽查API](xcba/tjkh/perCheck.md)
 * [案件抽查API](xcba/tjkh/caseCheck.md)
 * [小类标注考核API](xcba/tjkh/xlbz.md)
+* [侵财类案件统计API](xcba/tjkh/qcajtj.md)
 
 ### 字典
 
