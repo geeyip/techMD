@@ -20,8 +20,8 @@
         "msg": null,
         "data": [
             {
-                "value": "合计",//上级中文
-                "pvalue": "合计",//本身中文
+                "value": "合计",//本身中文
+                "pvalue": "合计",//上级中文
                 "key": "合计",//本身代码
                 "pkey": "合计",//上级代码
                 "accnum":"",//受理案件数
@@ -42,7 +42,7 @@
 ```java
 1.API路径：http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/fxjlist
 	后端格式为xlcb/api/{recordLog}/tjkh/qcaj/fxjlist，其中{recordLog}为前端传入，标识是否需要记录操作日志。
-	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/xlablist',{pcdName:"SP_TAG_API_SEL_REP_REGION_CASE",
+	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/fxjlist',{pcdName:"SP_TAG_API_SEL_REP_REGION_CASE",
                      pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","unit":""}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
@@ -99,7 +99,7 @@
                 "accnum":"",//案件受理数
                 "regnum":"",//立案数
                 "regrat":"",//立案率
-                "solnum":"",破案数
+                "solnum":"",//破案数
                 "solrat":""//破案率
             }
         ],
