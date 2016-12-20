@@ -276,3 +276,68 @@ POST, application/json
 {"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ````
 
+
+### 指纹修改接口
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/0/alims/handprint/edit
+```
+
+后端格式为`/api/{recordLog}/api/0/alims/handprint/edit`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+	"handprintPhotoId": "3028811b587a4b0301587a4b03620000",
+	"collectedBy": "3028811b5876038401587605a0c60015",
+	"collectedByName": "李呀",
+	"collectedDate": "2017-12-20",
+	"printCode": "10154541011",
+	collectionMode: "224",
+	"id": "4414CDCFC3497F1FE050A8C0C901181E"//手印id
+}
+```
+
+#### 返回值格式
+
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+````
+
+
+### 指纹修改接口
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/0/alims/handprint/delete
+```
+
+后端格式为`/api/{recordLog}/api/0/alims/handprint/delete`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+****
+```json
+"id": "4414CDCFC3497F1FE050A8C0C901181E"//手印id(不用jsonStr包裹)
+```
+
+#### 返回值格式
+
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+````
