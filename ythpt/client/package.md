@@ -1,76 +1,67 @@
-## 一体化客户端打包
+## 客户端安装文件打包
 
 ### 安装环境
 
 打包开始前，需要安装下列软件
 
-* Node [点击下载](https://nodejs.org/en/download/)
-* Inno Setup  [点击下载](https://pan.baidu.com/s/1c18kJ0O)
+* `Node` [点击下载](https://nodejs.org/en/download/)
+* `Inno Setup`  [点击下载](https://pan.baidu.com/s/1c18kJ0O)
 
-### 克隆打包工程代码
+### 克隆打包代码
 
 ```shell
-git clone https://github.com/geeyip/one-client.git
+git clone http://192.168.1.211/root/client-package.git
 ```
 
-使用`webstorm` 从代码仓库克隆代码，克隆后的文件结构如下
-
-![](pic/p1.png)
-
- **node_modules** 文件夹刚开始不存在，需要安装依赖生成，其中**data**与**dist** 文件夹为一体化前端代码,需要从一体化工程中拷贝到这里。
-
 ### 安装依赖
+
+联网环境下，在工程根目录执行
 
 ```shell
 npm install
 ```
 
-在`webstorm`的命令窗口(`Terminal`) , 使用上面命令安装依赖, 完成后生成**node_modules** 文件夹。
-
-### 拷贝一体化代码
-
-将一体化工程webapp下的data文件夹、dist文件夹拷贝到工程目录下覆盖。
+完成后生成`node_modules` 文件夹，即使该文件夹已经存在，也请再执行一次。
 
 
 ### 修改配置
 
-根据`Inno Setup`安装路径的不同和`one`工程克隆存放路径的不同，需要修改配置文件。
+根据`Inno Setup`安装路径和`Inno Setup`打包配置文件路径的不同
 
-**修改`setup`文件夹下的`setup.js` 文件，修改下列2处**
+修改`setup`文件夹下的`setup.js` 文件，修改下列2处
 
 ```javascript
 exports.InnoSetupPath = "D:\\InnoSetup5\\ISCC.exe";
 
-exports.InnoSetupConfig = "E:\\work\\one\\setup\\setup.iss";
+exports.InnoSetupConfig = "E:\\work\\one\\setup\\";
 ```
 
 `InnoSetupPath` 是`Inno Setup`安装根目录下`ISCC.exe`的绝对路径
 
-`InnoSetupConfig` 是`setup`文件夹下的`setup.iss`文件的绝对路径
+`InnoSetupConfig` 是`setup`文件夹的绝对路径
 
-**修改`setup`文件夹下的`setup.iss` 文件，修改下列2处**
+### 拷贝应用代码
 
-注意，`webstorm`打开会有乱码，所以使用`Inno Setup`软件打开。
+将应用代码拷贝到`app`文件夹 下, 需要拷贝`dist`、`data`、`package.json` 。拷贝前最好先删除。
 
-```shell
-#define ExeOutputDir "D:\"
-#define AppDistDir "E:\work\one\tmp"
-```
-
-`ExeOutputDir` 是exe安装文件生成存放目录
-
-`AppDistDir` 是`one`工程根目录下的`tmp`文件夹的绝对路径
+注意确保`package.json`中的配置配置正确，主要是确认`serverPath`
 
 ### 生成安装包
 
+在工程根目录执行
+
 ```shell
-gulp
+gulp package -name=工程名
 ```
 
-在`webstorm`的命令窗口(`Terminal`) , 使用上面命令生成安装包, 完成后会在`{ExeOutputDir}` 目录生成windows安装包。
+工程名目前可以填写
 
+`imms`  实施管理系统
 
+`ythpt` 一体化平台
 
+`xlcb` 小类串并
 
+完成后在C盘生成windows安装包。
 
 
