@@ -115,6 +115,7 @@ POST, application/json
         "pages": null,
         "operates": null
 }
+
 ```
 
 ### 指纹比对页面查询接口
@@ -236,3 +237,42 @@ POST, application/json
 "operates": null
 }
 ````
+
+
+### 指纹新增接口
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/0/alims/handprint/add
+```
+
+后端格式为`/api/{recordLog}/api/0/alims/handprint/add`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+{
+	"investigationId": "4028811b587603840158760384560000",//勘验id
+	"handprintPhotoId": "4028811b587a4b0301587a4b03620000",//照片id
+	"materialId": "4028811b5876038401587605a0c60015",//物证id
+	"collectedBy": "4028811b5876038401587605a0c60015",//采集人id（技术人员id，页面展示跟现场信息录入的勘验人一样）
+	"collectedByName": "李四",//（采集人姓名）
+	"collectedDate": "2016-12-20",//采集日期
+	"printCode": "20154541011",//
+	collectionMode: "222"//采集方法（字典：ZWTQFFDM）
+}
+```
+
+#### 返回值格式
+
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+````
+
