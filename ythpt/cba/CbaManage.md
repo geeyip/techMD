@@ -51,7 +51,7 @@ POST, application/json
 			"cbaid"://串并案编号,
 			"hbid"://合并串编号"",
 			"cbmc"://串并名称  "",
-			"cblb"://串并类别 "",
+			"cblbarray"://串并类别 字符串数组"",
 			"cbyj"://串并依据 "",
             "createDateStr"://首串时间
 			"xcsj"://续串时间 "",
