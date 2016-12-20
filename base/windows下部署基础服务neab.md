@@ -21,7 +21,7 @@ neab工程包含一些基础服务，包括文件(图片)上传，登录登出�
 
 4. 在安装界面Application选项卡，如图
 
-   ![](pic/p2.png)
+   ![](https://github.com/geeyip/techMD/blob/master/pic/p10.png)
 
    Path 选择Nodejs安装目录下node.exe路径
 
