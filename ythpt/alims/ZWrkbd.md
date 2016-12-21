@@ -341,3 +341,50 @@ POST, application/json
 ```json
 {"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
 ````
+
+
+### 指纹保存接口
+
+#### API路径
+
+```http
+http://localhost:8081/ythpt/api/0/alims/handprint/save
+```
+
+后端格式为`/api/{recordLog}/api/0/alims/handprint/save`，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+
+#### 请求
+
+```
+POST, application/json
+```
+
+#### 传入参数格式
+**jsonStr:**
+```json
+[{
+	"investigationId": "4028811b587603840158760384560000",//勘验id
+	"handprintPhotoId": "4028811b587a4b0301587a4b03620000",//照片id
+	"materialId": "4028811b5876038401587605a0c60015",//物证id
+	"collectedBy": "4028811b5876038401587605a0c60015",//采集人id（技术人员id，页面展示跟现场信息录入的勘验人一样）
+	"collectedByName": "李四",//（采集人姓名）
+	"collectedDate": "2016-12-20",//采集日期
+	"printCode": "20154541011",//
+	collectionMode: "222"//采集方法（字典：ZWTQFFDM）(无id表示新增)
+},{
+   "handprintPhotoId": "3028811b587a4b0301587a4b03620000",
+   	"collectedBy": "3028811b5876038401587605a0c60015",
+   	"collectedByName": "李呀",
+   	"collectedDate": "2017-12-20",
+   	"printCode": "10154541011",
+   	collectionMode: "224",
+   	"id": "4414CDCFC3497F1FE050A8C0C901181E"//手印id(有id表示修改)
+}]
+```
+
+#### 返回值格式
+
+```json
+{"flag":1,"totalCount":0,"msg":null,"data":null,"pages":null,"operates":null}
+````
+
