@@ -216,6 +216,7 @@ GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPla
   "localVersion":"-1",
   "update":true,
   "fileId":"5847da4ac1a2d82a8ca537b4"
+  "desc": "更新内容说明"
 }
 ```
 
@@ -223,6 +224,7 @@ GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPla
 * `localVersion`本地版本序列号
 * `update` 是否需要更新
 * `fileId`更新包文件ID
+* `desc` 更新内容说明
 
 客户端安装包下载
 ```http
