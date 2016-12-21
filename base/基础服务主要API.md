@@ -215,8 +215,8 @@ GET http://ip:port/api/client/version?systemId={systemId}&systemPlace={systemPla
   "latestVersion":1481103947524,
   "localVersion":"-1",
   "update":true,
-  "fileId":"5847da4ac1a2d82a8ca537b4"
-  "desc": "更新内容说明"
+  "fileId":"5847da4ac1a2d82a8ca537b4",
+  "desc":"1. 界面优化\r\n2. 其他优化"
 }
 ```
 
