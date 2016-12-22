@@ -6,12 +6,12 @@
 1.API路径：http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/xlablist
 	后端格式为xlcb/api/{recordLog}/tjkh/qcaj/xlablist，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/xlablist',{pcdName:"SP_TAG_API_SEL_REP_STATISTICS",
-                     pcdParamValMap:{"timemin":"","timemax":"","timetype":"1","kind":""}},o=>info(o),true)
+                     pcdParamValMap:{"timemin":"","timemax":"","timetype":"1","kind":"","unit":""}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_STATISTICS",
-                pcdParamValMap:{"timemin":"","timemax":"","timetype":"1","kind":""}
+                pcdParamValMap:{"timemin":"","timemax":"","timetype":"1","kind":"","unit":""}
              }
 4.返回值格式
 	{
@@ -43,12 +43,12 @@
 1.API路径：http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/fxjlist
 	后端格式为xlcb/api/{recordLog}/tjkh/qcaj/fxjlist，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/fxjlist',{pcdName:"SP_TAG_API_SEL_REP_REGION_CASE",
-                     pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","unit":""}},o=>info(o),true)
+                     pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","kind":"","unit":""}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_REGION_CASE",
-                pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","unit":""}
+                pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","kind":"","unit":""}
              }
 4.返回值格式
 	{
@@ -78,12 +78,12 @@
 1.API路径：http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/pcslist
 	后端格式为xlcb/api/{recordLog}/tjkh/qcaj/pcslist，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/pcslist',{pcdName:"SP_TAG_API_SEL_REP_POLICE_CASE",
-                     pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","unit":""}},o=>info(o),true)
+                     pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","kind":"","unit":""}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
 	            pcdName:"SP_TAG_API_SEL_REP_POLICE_CASE",
-                pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","unit":""}
+                pcdParamValMap:{"timetype":"1","timemin":"","timemax":"","kind":"","unit":""}
              }
 4.返回值格式
 	{
@@ -115,8 +115,8 @@
 1.API路径：http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/view
 	后端格式为xlcb/api/{recordLog}/tjkh/qcaj/view，其中{recordLog}为前端传入，标识是否需要记录操作日志。
 	前端格式:$post('http://192.168.1.120:8020/xlcb/api/0/tjkh/qcaj/view',{pcdName:"SP_TAG_API_SEL_CASE_BRIEF",
-        pcdParamValMap:{'timemin':'2016-01-01', 'timemax':'', 'timetype':'1', 'kind':'', 'condit':'' 'unit':'',
-        'order':'', 'record':''}},o=>info(o),true)
+        pcdParamValMap:{'timemin':'2016-01-01', 'timemax':'', 'timetype':'1', 'kind':'', 'condit':'', 'unit':'',
+        "reptype":"1",'order':'', 'record':''}},o=>info(o),true)
 2.请求：POST, application/json
 3.传入参数格式：
 	jsonStr:{
@@ -128,6 +128,7 @@
                                     'kind':'',//当前类别
                                     'condit':'',//列类型,3.受理 2.立案 1.破案
                                     'unit':'',//当前单位
+                                    'reptype':'',//报表类型 1.案别发案2.分县局、派出所发案
                                     'order':'',//第几行
                                     'record':''//要查的行数
                                 }
