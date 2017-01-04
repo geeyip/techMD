@@ -152,3 +152,19 @@
 	"operates": null
 }
 ```
+
+
+- 数字转换
+```java
+1.API路径：http://localhost:8090/api/0/system/param/number
+	后端格式为/api/{recordLog}/system/param/number，其中{recordLog}为前端传入，标识是否需要记录操作日志。
+2.请求：POST, application/json
+3.传入参数格式：
+jsonStr:['2', '23354', '20', '1435354333']
+type : 1  //转换类型(1-阿拉伯转汉字，2-汉字转阿拉伯，3-阿拉伯转汉字（汉字含特殊习惯用语）)
+4.返回值格式
+{"flag":1,"totalCount":0,"msg":null,
+"data":["二","二万三千三百五十四","二十","一十四亿三千五百三十五万四千三百三十三"],
+"pages":null,"operates":null
+}
+```
