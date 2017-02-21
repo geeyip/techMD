@@ -46,13 +46,20 @@
                 "stname": "",//案件状态中文
                 "unit": "",//录入单位
                 "unitname": "",//录入单位中文
-                "casekind": "",//小类案别
-                "typename": "",//小类案别中文
-                "means": "",//作案手段
-                "meanname": "",//作案手段中文
+                "casetype": "",//小类案别父级
+                "typename": "",//小类案别父级中文
+                "means": "",//小类案别
+                "meanname": "",//小类案别中文
                 "flag": "",//待标注、已标注
                 "usurflag": "",//侵财标记
-                "order": ""//排序
+                "order": "",//排序序号
+		"accname": "",//受理单位中文
+		"soltime": "",//破案时间
+		"regtime": "",//立案时间
+		"comname": "",//社区中文
+		"levname": "",//案件类别带上级中文名
+		"comkey": "",//社区
+		"cretime": ""//录入时间
             },
             {
                 "caseno": "",//案件编号
@@ -68,13 +75,20 @@
                 "stname": "",//案件状态中文
                 "unit": "",//录入单位
                 "unitname": "",//录入单位中文
-                "casekind": "",//小类案别
-                "typename": "",//小类案别中文
-                "means": "",//作案手段
-                "meanname": "",//作案手段中文
+                "casetype": "",//小类案别父级
+                "typename": "",//小类案别父级中文
+                "means": "",//小类案别
+                "meanname": "",//小类案别中文
                 "flag": "",//待标注、已标注
                 "usurflag": "",//侵财标记
-                "order": ""//排序
+                "order": "",//排序序号
+		"accname": "",//受理单位中文
+		"soltime": "",//破案时间
+		"regtime": "",//立案时间
+		"comname": "",//社区中文
+		"levname": "",//案件类别带上级中文名
+		"comkey": "",//社区
+		"cretime": ""//录入时间
             }
         ],
         "pages": null,
