@@ -262,14 +262,29 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_SEL_PERSON_HIT_INFO",
-	"pcdParamValMap": {"fileno":"T201703061499784"}
+	"pcdParamValMap": {"fileno":"T201703071499885"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"detail": "安溪县城厢镇经兜村移动通信店",
+		"status": null,
+		"cno": null,
+		"kno": "K3505241203002009040006",
+		"type": "DNA比中",
+		"haptime": "2009-02-20 00:00:00",
+		"kind": "入户盗窃案"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 人员档案被冒名信息
@@ -359,7 +374,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_INS_IDENTIFY_PERSON",
-	"pcdParamValMap": {"birthday":"1989-02-05","sex":"1","phone":"12524444","weight":"65","maflag":"1","edudegree":"2","dno":"343545","preaddr":"杭州","alias":"张三","job":"海鑫","idcard":"431122514412001","pid":"11454541111","house":"湖南","ideno":"认证编号","nation":"民族","natity":"国籍","idetime":"2016-05-09","ideby":"hh","height":"183","flength":"42","name":"张三","feature":"无","ideunit":"3502000000","house_cn":"杭州"}
+	"pcdParamValMap": {"birthday":"1989-02-05","sex":"1","phone":"12524444","weight":"65","maflag":"1","edudegree":"2","dno":"343545","preaddr":"杭州","alias":"张三","job":"海鑫","idcard":"431122514412001","pid":"11454541111","house":"湖南","nation":"1","natity":"2","idetime":"2016-05-09","ideby":"hh","height":"183","flength":"42","name":"张三","feature":"无","ideunit":"3502000000","house_cn":"杭州"}
 },
 function(res) {
 	log(obj2str(res))
