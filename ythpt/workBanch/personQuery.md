@@ -431,37 +431,30 @@ true)
 ```java
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/dict', {
-	"tableName":"T_CET_DICT_EDU_LEVEL"
+	"tableName":"T_CET_DICT_MARRY_STATUS"
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
-//tableName备注：T_CET_DICT_NATION--民族，T_CET_DICT_NATIONALITY--国籍，T_CET_DICT_EDU_LEVEL--学历
+//tableName备注：T_CET_DICT_NATION--民族，T_CET_DICT_NATIONALITY--国籍，T_CET_DICT_EDU_LEVEL--学历,
+T_CET_DICT_MARRY_STATUS--是否已婚
 2.返回值格式：
 {
 	"flag": 1,
 	"totalCount": 0,
 	"msg": null,
 	"data": [{
-		"KEY": "0",
-		"VALUE": "研究生"
+		"key": "0",
+		"value": "未婚"
 	},
 	{
-		"KEY": "1",
-		"VALUE": "研究生毕业"
+		"key": "1",
+		"value": "已婚"
 	},
 	{
-		"KEY": "2",
-		"VALUE": "相当研究生毕业"
-	},
-	{
-		"KEY": "9",
-		"VALUE": "研究生肄业"
-	},
-	{
-		"KEY": "10",
-		"VALUE": "大学本科"
+		"key": "9",
+		"value": "未知"
 	}],
 	"pages": null,
 	"operates": null
