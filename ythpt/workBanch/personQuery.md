@@ -342,14 +342,30 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_SEL_SYN_PERSON",
-	"pcdParamValMap": {"fileno":"T201703061499784"}
+	"pcdParamValMap": {"fileno":"T201703061683087"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"creunit": null,
+		"cretime": "2005-03-23 00:00:00",
+		"name": "周景平",
+		"faflag": "否",
+		"idcard": "350205194601011014",
+		"house": "杏林村七组",
+		"pno": null,
+		"spno": "10000439"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 查询认证信息
