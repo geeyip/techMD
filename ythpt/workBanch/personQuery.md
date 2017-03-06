@@ -84,7 +84,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_HDP_PERSON_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"idcard":"362324197606303317","no":"350206721604157"},
 	"begin": "1",
 	"end": "60"
 },
@@ -94,7 +94,27 @@ function(res) {
 true)
 2.返回值格式：
     {
-
+    	"flag": 1,
+    	"totalCount": 1,
+    	"msg": null,
+    	"data": [{
+    		"birthday": "1976-06-30 00:00:00",
+    		"sex": "1",
+    		"no": "350206721604157",
+    		"colnum": 1,
+    		"idcard": "362324197606303317",
+    		"naplace": "江西省上饶地区铅山县",
+    		"idecard": null,
+    		"ideflag": "0",
+    		"rownum": 1,
+    		"fileno": "T20170306535333",
+    		"creunit": null,
+    		"cretime": "2016-04-26 00:00:00",
+    		"name": "杨保军",
+    		"idename": null
+    	}],
+    	"pages": null,
+    	"operates": null
     }
 ```
 
@@ -104,18 +124,38 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_DNA_PERSON_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"no":"R3502000002008012800030","name":"吴霜"},
 	"begin": "1",
-	"end": "60"
+	"end": "2"
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-    {
-
-    }
+   {
+   	"flag": 1,
+   	"totalCount": 1,
+   	"msg": null,
+   	"data": [{
+   		"birthday": null,
+   		"sex": "2",
+   		"no": "R3502000002008012800030",
+   		"colnum": null,
+   		"idcard": "510214197708243421",
+   		"naplace": null,
+   		"idecard": null,
+   		"ideflag": "0",
+   		"rownum": 1,
+   		"fileno": "T201703061499784",
+   		"creunit": null,
+   		"cretime": null,
+   		"name": "吴霜",
+   		"idename": null
+   	}],
+   	"pages": null,
+   	"operates": null
+   }
 ```
 
 ```java

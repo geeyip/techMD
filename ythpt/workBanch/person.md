@@ -23,13 +23,6 @@ POST, application/json
  "pcdParamValMap":
 {"pno":"aaa","birday":"2015-01-02", "idcard":"cc", "sex":"1","name":"tet","place":"350200000000"},
 "begin":"1", "end":"200"}
-
-	$post('http://192.168.1.191:8090/workbench/person_query/list',
-	{"pcdName":"SP_INT_API_SEL_CSE_PERSON_ALL",
-     "pcdParamValMap":
-    {},
-    "begin":"1", "end":"200"},
-	o=>info(o),true);
 ```
 
 #### 返回值格式
