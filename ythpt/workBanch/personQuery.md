@@ -4,7 +4,7 @@
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_CSE_PERSON_ALL",
-	"pcdParamValMap": {"name":"陈蓉敏"},
+	"pcdParamValMap": {"name":"马海波", "sex":"1", "no":"R3301","birdaymi":"1969-08-01"},
 	"begin": "1",
 	"end": "60"
 },
@@ -13,29 +13,29 @@ function(res) {
 },
 true)
 2.返回值格式：
-  {
-  	"flag": 1,
-  	"totalCount": 1,
-  	"msg": null,
-  	"data": [{
-  		"birthday": "1982-12-20 00:00:00",
-  		"sex": "2",
-  		"no": "R3502001909992001030087",
-  		"colnum": null,
-  		"idcard": null,
-  		"naplace": "贵州省黔西南布依族苗族自治州晴隆县",
-  		"idecard": null,
-  		"ideflag": "0",
-  		"rownum": 1,
-  		"fileno": "T201703062475370",
-  		"creunit": "厦门市公安局刑事侦查支队",
-  		"cretime": "2001-03-07 09:11:21",
-  		"name": "陈蓉敏",
-  		"idename": null
-  	}],
-  	"pages": null,
-  	"operates": null
-  }
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"birthday": "1969-08-01 00:00:00",
+		"sex": "1",
+		"no": "R3301066200002016080491",
+		"colnum": null,
+		"idcard": "412925196908013410",
+		"naplace": "河南省南阳市镇平县",
+		"idecard": null,
+		"ideflag": "0",
+		"rownum": 1,
+		"fileno": "T201703062454168",
+		"creunit": "杭州市公安局西湖区分局转塘派出所",
+		"cretime": "2016-12-01 08:22:48",
+		"name": "马海波",
+		"idename": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 综采人员查询接口
