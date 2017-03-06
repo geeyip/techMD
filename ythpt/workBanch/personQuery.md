@@ -1,9 +1,69 @@
-* 注销接口
+* 警综人员查询接口
 
 ```java
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_CSE_PERSON_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+    {
+
+    }
+```
+
+* 综采人员查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/list', {
+	"pcdName": "SP_INT_API_SEL_SYN_PERSON_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+    {
+
+    }
+```
+
+* 指纹人员查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/list', {
+	"pcdName": "SP_INT_API_SEL_HDP_PERSON_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+    {
+
+    }
+```
+
+* DNA人员查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/list', {
+	"pcdName": "SP_INT_API_SEL_DNA_PERSON_ALL",
 	"pcdParamValMap": {},
 	"begin": "1",
 	"end": "60"
