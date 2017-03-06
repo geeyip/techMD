@@ -438,7 +438,7 @@ function(res) {
 },
 true)
 //tableName备注：T_CET_DICT_NATION--民族，T_CET_DICT_NATIONALITY--国籍，T_CET_DICT_EDU_LEVEL--学历,
-T_CET_DICT_MARRY_STATUS--是否已婚
+//T_CET_DICT_MARRY_STATUS--是否已婚
 2.返回值格式：
 {
 	"flag": 1,
