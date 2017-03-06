@@ -4,7 +4,7 @@
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_CSE_PERSON_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"name":"陈蓉敏"},
 	"begin": "1",
 	"end": "60"
 },
@@ -13,9 +13,29 @@ function(res) {
 },
 true)
 2.返回值格式：
-    {
-
-    }
+  {
+  	"flag": 1,
+  	"totalCount": 1,
+  	"msg": null,
+  	"data": [{
+  		"birthday": "1982-12-20 00:00:00",
+  		"sex": "2",
+  		"no": "R3502001909992001030087",
+  		"colnum": null,
+  		"idcard": null,
+  		"naplace": "贵州省黔西南布依族苗族自治州晴隆县",
+  		"idecard": null,
+  		"ideflag": "0",
+  		"rownum": 1,
+  		"fileno": "T201703062475370",
+  		"creunit": "厦门市公安局刑事侦查支队",
+  		"cretime": "2001-03-07 09:11:21",
+  		"name": "陈蓉敏",
+  		"idename": null
+  	}],
+  	"pages": null,
+  	"operates": null
+  }
 ```
 
 * 综采人员查询接口
