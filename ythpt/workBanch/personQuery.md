@@ -278,14 +278,47 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_SEL_FALSED_PERSON",
-	"pcdParamValMap": {"fileno":"T201703061499784"}
+	"pcdParamValMap": {"fileno":"T201703062052690"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 3,
+	"msg": null,
+	"data": [{
+		"creunit": null,
+		"cretime": "2004-04-07 00:00:00",
+		"no": "A35021210004265386",
+		"name": "林英灯",
+		"idcard": "350221198111200590",
+		"house": "马巷镇黎安村田边84号",
+		"type": "综采"
+	},
+	{
+		"creunit": "厦门市公安局马巷派出所",
+		"cretime": "2013-09-11 15:41:30",
+		"no": "R3502137200002013090067",
+		"name": "林英灯",
+		"idcard": "350221198111200590",
+		"house": "福建省厦门市翔安区马巷镇黎安村田边84号",
+		"type": "综采"
+	},
+	{
+		"creunit": "厦门市公安局嘉莲派出所",
+		"cretime": "2012-03-30 11:08:20",
+		"no": "R3502038000002012030143",
+		"name": "马学峰",
+		"idcard": "350221198111200590",
+		"house": "青海省门源回族自治县青石咀镇尕大滩村57号",
+		"type": "综采"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 综采人员信息
