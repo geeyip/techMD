@@ -44,7 +44,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/list', {
 	"pcdName": "SP_INT_API_SEL_SYN_PERSON_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"name":"陈莉莉","idcard":"511602199002053227"},
 	"begin": "1",
 	"end": "60"
 },
@@ -53,9 +53,29 @@ function(res) {
 },
 true)
 2.返回值格式：
-    {
-
-    }
+   {
+   	"flag": 1,
+   	"totalCount": 1,
+   	"msg": null,
+   	"data": [{
+   		"birthday": "1990-02-05 00:00:00",
+   		"sex": "2",
+   		"no": "B3502067100002016060004",
+   		"colnum": null,
+   		"idcard": "511602199002053227",
+   		"naplace": "四川省广安市广安区",
+   		"idecard": null,
+   		"ideflag": "0",
+   		"rownum": 1,
+   		"fileno": "T201703062018007",
+   		"creunit": "厦门市公安局禾山派出所",
+   		"cretime": "2016-06-01 09:41:20",
+   		"name": "陈莉莉",
+   		"idename": null
+   	}],
+   	"pages": null,
+   	"operates": null
+   }
 ```
 
 * 指纹人员查询接口
