@@ -409,14 +409,21 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_INS_IDENTIFY_PERSON",
-	"pcdParamValMap": {"birthday":"1989-02-05","sex":"1","phone":"12524444","weight":"65","maflag":"1","edudegree":"2","dno":"343545","preaddr":"杭州","alias":"张三","job":"海鑫","idcard":"431122514412001","pid":"11454541111","house":"湖南","nation":"1","natity":"2","idetime":"2016-05-09","ideby":"hh","height":"183","flength":"42","name":"张三","feature":"无","ideunit":"3502000000","house_cn":"杭州"}
+	"pcdParamValMap": {"birthday":"1989-02-05","sex":"1","phone":"12524444","weight":"65","maflag":"1","dno":"343545","foot":"43","preaddr":"杭州","alias":"张三","job":"海鑫","idcard":"431126199310010871","pid":"34fffsfds","house":"湖南","nation":"2","ideby":"李四","height":"125","fileno":"T34343435","housecn":"湖南","name":"张三","feature":"无","nality":"1","ideunit":"3502000000","calture":"2"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": "1",
+	"pages": null,
+	"operates": null
+}
 ```
 
 
