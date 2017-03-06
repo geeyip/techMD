@@ -374,14 +374,33 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/workbench/person_query/info', {
 	"pcdName": "SP_INT_API_SEL_IDENTIFY_PERSON",
-	"pcdParamValMap": {"no":""}
+	"pcdParamValMap": {"fileno":"T201703062454134"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"data": [{
+		null: "技工学校",
+		"birthday": 203270400000,
+		"preaddr": "杭州市拱墅区左岸花园９幢１单元３０１室",
+		"idcard": "330702197606110415",
+		"house": "浙江省金华市婺城区",
+		"nation": "汉族",
+		"ideno": "I201703060000000004",
+		"natity": "中国",
+		"idetime": 1488798579000,
+		"ideby": "test",
+		"height": 170,
+		"name": "吴观孙",
+		"ideunit": "350200000000",
+		"house_cn": "杭州市拱墅区左岸花园９幢１单元３０１室"
+	}],
+	"flag": 1,
+	"totalCount": 0
+}
 ```
 
 * 插入认证信息
@@ -412,9 +431,9 @@ true)
 DNA人员查询结果集说明：{"birthday":"出生日期","sex":"性别","no":"编号","idcard":"身份证号","colnum":"采集数量","naplace":"户籍地","idecard":"认证身份证号","ideflag":"认证标识","rownum":"序号","fileno":"档案编号","creunit":"录入单位","cretime":"录入时间","name":"姓名","idename":"认证姓名"}
 DNA人员查询参数说明：{"unit":"送检单位","crtmin":"送检时间","sex":"性别","birdaymi":"出生日期","count":"行数","crtmax":"送检时间","no":"编号","name":"姓名","idcard":"身份证号","naplace":"籍贯","birdayma":"出生日期"}
 插入认证信息结果集说明：{}
-插入认证信息参数说明：{"birthday":"出生日期","sex":"性别","phone":"联系电话","weight":"体重","maflag":"是否已婚","dno":"DNA编号","foot":"足长","preaddr":"现住址","alias":"别名","job":"工作单位","idcard":"身份证号","pid":"照片id","house":"户籍地字典","nation":"民族","ideby":"认证人","height":"身高","housecn":"户籍地详址","name":"姓名","feature":"其他体貌特征","nality":"国籍","ideunit":"认证单位","calture":"文化程度"}
+插入认证信息参数说明：{"birthday":"出生日期","sex":"性别","phone":"联系电话","weight":"体重","maflag":"是否已婚","dno":"DNA编号","foot":"足长","preaddr":"现住址","alias":"别名","job":"工作单位","idcard":"身份证号","pid":"照片id","house":"户籍地字典","nation":"民族","ideby":"认证人","height":"身高","fileno":"档案编号","housecn":"户籍地详址","name":"姓名","feature":"其他体貌特征","nality":"国籍","ideunit":"认证单位","calture":"文化程度"}
 查询认证信息结果集说明：{"birthday":"出生日期","sex":"性别","phone":"联系方式","weight":"体重","maflag":"是否已婚","edudegree":"文化程度","dno":"DNA编号","preaddr":"现住址","alias":"别名","job":"工作单位","idcard":"身份证号","pid":"照片","house":"户籍地","ideno":"认证编号","nation":"民族","natity":"国籍","idetime":"认证时间","ideby":"认证人","height":"身高","flength":"足长","name":"姓名","feature":"其他体貌特征","ideunit":"认证单位","house_cn":"户籍地详址"}
-查询认证信息参数说明：{"no":"编号","type":"数据类型"}
+查询认证信息参数说明：{"fileno":"档案编号"}
 人员档案人员基本信息结果集说明：{"source":"人员来源","creunit":"人员创建单位","status":"人员状态","cretime":"创建时间","name":"人员姓名","faflag":"是否冒名","idcard":"人员身份证","house":"人员户籍地","pno":"人员编号"}
 人员档案人员基本信息参数说明：{"fileno":"档案编号"}
 人员档案人员指纹信息结果集说明：{"hjd":"户籍地","faflag":"是否冒名","sfzh":"身份证号","nydw":"捺印单位","pno":"人员编号","nyrq":"捺印日期","ryxm":"人员姓名","ryzwxx":"人员指纹编号"}
