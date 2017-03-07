@@ -4,16 +4,33 @@
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/list', {
 	"pcdName": "SP_INT_API_SEL_REC_CASE_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"no":"J350182720000201401000001"},
 	"begin": "1",
-	"end": "2"
+	"end": "60"
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": "金沙港",
+		"hatime": "2014-01-01 02:06:25",
+		"fileno": "T350200201703070013730287",
+		"cretime": "2014-01-01 02:04:05",
+		"no": "J350182720000201401000001",
+		"cname": null,
+		"kind": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 案件查询接口
@@ -110,7 +127,7 @@ true)
 		"rownum": 1,
 		"detail": "厦门市海沧区霞阳西路186号",
 		"hatime": "2016-12-12 10:10:10",
-		"fileno": "T350200201703070000480881",
+		"fileno": "T350200201703070011625431",
 		"cretime": "2016-12-13 10:20:20",
 		"no": "xmhc160112003007",
 		"cname": null,
@@ -232,14 +249,38 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_SCENE",
-	"pcdParamValMap": {"fileno":"T350200201703070000645468"}
+	"pcdParamValMap": {"fileno":"T350200201703070011620917"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"lotude": null,
+		"sno": "K3505830000002010050070",
+		"inperson": "吕金星,文学",
+		"location": "居民小区",
+		"sceaddr": "福建省南安市溪美街普东巷11幢302室",
+		"inway": "从门侵入",
+		"latude": null,
+		"means": null,
+		"goods": "笔记本电脑,外套",
+		"content": null,
+		"rownum": 1,
+		"unit": null,
+		"time": "2010-04-30 18:30:00",
+		"value": "320",
+		"cripoint": "结伙作案",
+		"critime": "夜"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 现场dna信息接口
@@ -280,14 +321,28 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_SCENE_FOOTPRINT",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011850062"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"left": "礼盒下方地面",
+		"type": "鞋印",
+		"fno": "K350519000000201501007505",
+		"colunit": null,
+		"coltime": null,
+		"colby": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 警情信息接口
@@ -312,7 +367,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_SCENE_HANDPRINT",
-	"pcdParamValMap": {"fileno": "T350200201703070000480881"}
+	"pcdParamValMap": {"fileno": "T350200201703070011625429"}
 },
 function(res) {
 	log(obj2str(res))
@@ -344,7 +399,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_CASE_HIT_INFO",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011625468"}
 },
 function(res) {
 	log(obj2str(res))
@@ -376,14 +431,29 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_PROOF_SAVE",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011892229"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"status": "4",
+		"cretime": "2016-03-11 22:46:08",
+		"name": "血液（斑）",
+		"purpose": null,
+		"type": "入库",
+		"pno": "W35058224000620160300193",
+		"billno": "B35058224000620160300082"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 串并情况接口
