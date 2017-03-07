@@ -510,7 +510,25 @@ function(res) {
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": {
+		"id": "F34429BD68B900D2E0430A2833CF00D2",
+		"createDate": "2013-11-02 00:00:00",
+		"cbaid": "CB4403000000002014020376",
+		"cbmc": null,
+		"cbnum": "2",
+		"rynum": "2",
+		"cbr": null,
+		"cbaType": "指纹",
+		"cbdw": "广东省公安厅",
+		"cblb": "入室盗窃(夜盗)"
+	},
+	"pages": null,
+	"operates": null
+}
 ```
 
 ```java
@@ -539,5 +557,6 @@ DNA人员查询参数说明：{"unit":"送检单位","crtmin":"送检时间","se
 人员档案被冒名信息参数说明：{"fileno":"档案编号"}
 综采人员信息结果集说明：{"creunit":"创建单位","cretime":"创建时间","name":"姓名","faflag":"是否冒名","idcard":"身份证号","house":"户籍地","pno":"警综人员编号","spno":"综采人员编号"}
 综采人员信息参数说明：{"fileno":"档案编号"}
-
+串并情况结果集说明：{"createDate":"串并时间","cbaid":"串并号","cbmc":"串并名称","cbnum":"案件数量","rynum":"人员数量","cbaType":"串并依据","cbdw":"串并单位","cblb": "串并类别"}
+串并情况参数说明：{"ryNo":"人员编号"}
 ```

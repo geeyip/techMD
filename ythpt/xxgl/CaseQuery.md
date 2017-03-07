@@ -403,7 +403,6 @@ true)
 	"totalCount": 0,
 	"msg": null,
 	"data": {
-		"rownum": null,
 		"id": "ED886582B6FE00CAE0430A2833CF00CA",
 		"createDate": "2013-03-15 00:00:00",
 		"cbaid": "CB4403000000002013120318",
@@ -411,13 +410,12 @@ true)
 		"cbnum": "4",
 		"rynum": "1",
 		"cbr": null,
+		"cbaType": "DNA",
 		"cbdwdm": null,
 		"createDateStr": null,
 		"paNum": null,
 		"cbdw": "深圳市公安局",
-		"cblb": "盗窃",
-		"jspaNum": null,
-		"checkPid": null
+		"cblb": "盗窃"
 	},
 	"pages": null,
 	"operates": null
@@ -458,5 +456,6 @@ dna查询参数说明：{"region":"案发区划","htimema":"案发时间终值",
 提取物品参数说明：{"fileno":"档案编号"}
 物证保管结果集说明：{"status":"清单状态","cretime":"申请时间","name":"物证名称","purpose":"清单用途","type":"清单类型","billno":"清单编号","pno":"物证编号"}
 物证保管参数说明：{"fileno":"档案编号"}
-
+串并情况结果集说明：{"createDate":"串并时间","cbaid":"串并号","cbmc":"串并名称","cbnum":"案件数量","rynum":"人员数量","cbaType":"串并依据","cbdw":"串并单位","cblb": "串并类别"}
+串并情况参数说明：{"caseNo":"案件编号"}
 ```
