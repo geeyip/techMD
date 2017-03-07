@@ -374,7 +374,23 @@ function(res) {
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"detail": "同安区新民镇凤南大埔路48号中通快递公司",
+		"hatime": null,
+		"colunit": "厦门市公安局同安分局刑事侦查大队技术科",
+		"left": "纸盒",
+		"hno": "XM003L1604260003",
+		"coltime": null,
+		"kind": "盗窃案",
+		"colby": "张题，邱福生"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 案件信息接口
