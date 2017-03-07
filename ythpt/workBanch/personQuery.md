@@ -382,24 +382,37 @@ function(res) {
 true)
 2.返回值格式：
 {
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
 	"data": [{
-		null: "技工学校",
-		"birthday": 203270400000,
+		"birthday": "1976-06-11 00:00:00",
+		"phone": null,
+		"sex": null,
+		"weight": null,
+		"maflag": null,
+		"edudegree": "技工学校",
+		"dno": null,
+		"alias": null,
 		"preaddr": "杭州市拱墅区左岸花园９幢１单元３０１室",
 		"idcard": "330702197606110415",
+		"job": null,
+		"pid": null,
 		"house": "浙江省金华市婺城区",
 		"nation": "汉族",
 		"ideno": "I201703060000000004",
 		"natity": "中国",
-		"idetime": 1488798579000,
+		"idetime": "2017-03-06 19:09:39",
 		"ideby": "test",
 		"height": 170,
 		"name": "吴观孙",
+		"flength": null,
+		"feature": null,
 		"ideunit": "350200000000",
 		"house_cn": "杭州市拱墅区左岸花园９幢１单元３０１室"
 	}],
-	"flag": 1,
-	"totalCount": 0
+	"pages": null,
+	"operates": null
 }
 ```
 
