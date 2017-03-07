@@ -51,6 +51,148 @@ true)
 }
 ```
 
+* 现勘查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_SCN_CASE_ALL",
+	"pcdParamValMap": {"no":"K3505830000002016090827"},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": "乐峰镇厚阳村坑内9组",
+		"hatime": "2016-09-27 00:00:00",
+		"fileno": "T350200201703070000645468",
+		"cretime": "2016-09-27 09:07:00",
+		"no": "K3505830000002016090827",
+		"cname": null,
+		"kind": "盗窃牲畜案"
+	}],
+	"pages": null,
+	"operates": null
+}
+```
+
+* 指纹查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_HDP_CASE_ALL",
+	"pcdParamValMap": {"no":"xmhc160112003007"},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": "厦门市公安局新阳派出所",
+		"rownum": 1,
+		"detail": "厦门市海沧区霞阳西路186号",
+		"hatime": "2016-12-12 10:10:10",
+		"fileno": "T350200201703070000480881",
+		"cretime": "2016-12-13 10:20:20",
+		"no": "xmhc160112003007",
+		"cname": null,
+		"kind": "入户盗窃案"
+	}],
+	"pages": null,
+	"operates": null
+}
+```
+
+* dna查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_DNA_CASE_ALL",
+	"pcdParamValMap": {"no":"W3502000002016092810121"},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": null,
+		"hatime": "2016-09-11 00:00:00",
+		"fileno": "T350200201703070004016217",
+		"cretime": "2016-09-12 00:00:00",
+		"no": "W3502000002016092810121",
+		"cname": "20160911思明区东明路26号1902室A号房被盗",
+		"kind": null
+	}],
+	"pages": null,
+	"operates": null
+}
+```
+
+* 足迹查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_FTP_CASE_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "3"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 物证查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_PRV_CASE_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "3"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+
 ```java
 字段说明：
 警情查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
