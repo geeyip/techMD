@@ -351,14 +351,21 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_RECEPTION",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011625429"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": [],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 现场指纹信息接口
@@ -399,14 +406,35 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_CASE_INFO",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011136867"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"summary": "2010年1月21日19时50分，我所接到方建（江西南昌市新建县石埠乡田垅村，身份证号：360122198807291219）报案：2010年1月21日8时许，其把一部五羊本田摩托车停放在兴泰开发区鸿鑫财富广场“开心网吧”后面的租房楼下，后回租房休息。1月21日19时40分发现其停放在租房楼下的摩托车被盗。该车未上牌，车架号：261038002；发动机号：02598。该车于2006年购买，价值约4000元。",
+		"rno": null,
+		"detail": "鸿鑫广场开心网吧后面",
+		"status": null,
+		"hadate": "2010-01-21 08:00:00",
+		"cno": "A3301257600002010010020",
+		"kind": "盗窃摩托车案",
+		"redate": null,
+		"sodate": null,
+		"unit": null,
+		"place": "福建省漳州市长泰县",
+		"user": "370120",
+		"cname": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 涉案比中信息接口
@@ -422,7 +450,23 @@ function(res) {
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"ryly": null,
+		"lrsj": "2016-05-09 09:28:15",
+		"hjd": "贵州省铜仁地区印江土家族苗族自治县峨岭镇麻柳村水井堡组",
+		"ryzt": "未抓获",
+		"sfzh": "522226199609290036",
+		"pno": "R3502122400002016040017",
+		"ryxm": "柳远锋",
+		"lx": "指纹比中"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 提取物品接口
@@ -431,14 +475,30 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_PROOF",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno":"T350200201703070011892229"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"colpart": "北侧距离员工宿舍楼17.7m，东侧距离管理宿舍楼4.6m",
+		"flag": null,
+		"colway": "擦拭提取",
+		"name": "血液（斑）",
+		"type": null,
+		"pno": "W35058224000620160300266",
+		"coltime": null,
+		"colby": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 物证保管接口
