@@ -214,14 +214,30 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_SCENE_DNA",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno": "T350200201703070004016217"}
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"position": null,
+		"unit": null,
+		"dno": "W3502000002016092810121",
+		"name": "20160911思明区东明路26号1902室A号房被盗",
+		"type": "其他",
+		"labno": "2016A2740-001",
+		"coltime": "2016-09-12 00:00:00",
+		"colby": "唐玮玮"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 现场足迹接口
@@ -262,7 +278,7 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/info', {
 	"pcdName": "SP_INT_API_SEL_SCENE_HANDPRINT",
-	"pcdParamValMap": {"fileno":""}
+	"pcdParamValMap": {"fileno": "T350200201703070000480881"}
 },
 function(res) {
 	log(obj2str(res))
