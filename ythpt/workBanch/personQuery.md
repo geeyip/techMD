@@ -474,6 +474,29 @@ true)
 }
 ```
 
+* 修改认证信息
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/info', {
+	"pcdName": "SP_INT_API_UPD_IDENTIFY_PERSON",
+	"pcdParamValMap": {"birthday":"1989-02-05","sex":"1","phone":"12524444","weight":"65","maflag":"1","dno":"343545","foot":"43","preaddr":"杭州","alias":"张三","job":"海鑫","idcard":"431126199310010871","pid":"34fffsfds","house":"湖南","nation":"2","ideby":"李四","height":"125","fileno":"T34343435","housecn":"湖南","name":"张三","feature":"无","nality":"1","ideunit":"3502000000","calture":"2"}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": "1",
+	"pages": null,
+	"operates": null
+}
+```
+
 ```java
 字段说明：
 警综人员查询结果集说明：{"birthday":"出生日期","sex":"性别","no":"编号","idcard":"身份证号","colnum":"采集数量","naplace":"户籍地","idecard":"认证身份证号","ideflag":"认证标识","rownum":"序号","fileno":"档案编号","creunit":"录入单位","cretime":"录入时间","name":"姓名","idename":"认证姓名"}
@@ -500,4 +523,5 @@ DNA人员查询参数说明：{"unit":"送检单位","crtmin":"送检时间","se
 人员档案被冒名信息参数说明：{"fileno":"档案编号"}
 综采人员信息结果集说明：{"creunit":"创建单位","cretime":"创建时间","name":"姓名","faflag":"是否冒名","idcard":"身份证号","house":"户籍地","pno":"警综人员编号","spno":"综采人员编号"}
 综采人员信息参数说明：{"fileno":"档案编号"}
+
 ```
