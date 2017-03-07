@@ -14,7 +14,7 @@ dna查询参数说明：{"region":"案发区划","count":"行数","htimema":"案
 足迹查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 物证查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
 物证查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
-勘验信息结果集说明：{null:"现勘编号","lotude":"经度","inperson":"勘验人","location":"选择场所","sceaddr":"勘验地点","latude":"纬度","inway":"侵入方式","means":"作案手段","goods":"损失物品","content":"作案过程分析","rownum":"排序序号","unit":"勘验单位","time":"勘验时间","value":"损失价值","cripoint":"作案特点","critime":"选择时机"}
+勘验信息结果集说明：{"lotude":"经度","sno":"现勘编号","inperson":"勘验人","location":"选择场所","sceaddr":"勘验地点","latude":"纬度","inway":"侵入方式","means":"作案手段","goods":"损失物品","content":"作案过程分析","rownum":"排序序号","unit":"勘验单位","time":"勘验时间","value":"损失价值","cripoint":"作案特点","critime":"选择时机"}
 勘验信息参数说明：{"fileno":"档案编号"}
 现场dna信息结果集说明：{"position":"提取部位","unit":"提取单位","dno":"DNA编号","name":"案件名称","type":"样本类型","labno":"实验室编号","coltime":"提取时间","colby":"提取人"}
 现场dna信息参数说明：{"fileno":"档案编号"}
@@ -28,4 +28,8 @@ dna查询参数说明：{"region":"案发区划","count":"行数","htimema":"案
 案件信息参数说明：{"fileno":"档案编号"}
 涉案比中信息结果集说明：{"ryly":"人员来源","lrsj":"录入时间","hjd":"户籍地","ryzt":"人员状态","sfzh":"身份证号","pno":"人员编号","lx":"类型","ryxm":"人员姓名"}
 涉案比中信息参数说明：{"fileno":"档案编号"}
+提取物品结果集说明：{"colpart":"提取部位","flag":"保管状态","colway":"提取方法","name":"物证名称","type":"物证类型","pno":"物证编号","coltime":"提取时间","colby":"提取人"}
+提取物品参数说明：{"fileno":"档案编号"}
+物证保管结果集说明：{"status":"清单状态","cretime":"申请时间","name":"物证名称","purpose":"清单用途","type":"清单类型","billno":"清单编号","pno":"物证编号"}
+物证保管参数说明：{"fileno":"档案编号"}
 ```
