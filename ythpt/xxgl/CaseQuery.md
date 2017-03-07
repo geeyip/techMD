@@ -162,16 +162,33 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/list', {
 	"pcdName": "SP_INT_API_SEL_FTP_CASE_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"no":"K350582240006201610008401"},
 	"begin": "1",
-	"end": "3"
+	"end": "60"
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": "晋江市西园街道赖厝社区雁山寺",
+		"hatime": "2016-10-06 08:00:00",
+		"fileno": "T350200201703070011134359",
+		"cretime": null,
+		"no": "K350582240006201610008401",
+		"cname": null,
+		"kind": null
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 物证查询接口
@@ -180,16 +197,33 @@ true)
 1.  前端调用:
 $post('http://localhost:8090/api/0/xxgl/case_query/list', {
 	"pcdName": "SP_INT_API_SEL_PRV_CASE_ALL",
-	"pcdParamValMap": {},
+	"pcdParamValMap": {"no":"W35058224000620160900684"},
 	"begin": "1",
-	"end": "3"
+	"end": "60"
 },
 function(res) {
 	log(obj2str(res))
 },
 true)
 2.返回值格式：
-
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": "福建省晋江市新塘街道新塘园阳泉服饰厂436宿舍",
+		"hatime": "2016-09-26 08:00:00",
+		"fileno": "T350200201703070009352359",
+		"cretime": null,
+		"no": "W35058224000620160900684",
+		"cname": "2016-09-26 08:00福建省晋江市新塘街道新塘园阳泉服饰厂436宿舍入室盗窃案",
+		"kind": "入户盗窃案"
+	}],
+	"pages": null,
+	"operates": null
+}
 ```
 
 * 勘验信息接口
@@ -350,6 +384,44 @@ function(res) {
 true)
 2.返回值格式：
 
+```
+
+* 串并情况接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/cba_info', {
+	"caseNo": "A4403068400002014010027",
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": {
+		"rownum": null,
+		"id": "ED886582B6FE00CAE0430A2833CF00CA",
+		"createDate": "2013-03-15 00:00:00",
+		"cbaid": "CB4403000000002013120318",
+		"cbmc": "dddd",
+		"cbnum": "4",
+		"rynum": "1",
+		"cbr": null,
+		"cbdwdm": null,
+		"createDateStr": null,
+		"paNum": null,
+		"cbdw": "深圳市公安局",
+		"cblb": "盗窃",
+		"jspaNum": null,
+		"checkPid": null
+	},
+	"pages": null,
+	"operates": null
+}
 ```
 
 ```java

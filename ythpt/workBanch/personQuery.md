@@ -497,6 +497,22 @@ true)
 }
 ```
 
+
+* 串并情况接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/cba_info', {
+	"ryNo": "R4403075500002013020350"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
 ```java
 字段说明：
 警综人员查询结果集说明：{"birthday":"出生日期","sex":"性别","no":"编号","idcard":"身份证号","colnum":"采集数量","naplace":"户籍地","idecard":"认证身份证号","ideflag":"认证标识","rownum":"序号","fileno":"档案编号","creunit":"录入单位","cretime":"录入时间","name":"姓名","idename":"认证姓名"}
