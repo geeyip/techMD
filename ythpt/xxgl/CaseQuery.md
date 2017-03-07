@@ -1,19 +1,72 @@
+* 警情查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_REC_CASE_ALL",
+	"pcdParamValMap": {},
+	"begin": "1",
+	"end": "2"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 案件查询接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/list', {
+	"pcdName": "SP_INT_API_SEL_CSE_CASE_ALL",
+	"pcdParamValMap": {"no":"A330103045500002009080977"},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"unit": null,
+		"rownum": 1,
+		"detail": "黄石镇水南村石兴街",
+		"hatime": "2099-08-10 09:08:00",
+		"fileno": "T350200201703070000436372",
+		"cretime": "2010-03-26 11:12:31",
+		"no": "A330103045500002009080977",
+		"cname": null,
+		"kind": null
+	}],
+	"pages": null,
+	"operates": null
+}
+```
+
 ```java
 字段说明：
 警情查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-警情查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+警情查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 案件查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-案件查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+案件查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 现勘查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-现勘查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+现勘查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 指纹查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-指纹查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+指纹查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 dna查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-dna查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+dna查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 足迹查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-足迹查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+足迹查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 物证查询结果集说明：{"rownum":"排序序号","unit":"录入单位","detail":"案发地点","hatime":"案发时间","fileno":"档案编号","cretime":"录入时间","no":"编号","kind":"案件类别","cname":"案件名称"}
-物证查询参数说明：{"region":"案发区划","count":"行数","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
+物证查询参数说明：{"region":"案发区划","htimema":"案发时间终值","no":"编号","htimemi":"案发时间初值","kind":"案件类别"}
 勘验信息结果集说明：{"lotude":"经度","sno":"现勘编号","inperson":"勘验人","location":"选择场所","sceaddr":"勘验地点","latude":"纬度","inway":"侵入方式","means":"作案手段","goods":"损失物品","content":"作案过程分析","rownum":"排序序号","unit":"勘验单位","time":"勘验时间","value":"损失价值","cripoint":"作案特点","critime":"选择时机"}
 勘验信息参数说明：{"fileno":"档案编号"}
 现场dna信息结果集说明：{"position":"提取部位","unit":"提取单位","dno":"DNA编号","name":"案件名称","type":"样本类型","labno":"实验室编号","coltime":"提取时间","colby":"提取人"}
