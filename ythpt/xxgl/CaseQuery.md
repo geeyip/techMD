@@ -192,6 +192,149 @@ true)
 
 ```
 
+* 勘验信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_SCENE",
+	"pcdParamValMap": {"fileno":"T350200201703070000645468"}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 现场dna信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_SCENE_DNA",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 现场足迹接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_SCENE_FOOTPRINT",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 警情信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_RECEPTION",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 现场指纹信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_SCENE_HANDPRINT",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 案件信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_CASE_INFO",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 涉案比中信息接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_CASE_HIT_INFO",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 提取物品接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_PROOF",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
+
+* 物证保管接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/xxgl/case_query/info', {
+	"pcdName": "SP_INT_API_SEL_PROOF_SAVE",
+	"pcdParamValMap": {"fileno":""}
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+
+```
 
 ```java
 字段说明：
