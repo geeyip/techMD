@@ -548,7 +548,7 @@ true)
 	"flag": 1,
 	"totalCount": 0,
 	"msg": null,
-	"data": {
+	"data": [{
 		"id": "ED886582B6FE00CAE0430A2833CF00CA",
 		"createDate": "2013-03-15 00:00:00",
 		"cbaid": "CB4403000000002013120318",
@@ -562,7 +562,7 @@ true)
 		"paNum": null,
 		"cbdw": "深圳市公安局",
 		"cblb": "盗窃"
-	},
+	}],
 	"pages": null,
 	"operates": null
 }

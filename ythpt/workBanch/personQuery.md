@@ -514,7 +514,7 @@ true)
 	"flag": 1,
 	"totalCount": 0,
 	"msg": null,
-	"data": {
+	"data": [{
 		"id": "F34429BD68B900D2E0430A2833CF00D2",
 		"createDate": "2013-11-02 00:00:00",
 		"cbaid": "CB4403000000002014020376",
@@ -525,7 +525,7 @@ true)
 		"cbaType": "指纹",
 		"cbdw": "广东省公安厅",
 		"cblb": "入室盗窃(夜盗)"
-	},
+	}],
 	"pages": null,
 	"operates": null
 }
