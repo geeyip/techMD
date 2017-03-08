@@ -531,6 +531,29 @@ true)
 }
 ```
 
+* 串并情况接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/person_query/dict_key', {
+    "tableName":"T_CET_DICT_MARRY_STATUS",
+    "value":"已婚"
+},
+function(res) {
+    log(obj2str(res))
+})
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 0,
+	"msg": null,
+	"data": "1",
+	"pages": null,
+	"operates": null
+}
+备注：tableName："表名"，value："字典值"（发送请求时不用jsonStr包裹）
+```
+
 ```java
 字段说明：
 警综人员查询结果集说明：{"birthday":"出生日期","sex":"性别","no":"编号","idcard":"身份证号","colnum":"采集数量","naplace":"户籍地","idecard":"认证身份证号","ideflag":"认证标识","rownum":"序号","fileno":"档案编号","creunit":"录入单位","cretime":"录入时间","name":"姓名","idename":"认证姓名"}
