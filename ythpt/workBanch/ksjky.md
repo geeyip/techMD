@@ -200,5 +200,58 @@ true)
 }
 ```
 
+* 案事件勘验改造接口
+
+```java
+1.  前端调用:
+$post('http://localhost:8090/api/0/workbench/ky_aj_jcjxx/list', {
+	"pcdName": "SP_INT_API_SEL_REC_SCN_ALL",
+	"pcdParamValMap": {"recno":"J350182720000201401000001"},
+	"begin": "1",
+	"end": "60"
+},
+function(res) {
+	log(obj2str(res))
+},
+true)
+2.返回值格式：
+{
+	"flag": 1,
+	"totalCount": 1,
+	"msg": null,
+	"data": [{
+		"rectime": "2014-01-01 02:06:25",
+		"recunit": "350182000000",
+		"phtamt": null,
+		"evidamt": null,
+		"collamt": null,
+		"haptime": null,
+		"sceneno": null,
+		"caseno": null,
+		"casekd": null,
+		"invest": null,
+		"rownum": 1,
+		"hapdetl": null,
+		"acctunit": null,
+		"fileno": "T350200201703070013730287",
+		"recno": "J350182720000201401000001",
+		"pictamt": null,
+		"scetime": null,
+		"casename": null,
+		"sceflag": "0",
+		"scesta": null,
+		"accttime": null
+	}],
+	"pages": null,
+	"operates": null
+}
+```
+
+```java
+字段说明：
+案事件勘验查询结果集说明：{"rectime":"出警时间、接警时间","recunit":"接警单位","phtamt":"现场照片数量","evidamt":"痕迹物证","collamt":"提取物品","haptime":"发案时间","sceneno":"现勘编号","caseno":"案件编号","casekd":"案件类别","rownum":"排序序号","invest":"勘验人","hapdetl":"发案地点","acctunit":"受理单位","fileno":"案件档案号","recno":"接警编号","pictamt":"现场图数量","scetime":"勘验时间","casename":"案件名字","sceflag":"勘验是否合格，‘0’为不合格，‘1’为合格","scesta":"勘验状态","accttime":"受理时间"}
+案事件勘验查询参数说明：{"secflag":"是否勘验","unitflag":"单位标志 1表示接警单位，2表示受理单位","recby":"接警人","caseno":"案件编号","acctmin":"受理时间初值","casekd":"案件类别","unit":"接警或受理单位","acctmax":"受理时间终值","recno":"警情编号","rectmin":"接警时间初值","rectmax":"接警时间终值"}
+```
+
 
 
