@@ -3,7 +3,7 @@
 ```java
 1.  前端调用:
 $.post('http://192.168.1.203:8686/datacenter/api/business/proc/apiInside/SP_INT_API_SEL_CASE_EVENT_INFO', {
-	"begin":"0","end":"60","actimema":"受理时间","rno":"警情编号","detail":"案发地点","sunit":"主办人","maflag":"是否存入原始资料库","sno":"现勘编号","reunit":"接警单位","hatimemi":"案发时间","laflag":"是否送检","actimemi":"受理时间","cno":"案件编号","ckind":"案件类别","accunit":"受理单位","sflag":"是否勘验","retimema":"接警时间","buflag":"是否串并","rekind":"警情类别","retimemi":"接警时间","cflag":"是否立案","hatimema":"案发时间"
+	"begin":"0","end":"60","actimema":"受理时间","rno":"警情编号","detail":"案发地点","sunit":"主办人","maflag":"是否存入原始资料库","sno":"现勘编号","reunit":"接警单位","hatimemi":"案发时间","laflag":"是否送检","actimemi":"受理时间","cno":"案件编号","ckind":"案件类别","accunit":"受理单位","sflag":"是否勘验","retimema":"接警时间","buflag":"是否串并","rekind":"警情类别","retimemi":"接警时间","cflag":"是否立案","hatimema":"案发时间","casetype":"案件类别（固定）1:必勘;2:盗抢骗;3:十类"
 },
 function(res) {
 	console.log(obj2str(res))
@@ -68,5 +68,6 @@ function(res) {
     "retimemi": "接警时间",
     "cflag": "是否立案",
     "hatimema": "案发时间"
+    "casetype":"案件类别（固定）1:必勘;2:盗抢骗;3:十类"
 }
 ```
