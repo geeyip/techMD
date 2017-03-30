@@ -2,7 +2,8 @@
 
 ```java
 1.  前端调用:
-$.post('http://192.168.1.211:47000/datacenter/api/business/proc/apiInside', {
+$.post('http://192.168.1.151:8023/datacenter/api/business/proc/apiInside', {
+    "pcdName":"SP_INT_API_SEL_EVT_SOME_SCENE",
 	"fout":"案件编号"
 },
 function(res) {
